@@ -1,0 +1,165 @@
+{
+  "candidate_graph_sha256": "2a2873494f4d097e9e33786de3db0681e22e62a5e480f7407b1a5e59870acb28",
+  "changed_cells": {
+    "_108_": {
+      "arity": 2,
+      "drive": "1",
+      "input_nets": [
+        "data_i[21]",
+        "data_i[22]"
+      ],
+      "new_master": "sky130_fd_sc_hd__xor2_1",
+      "new_output_pin": "X",
+      "old_master": "sky130_fd_sc_hd__xnor2_1",
+      "old_output_net": "_090_",
+      "old_output_pin": "Y",
+      "phase_rhs": 0
+    },
+    "_118_": {
+      "arity": 2,
+      "drive": "1",
+      "input_nets": [
+        "data_i[19]",
+        "data_i[20]"
+      ],
+      "new_master": "sky130_fd_sc_hd__xor2_1",
+      "new_output_pin": "X",
+      "old_master": "sky130_fd_sc_hd__xnor2_1",
+      "old_output_net": "_100_",
+      "old_output_pin": "Y",
+      "phase_rhs": 0
+    },
+    "_125_": {
+      "arity": 2,
+      "drive": "1",
+      "input_nets": [
+        "data_i[2]",
+        "data_i[34]"
+      ],
+      "new_master": "sky130_fd_sc_hd__xnor2_1",
+      "new_output_pin": "Y",
+      "old_master": "sky130_fd_sc_hd__xor2_1",
+      "old_output_net": "_106_",
+      "old_output_pin": "X",
+      "phase_rhs": 1
+    },
+    "_129_": {
+      "arity": 2,
+      "drive": "1",
+      "input_nets": [
+        "data_i[9]",
+        "data_i[10]"
+      ],
+      "new_master": "sky130_fd_sc_hd__xor2_1",
+      "new_output_pin": "X",
+      "old_master": "sky130_fd_sc_hd__xnor2_1",
+      "old_output_net": "_003_",
+      "old_output_pin": "Y",
+      "phase_rhs": 0
+    },
+    "_130_": {
+      "arity": 3,
+      "drive": "1",
+      "input_nets": [
+        "_095_",
+        "_002_",
+        "_003_"
+      ],
+      "new_master": "sky130_fd_sc_hd__xnor3_1",
+      "new_output_pin": "X",
+      "old_master": "sky130_fd_sc_hd__xor3_1",
+      "old_output_net": "_004_",
+      "old_output_pin": "X",
+      "phase_rhs": 1
+    },
+    "_132_": {
+      "arity": 2,
+      "drive": "1",
+      "input_nets": [
+        "data_i[7]",
+        "data_i[8]"
+      ],
+      "new_master": "sky130_fd_sc_hd__xnor2_1",
+      "new_output_pin": "Y",
+      "old_master": "sky130_fd_sc_hd__xor2_1",
+      "old_output_net": "_005_",
+      "old_output_pin": "X",
+      "phase_rhs": 1
+    },
+    "_155_": {
+      "arity": 2,
+      "drive": "1",
+      "input_nets": [
+        "data_i[16]",
+        "data_i[24]"
+      ],
+      "new_master": "sky130_fd_sc_hd__xnor2_1",
+      "new_output_pin": "Y",
+      "old_master": "sky130_fd_sc_hd__xor2_1",
+      "old_output_net": "_025_",
+      "old_output_pin": "X",
+      "phase_rhs": 1
+    },
+    "_157_": {
+      "arity": 2,
+      "drive": "1",
+      "input_nets": [
+        "data_i[32]",
+        "data_i[0]"
+      ],
+      "new_master": "sky130_fd_sc_hd__xor2_1",
+      "new_output_pin": "X",
+      "old_master": "sky130_fd_sc_hd__xnor2_1",
+      "old_output_net": "_027_",
+      "old_output_pin": "Y",
+      "phase_rhs": 0
+    },
+    "_166_": {
+      "arity": 3,
+      "drive": "1",
+      "input_nets": [
+        "_028_",
+        "_029_",
+        "_035_"
+      ],
+      "new_master": "sky130_fd_sc_hd__xnor3_1",
+      "new_output_pin": "X",
+      "old_master": "sky130_fd_sc_hd__xor3_1",
+      "old_output_net": "_036_",
+      "old_output_pin": "X",
+      "phase_rhs": 1
+    }
+  },
+  "event": "improved",
+  "objective_score": 10,
+  "objective_tuple": [
+    10,
+    0,
+    10,
+    17
+  ],
+  "phase_one_nets": [
+    "_001_",
+    "_002_",
+    "_003_",
+    "_005_",
+    "_007_",
+    "_008_",
+    "_025_",
+    "_026_",
+    "_027_",
+    "_033_",
+    "_035_",
+    "_040_",
+    "_041_",
+    "_090_",
+    "_091_",
+    "_095_",
+    "_100_",
+    "_101_",
+    "_102_",
+    "_106_"
+  ],
+  "solver_seed": 2026092401,
+  "worker_id": 1
+}

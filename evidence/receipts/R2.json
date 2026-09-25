@@ -1,0 +1,60 @@
+{
+  "action": {
+    "kind": "balanced_phase_replay",
+    "plan": "critical_068"
+  },
+  "case": "R2",
+  "eco_reuse_origin_manifest_sha256": "af54861638e25eaedf52da7f4b0688c174e9647f00b048c40ff2ad3467be9554",
+  "eco_reuse_origin_receipt_sha256": "e9b1f3a82140a7d49df412cfa16bcbc3e00b5ec509880bab634fa3dfbd356086",
+  "eco_reuse_origin_source_commit": "ee8d3fedb504708a8fbcfc299f92a990b81376ad",
+  "eco_reuse_status": "VERIFIED_COMPLETED_ECO_ONLY",
+  "feasible": false,
+  "functional_valid": true,
+  "goal_id": "routed3_w64_d240_b271F0_v1",
+  "hashes": {
+    "eco_pre_route": "e07e2ce09a974c4ba3bce2e6689bf83570b915572c2cda3e983e04184d16d942",
+    "eco_routed_netlist": "e07e2ce09a974c4ba3bce2e6689bf83570b915572c2cda3e983e04184d16d942",
+    "eco_routed_odb": "167439187c729e19f5e017088f9d8a445b1e5d1e24e4ec2687bd0c9f01f601b4",
+    "eco_routed_spef": "73ee80f7880c79bc86977cc76778a5c0f6238f462855c4696f17de62f72bff91",
+    "final_proof_log": "5460d18b9a425345a564b2025275b813c81c036d5f7f09f984233544cd6207cd"
+  },
+  "j_score": 0.8947643094093487,
+  "kind": "balanced_phase_replay",
+  "measurement_valid": true,
+  "original_sha256": "42997b9a015ea4162e3ad1b75a7241863979fc7f113a63d7da6d4b9d3d0e1b64",
+  "parent_binding_sha256": "8d926391a6f09f994d2ae4c01e559bc693fca53cc814d612f21dad661f7fc8a7",
+  "parent_graph_sha256": "d6b1d9c234f4de9d44f5fc1c29b728fb033c93c0ee5e1bfb5718f9c717c970e9",
+  "parent_id": "d6b1d9c2",
+  "parent_measurement_meta_sha256": "d755d6c4acb17858b202062b8b228f47dd226f4595cdf72eb54dd546cf7e9a26",
+  "parent_odb_sha256": "e336d882efd607a14d02779419a116d3978a852956164e7c4dd5dedee26be304",
+  "parent_proof_log_sha256": "b48ccd1de0aff437c1e36babb166bba06e15d447a104037d77b13586c2ab8f2d",
+  "parent_receipt_sha256": "4453587f2d4d5652e7a5ec567fdf29125a5c761180c2d34f79f6a245b0e4260a",
+  "parent_spef_sha256": "df67bd3697f8d6edbd840db8ec9070e7da3d4cb3ae78dae306536b89fea0f053",
+  "raw_energies_pj": {
+    "stress_encoded": 2.466217848,
+    "valid_low_toggle": 0.3514162017,
+    "valid_uniform": 1.856532035
+  },
+  "route_valid": true,
+  "routed_area_um2": 2416.0,
+  "routed_delay_ns": 2.425037,
+  "selected_metric_row": {
+    "area_um2": 2416.0,
+    "delay_ns": 2.425037,
+    "energy_pj": {
+      "stress_encoded": 2.466217848,
+      "valid_low_toggle": 0.3514162017,
+      "valid_uniform": 1.856532035
+    },
+    "feasible": false,
+    "id": "R2",
+    "j": 0.8947643094093487,
+    "width": 64
+  },
+  "source_commit": "81089f1b0d94b2b17072bf65af4a808e8c03041d",
+  "source_pointer": "",
+  "source_revision": "dae45a4cc0da4e924992eca1f9b3462160f33f03",
+  "stage": "complete",
+  "status": "OK",
+  "upstream_path": "review/chia_R_xor3_critical/20260924/r02-receipt.json"
+}

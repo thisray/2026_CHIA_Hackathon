@@ -1,0 +1,39 @@
+{
+  "error": null,
+  "error_kind": null,
+  "finish_reason": "STOP",
+  "http_status": 200,
+  "latency_s": 2.592,
+  "model": "google-vertex/gemini-3.8-flash",
+  "model_version": "gemini-3.8-flash",
+  "parsed_object": {
+    "action": {
+      "kind": "xor3_phase_replay",
+      "plan": "n02_068"
+    },
+    "decision": "RUN",
+    "parent_id": "N02-320970ab",
+    "reason": "The candidate has verified GF2/cellmap functional validity, shrinks cell liberty area by -2.5024 um2 via swapping XOR3 to XNOR3 instances on single-fanout net _068_, and operates on feasible parent N02-320970ab within the route and native call budget."
+  },
+  "response_sha256": "7984b2d4c2448f689bc3177d133482133a3308a32dea02c01bb687116d3710a5",
+  "retry_after_s": null,
+  "thinking_level": "LOW",
+  "usage_metadata": {
+    "candidatesTokenCount": 143,
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 143
+      }
+    ],
+    "promptTokenCount": 1583,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1583
+      }
+    ],
+    "totalTokenCount": 1726,
+    "trafficType": "ON_DEMAND"
+  }
+}

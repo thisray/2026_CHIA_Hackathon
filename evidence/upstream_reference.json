@@ -1,0 +1,8 @@
+{
+  "source": "sources/manifests/common_cells.json",
+  "repository": "https://github.com/pulp-platform/common_cells.git",
+  "commit": "121182eaa0fa1f67b74eaa97c73b8a7133adda6a",
+  "ecc_decode_sha256": "177b961a388c9ce68c3706fa1a7e5773a8577d9ff82de77aaf22e9e7951c7eb8",
+  "cc_pkg_sha256": "8fe1d23d619f4e11643d9a2c44a1a6f18b088f45888fca0ba7ef75e3f6872f92",
+  "verification_scope": "Source manifest read through authenticated GitHub connector; this review did not fetch/reprove the upstream RTL bytes."
+}

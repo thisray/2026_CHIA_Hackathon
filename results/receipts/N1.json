@@ -1,0 +1,48 @@
+{
+  "action": {
+    "kind": "phase_assignment",
+    "proposal": "timing_frontier_power_weighted"
+  },
+  "case": "N1",
+  "feasible": true,
+  "functional_valid": true,
+  "goal_id": "routed3_w64_d240_b271F0_v1",
+  "hashes": {
+    "eco_pre_route": "053c7242b2c4ed51ad391a6af23182b86d9916dba0a96fe9e3b8f1706c0c79f8",
+    "eco_routed_netlist": "053c7242b2c4ed51ad391a6af23182b86d9916dba0a96fe9e3b8f1706c0c79f8",
+    "eco_routed_odb": "1ebdaa7cbff98811fe26730c6021f4378b1dcd4db798b0bd4a8a1145c0cf140e",
+    "eco_routed_spef": "abaebf26e68a7bdf153c3fb75ce547e5cfca36b0b7f70b9fcedab1d8f5bb9b51",
+    "final_proof_log": "f5cec130c2ee8cf9a5ee5cc7741eb2276ac5b5bc58b6a7bbd1ff042a48607f47"
+  },
+  "j_score": 0.8971559836444075,
+  "measurement_valid": true,
+  "original_sha256": "9c2cf1bac390acf29c7e7a2c1f175ddeb75e059605744e4356b69cdacc755183",
+  "parent_id": "bbf15474",
+  "raw_energies_pj": {
+    "stress_encoded": 2.4741599919999997,
+    "valid_low_toggle": 0.3530194954,
+    "valid_uniform": 1.856979507
+  },
+  "route_valid": true,
+  "routed_area_um2": 2427.0,
+  "routed_delay_ns": 2.369255,
+  "selected_metric_row": {
+    "area_um2": 2427.0,
+    "delay_ns": 2.369255,
+    "energy_pj": {
+      "stress_encoded": 2.4741599919999997,
+      "valid_low_toggle": 0.3530194954,
+      "valid_uniform": 1.856979507
+    },
+    "feasible": true,
+    "id": "N1",
+    "j": 0.8971559836444075,
+    "width": 64
+  },
+  "source_commit": "2d0a5f4265e496cd5e8e7d2722c247e9afed6fbe",
+  "source_pointer": "",
+  "source_revision": "a59959e331919cc55f1bb7a6526221f84ed5b119",
+  "stage": "complete",
+  "status": "OK",
+  "upstream_path": "review/chia_N_weighted_phase/20260924/n01-result.json"
+}

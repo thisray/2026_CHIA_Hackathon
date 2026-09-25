@@ -1,0 +1,58 @@
+{
+  "action": {
+    "kind": "star_batch",
+    "roots": [
+      "_274_",
+      "_330_"
+    ]
+  },
+  "case": "bbf",
+  "feasible": true,
+  "functional_valid": true,
+  "goal_id": "routed3_w64_d240_b271F0_v1",
+  "hashes": {
+    "eco_pre_route": "bbf15474e18c61fc0d2356d7c9c471011a6b37a79bf2cfe987a6281892e832ff",
+    "eco_routed_netlist": "bbf15474e18c61fc0d2356d7c9c471011a6b37a79bf2cfe987a6281892e832ff",
+    "eco_routed_odb": "833586c6ad23a4ef8cd2ef2eb3dcd7bdf8f02dfa2da0b965d78b07391f91082d",
+    "eco_routed_spef": "bdfe3d420ccbefb6ebc2c441e485d1f43869cec7051e4d59104b0657f859dc72",
+    "final_proof_log": "5bbeb2d1111f177c2a8ae820c0c36215d3776140a88e09c7e34aa4b6a0a874a7"
+  },
+  "j_score": 0.9320803737308742,
+  "kind": "polarity_action",
+  "measurement_valid": true,
+  "original_sha256": "3002a702321c1f476cb8258271dd69e2c6d0840dc06affaf8bfcd7befd012cec",
+  "parent_graph_sha256": "244543a8eb9c43bff8768d65615ac4c1ce70882572780afb3f95e054bd2c4dc3",
+  "parent_id": "244543a8-w64",
+  "parent_measurement_meta_sha256": "1958794cd89678d051c40a23fcbff13241e0fd596c86efa985d000008cc1c689",
+  "parent_odb_sha256": "6b51a1103ff7d491ea998a24c5af01879f7659955f396985b8894aa52bc2d772",
+  "parent_proof_log_sha256": "6277b9620f173303cb6cb1bb33679dc422e72dece326dd20bd004b3a5b0e1554",
+  "parent_receipt_sha256": "3350a5e747d59f2bf29a17a4eb0ebb503329c89fc12c958755737133aee8fb1f",
+  "parent_spef_sha256": "e12e692dc0cdd6caaf9f5c2ab46bc18ee101fddd9cd1e406b4a1794edc2a55af",
+  "raw_energies_pj": {
+    "stress_encoded": 2.534645901,
+    "valid_low_toggle": 0.37545007220000004,
+    "valid_uniform": 1.9112623699999998
+  },
+  "route_valid": true,
+  "routed_area_um2": 2427.0,
+  "routed_delay_ns": 2.362535,
+  "selected_metric_row": {
+    "area_um2": 2427.0,
+    "delay_ns": 2.362535,
+    "energy_pj": {
+      "stress_encoded": 2.534645901,
+      "valid_low_toggle": 0.37545007220000004,
+      "valid_uniform": 1.9112623699999998
+    },
+    "feasible": true,
+    "id": "bbf",
+    "j": 0.9320803737308742,
+    "width": 64
+  },
+  "source_commit": "3745c1446b231d7063d27f18761e0d21dfc3ad6f",
+  "source_pointer": "",
+  "source_revision": "1b455dfd926bc1dd73e189eab7f8f73c0c1516ea",
+  "stage": "complete",
+  "status": "OK",
+  "upstream_path": "review/chia_F_composable_phase/20260924/f03-step-01-receipt.json"
+}

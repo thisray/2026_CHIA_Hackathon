@@ -1,0 +1,201 @@
+\documentclass[10pt]{article}
+\usepackage[a4paper,margin=18mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,booktabs,array,longtable,amsmath,amssymb,url}
+\usepackage[hidelinks]{hyperref}
+\setlength{\parindent}{0pt}\setlength{\parskip}{5pt}
+\hypersetup{pdftitle={CHIA Routed Feedback: Expanded Evidence Supplement},pdfauthor={Ssu-Rui Lee}}
+\newcommand{\sect}[1]{\subsection*{#1}}
+\begin{document}
+\begin{center}{\Large\bfseries CHIA Routed Feedback: Expanded Evidence Supplement}\\[4pt]
+Ssu-Rui Lee --- September 25, 2026\end{center}
+This supplement accompanies the four-page manuscript. Research measurements remain tied to commit \texttt{f5d938b}; the repository archives the available source records. Extra digits support matching the source records, not claims of measurement precision.
+\sect{1. What is being compared}
+The main paper reports the selected progression from pre-optimized feasible designs, not only the later global-search extension. The 64-bit start is an RTL-search result after timing repair and power recovery; the 32-bit start is a fixed projection of previously searched RTL. Both already contain work from this project. They are not external industrial baselines, untouched upstream RTL, or solutions produced by independent competitors.
+
+The fixed normalization references are different again. The 64-bit reference is a searched RTL realization whose 2.526346\,ns delay is infeasible under the final 2.40\,ns ceiling. The 32-bit reference uses the project's mask-based parity RTL. A reference supplies the energy denominator; it does not automatically supply a fair feasible starting point for every comparison.
+\begin{center}\fontsize{8.4}{10.1}\selectfont\setlength{\tabcolsep}{3.6pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{5.3cm}rrrrrr@{}}\toprule
+Design / operation & Delay (ns) & Area & Stress & Uniform & Low-toggle & Score\\\midrule
+\multicolumn{7}{@{}l}{\textbf{64-bit decoder}}\\
+Searched RTL reference$^{\dagger}$ & 2.526346 & 2392 & 2.541008 & 2.027927 & 0.435884 & 1.000000\\
+RTL + physical tuning & 2.372445 & 2434 & 2.641683 & 2.010297 & 0.412100 & 0.991375\\
+Final three-input refinement & 2.374088 & 2425 & 2.470199 & 1.854112 & 0.351798 & 0.895180\\
+\midrule
+\multicolumn{7}{@{}l}{\textbf{32-bit decoder}}\\
+Masked-RTL reference & 2.248806 & 1836 & 1.595185 & 1.140097 & 0.327811 & 1.000000\\
+Projected searched RTL & 2.049337 & 1299 & 1.379291 & 0.974656 & 0.306806 & 0.884433\\
+Final mixed-arity plan & 2.081588 & 1296 & 1.275677 & 0.883614 & 0.266264 & 0.795511\\
+\bottomrule\end{tabular}\end{center}
+Area is in $\mu$m$^2$; each energy is pJ/vector. $^{\dagger}$ marks delay above 2.40\,ns. Score means the geometric mean of three width-specific energy ratios, $E_{\mathrm{norm}}$ in the paper (the historical program field is \texttt{J}).
+\begin{center}\small\setlength{\tabcolsep}{5pt}\begin{tabular}{@{}p{8.0cm}rrr@{}}\toprule
+Before $\rightarrow$ after & Score reduction & $\Delta$delay (ps)&$\Delta$area ($\mu$m$^2$)\\\midrule
+RTL + physical tuning $\rightarrow$ Final three-input refinement & 9.7032\% & +1.643 & -9\\
+Feedback-recovered local design $\rightarrow$ Final three-input refinement & 3.9589\% & +11.553 & -2\\
+Feedback-selected pair refinement $\rightarrow$ Final three-input refinement & 0.1770\% & -1.829 & -2\\
+Projected searched RTL $\rightarrow$ Final mixed-arity plan & 10.0541\% & +32.251 & -3\\
+Feedback-selected four-star trial $\rightarrow$ Final mixed-arity plan & 5.2554\% & -28.551 & -3\\
+Power-weighted binary plan $\rightarrow$ Final mixed-arity plan & 0.2677\% & -16.655 & -3\\
+Masked-RTL reference $\rightarrow$ Final mixed-arity plan & 20.4489\% & -167.218 & -540\\
+\bottomrule\end{tabular}\end{center}
+The 64-bit stages are a 5.9810\% reduction from the tuned start to the recovered local result, then 3.9589\% to the final logic result. The 32-bit stages are 5.0649\% then 5.2554\%. Ratios multiply; percentage reductions do not add. The 32-bit masked-reference comparison includes the earlier projection gain and is explicitly broader than the 10.05\% extension of the projected design.
+
+\textbf{Physical tradeoffs remain visible.} The final designs are 1.643 and 32.251\,ps slower than the two pre-optimized starts, although both are feasible. The final 64-bit design has 33\,$\mu$m$^2$ more area than its timing-failing normalization reference. No claim of simultaneous improvement over every reference and every metric is made.
+
+\newpage
+\sect{2. Complete selected 64-bit progression: early and local stages}
+All entries below use the same three-workload reference $(2.541007707,2.027927403,0.4358843944)$ pJ/vector and the same final 2.40\,ns ceiling. Each row comes from a single implementation. Rows identify milestones; their ordering is not a complete ancestry graph or an equal-cost policy comparison.
+\begin{center}\fontsize{8.4}{10.1}\selectfont\setlength{\tabcolsep}{3.6pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{5.3cm}rrrrrr@{}}\toprule
+Design / operation & Delay (ns) & Area & Stress & Uniform & Low-toggle & Score\\\midrule
+Searched RTL reference$^{\dagger}$ & 2.526346 & 2392 & 2.541008 & 2.027927 & 0.435884 & 1.000000\\
+Repaired searched reference (fails)$^{\dagger}$ & 2.432030 & 2434 & 2.603721 & 2.055286 & 0.448589 & 1.022418\\
+Second repaired RTL choice (fails)$^{\dagger}$ & 2.407488 & 2414 & 2.579348 & 2.049534 & 0.444262 & 1.014982\\
+First feasible model-selected RTL & 2.379898 & 2434 & 2.647325 & 2.010553 & 0.412087 & 0.992112\\
+RTL + physical tuning & 2.372445 & 2434 & 2.641683 & 2.010297 & 0.412100 & 0.991375\\
+Calibrated power recovery & 2.397587 & 2424 & 2.629275 & 2.010855 & 0.412114 & 0.989923\\
+First pin-swap prototype & 2.365314 & 2424 & 2.630401 & 2.012902 & 0.412033 & 0.990336\\
+Feedback-selected pin swap & 2.359425 & 2424 & 2.631110 & 2.013203 & 0.411977 & 0.990429\\
+Selective cell downsizing & 2.373910 & 2416 & 2.626159 & 2.006511 & 0.411598 & 0.988406\\
+Pin/downsize + tree rotation & 2.358853 & 2416 & 2.625896 & 2.008364 & 0.410271 & 0.987614\\
+Initial local phase pair & 2.359302 & 2416 & 2.619734 & 2.005281 & 0.408633 & 0.985021\\
+Four-pair phase batch & 2.362417 & 2416 & 2.598359 & 1.984608 & 0.390834 & 0.964522\\
+Six-pair phase milestone & 2.361620 & 2416 & 2.588101 & 1.974260 & 0.388406 & 0.959579\\
+Eight-pair phase milestone & 2.371359 & 2416 & 2.577747 & 1.964015 & 0.387134 & 0.955592\\
+Shared-consumer phase edit & 2.398144 & 2416 & 2.570336 & 1.956617 & 0.381644 & 0.948946\\
+Fold for timing headroom & 2.363135 & 2427 & 2.583333 & 1.958906 & 0.382310 & 0.951466\\
+Local shared-consumer branch & 2.373917 & 2416 & 2.565100 & 1.951086 & 0.381948 & 0.947658\\
+Folded local phase refinement & 2.373085 & 2427 & 2.569547 & 1.944608 & 0.378652 & 0.944423\\
+Extended local phase refinement & 2.364892 & 2427 & 2.559029 & 1.934800 & 0.377567 & 0.940644\\
+Four-star timing failure$^{\dagger}$ & 2.405758 & 2427 & 2.527143 & 1.903886 & 0.374547 & 0.929214\\
+Conservative one-star recovery & 2.362283 & 2427 & 2.550519 & 1.926687 & 0.377119 & 0.937914\\
+Feedback-recovered local design & 2.362535 & 2427 & 2.534646 & 1.911262 & 0.375450 & 0.932080\\
+\bottomrule\end{tabular}\end{center}
+\textbf{Why the early starting point is already optimized.} In the initial three-route episode, a model plan evaluates the searched reference, then a second RTL after a timing failure. Replanning with the two measured outcomes selects the third RTL, which first satisfies both the delay limit and score below one. Power recovery subsequently accepts two inverter downsizes. A matched control removes recovery while retaining the associated placement/routing steps and reproduces the earlier result; this is evidence for the specific recovery gain, not saturation of all physical optimization.
+
+\textbf{Composition and rejection.} The pin/downsize/rotation milestone is the composition of two pin edits, selective downsizing, and a tree reassociation. The first pin edit was a direct-EDA prototype; the next pin edit and later reported operations used CHIA/Ray. A lower-area or faster intermediate is retained even when its energy score is worse. An inverter-absorption step, for example, improves the old path by 102.918\,ps but improves the whole design by only 35.009\,ps because a different path becomes critical.
+
+\textbf{The later recovered local design.} A four-star trial on the earlier local circuit fails by 5.758\,ps. A single-star sibling produces a feasible intermediate. The following runtime call receives the earlier failure's path diagnosis and selects a two-star edit on that intermediate. The result has 37.465\,ps margin. Lower-energy local alternatives exist with 10.596 or 0.339\,ps margin, so this checkpoint is a headroom choice, not the globally lowest local score.
+
+Full source paths and exact internal keys for these rows are in \path{evidence/expanded_results.csv} and \path{evidence/experiment_name_map.csv}. The immediate parent of the local shared-consumer branch is an unlisted \texttt{9eb} checkpoint; it is not silently connected to the preceding table row.
+
+\newpage
+\sect{3. Complete selected 64-bit progression: global and repair branches}
+\begin{center}\fontsize{8.4}{10.1}\selectfont\setlength{\tabcolsep}{3.6pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{5.3cm}rrrrrr@{}}\toprule
+Design / operation & Delay (ns) & Area & Stress & Uniform & Low-toggle & Score\\\midrule
+Single-path protection$^{\dagger}$ & 2.528992 & 2427 & 2.428730 & 1.814035 & 0.347827 & 0.880345\\
+Expanded-path protection$^{\dagger}$ & 2.452134 & 2427 & 2.440835 & 1.823998 & 0.350628 & 0.885781\\
+Phase + timing repair & 2.398176 & 2447 & 2.475489 & 1.848242 & 0.362323 & 0.903709\\
+Repair-only control & 2.365566 & 2427 & 2.535719 & 1.911528 & 0.375529 & 0.932320\\
+Multi-path protection & 2.376334 & 2427 & 2.476977 & 1.859091 & 0.354799 & 0.899342\\
+Power-weighted global plan & 2.369255 & 2427 & 2.474160 & 1.856980 & 0.353019 & 0.897156\\
+Feedback-selected pair refinement & 2.375917 & 2427 & 2.472119 & 1.854769 & 0.353273 & 0.896767\\
+Final three-input refinement & 2.374088 & 2425 & 2.470199 & 1.854112 & 0.351798 & 0.895180\\
+Post-final timing failure$^{\dagger}$ & 2.430113 & 2425 & 2.461443 & 1.846515 & 0.351345 & 0.892515\\
+Undo: same logic, new route & 2.375888 & 2425 & 2.468786 & 1.853478 & 0.351741 & 0.894859\\
+Alternative post-final edit & 2.373983 & 2425 & 2.475586 & 1.859104 & 0.352247 & 0.897015\\
+Low-area timing-failing branch$^{\dagger}$ & 2.425037 & 2416 & 2.466218 & 1.856532 & 0.351416 & 0.894764\\
+Repaired speed/area alternative & 2.370334 & 2424 & 2.470196 & 1.862395 & 0.351942 & 0.896634\\
+\bottomrule\end{tabular}\end{center}
+\textbf{Conventional repair comparison.} The expanded-path phase candidate remains infeasible at 2.452134\,ns. Repair lowers its delay by 53.958\,ps and restores feasibility, while adding 20\,$\mu$m$^2$ and raising score from 0.885781 to 0.903709. Repair on the recovered local design returns 0.932320. Thus phase plus repair has a 3.0688\% lower score than that repair-only control, at a higher area and 32.610\,ps more delay. This is a hardware/tool-composition comparison, not an isolated benefit of the language model.
+\begin{center}\small\setlength{\tabcolsep}{5pt}\begin{tabular}{@{}p{8.0cm}rrr@{}}\toprule
+Before $\rightarrow$ after & Score reduction & $\Delta$delay (ps)&$\Delta$area ($\mu$m$^2$)\\\midrule
+Expanded-path protection $\rightarrow$ Phase + timing repair & -2.0240\% & -53.958 & +20\\
+Repair-only control $\rightarrow$ Phase + timing repair & 3.0688\% & +32.610 & +20\\
+Multi-path protection $\rightarrow$ Power-weighted global plan & 0.2431\% & -7.079 & +0\\
+Feedback-selected pair refinement $\rightarrow$ Final three-input refinement & 0.1770\% & -1.829 & -2\\
+Final three-input refinement $\rightarrow$ Undo: same logic, new route & 0.0358\% & +1.800 & +0\\
+\bottomrule\end{tabular}\end{center}
+\textbf{Same count, different physical result.} Multi-path and power-weighted assignments both start from the recovered local circuit. Both keep 37 XNOR2 cells and the same 34 fixed phase variables/33 protected gate polarities. They are siblings; their real score difference is 0.2431\%. The weighted proposal's 7.56\% proxy improvement is not a 7.56\% measured energy improvement. Subsequent local pair refinement is selected after a recorded star action had harmed a protected path on another parent.
+
+\textbf{The last logical edit.} Two XOR3-to-XNOR3 replacements preserve drive strength and functionality while reducing the summed cell geometry by 2.5024\,$\mu$m$^2$; the integer area report drops from 2427 to 2425. The direct-parent score reduction is 0.1770\%, with all three energies and delay lower. This final edit is distinct from the much larger cumulative campaign reduction.
+
+\textbf{Undo and alternate frontier.} A post-final trial fails timing. Repeating the pair action restores the final netlist and placement but produces different routing/parasitics; score becomes 0.894859, with 1.800\,ps more delay. It is the lowest observed feasible physical score in this selected evidence, not a new Boolean optimization. Another repaired branch gives 2.370334\,ns and 2424\,$\mu$m$^2$ at a slightly higher score. Its parent differs from the final logic result's parent; the two rows are not a matched single-change causal experiment.
+
+\newpage
+\sect{4. Complete 32-bit progression and the representation result}
+The reference is the project's mask-based parity implementation. Its three workload energies, independent of the 64-bit reference, are\[ (1.595184585,\;1.140097229,\;0.3278113945)\ \mathrm{pJ/vector}.\]
+\begin{center}\fontsize{8.4}{10.1}\selectfont\setlength{\tabcolsep}{3.6pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{5.3cm}rrrrrr@{}}\toprule
+Design / operation & Delay (ns) & Area & Stress & Uniform & Low-toggle & Score\\\midrule
+Masked-RTL reference & 2.248806 & 1836 & 1.595185 & 1.140097 & 0.327811 & 1.000000\\
+Projected searched RTL & 2.049337 & 1299 & 1.379291 & 0.974656 & 0.306806 & 0.884433\\
+Transferred local phase pairs & 2.061026 & 1299 & 1.363067 & 0.959193 & 0.297479 & 0.867296\\
+Three-star local trial & 2.060426 & 1299 & 1.339273 & 0.937648 & 0.286393 & 0.844951\\
+Feedback-selected four-star trial & 2.110139 & 1299 & 1.331617 & 0.930286 & 0.284876 & 0.839637\\
+Minimum-count binary plan & 2.069854 & 1299 & 1.280010 & 0.889243 & 0.267722 & 0.799553\\
+Power-weighted binary plan & 2.098243 & 1299 & 1.279071 & 0.886069 & 0.266960 & 0.797646\\
+Mixed-arity single-group trial & 2.080952 & 1297 & 1.277263 & 0.886224 & 0.267330 & 0.797686\\
+Final mixed-arity plan & 2.081588 & 1296 & 1.275677 & 0.883614 & 0.266264 & 0.795511\\
+\bottomrule\end{tabular}\end{center}
+\textbf{How the projected RTL was generated.} The frozen candidate manifest specifies radix-2 parity trees, input-bit order $(1,4,2,3,0,5)$, a tree decoder with grouping $(a,b)=(1,2)$ and cross-grouping AB, and a self-inverse syndrome-basis shear $t_0=s_0\oplus s_1$. These are construction settings, not publication method names. The original corrected-data, syndrome, and error-status outputs are retained. The generator records 69 XOR2 operations in the linear stage plus one extra ideal XOR; these abstract counts are not mapped area. Functional and routed evaluation, rather than these counts, support the reported gain.
+
+The original selector-based child had a generation failure; its corrected version later passed functional checks but reached 2.435600\,ns and failed the timing limit. That child is not part of the successful projected-start result. The originally logged mapped energy ratio mixed fidelities and was marked invalid; the routed score in this supplement uses only matching routed references.
+
+\textbf{Conventional recovery versus new operations.} A fixed transfer of the 64-bit power-recovery recipe to the projected circuit makes zero resize moves. Netlist bytes and all reported metrics equal its own earlier flow. This supports a no-op conclusion for this specific circuit and recipe, not a claim that all physical methods are exhausted. Transferred phase pairs and subsequent runtime-selected star batches still improve the score.
+
+\textbf{Feedback is not ancestry.} The three-star and four-star trials share the transferred-pair circuit as parent. The runtime reads the first trial's real measurements before selecting the four-star batch. Minimum-count and power-weighted binary plans likewise share the four-star parent. The mixed-arity single-group and final global plans share the power-weighted binary parent.
+
+\textbf{What the certificate proves.} A count-11 witness plus a Boolean satisfiability (SAT) query reporting unsatisfiable for count $\leq10$ establishes the minimum XNOR2 count in the exact 41-variable, fixed-boundary XOR2/XNOR2 representation. It proves neither minimum energy nor globally minimum gate count. The power-weighted alternative ranks the prespecified first sixteen of seventeen count-11 candidates and selects the ninth.
+
+Outer development then permits three-input parity consumers, increasing the phase variables to 56. The single-group trial improves delay and area while worsening the aggregate energy score. After seeing this, the runtime decides to evaluate the supplied global plan. Its nine changes comprise four XNOR2-to-XOR2, three XOR2-to-XNOR2, and two XOR3-to-XNOR3 replacements, leaving 10 XNOR2 and seven XNOR3 cells. Two bounded 22-second annealing workers used an area-first proxy and an XNOR2-count tie-break; no optimum certificate exists for this larger space.
+
+\newpage
+\sect{5. Measurement contract, source levels, and effort}
+\textbf{Electrical context.} SkyWater 130-nm high-density standard cells; typical corner, 1.8\,V, 25\,$^\circ$C; input slew 0.05\,ns; output load 0.005\,pF. The maximum external-output delay ceiling is 2.40\,ns. Rerouting uses a 2.575\,ns target and seed 20260921; the reported setup-repair recipe uses 2.35\,ns. The evaluator's virtual clock is 10\,ns. Clock slack is not the same quantity as $2.40-\mathrm{delay}$.
+
+\textbf{Activity and energy.} Each workload supplies 1,024 vectors spaced 10\,ns apart, seed 2026092101. Stress uses unrestricted encoded-width input bits, including invalid codewords; uniform and low-toggle encode valid payloads. The latter changes one payload bit per vector. Over $10.24\,\mu$s, $E_w=P_wT/1024$ includes internal, switching, and leakage power. The normalized score is the geometric mean of the three ratios to a fixed reference of the same width. Raw workload energies are never averaged across widths or combined with a mapped-only ratio.
+
+\textbf{Scope.} Functional gate waveforms have no delay back-annotation. These are activity-based estimates using routed parasitics, not silicon measurements or glitch-accurate power. The workloads were used during search. One nominal corner and no repeated-route confidence intervals bound the conclusions. Extra decimal places identify tool outputs; they do not express statistical uncertainty. Two-state equivalence and routed timing are not design-rule or layout-versus-schematic signoff.
+
+\textbf{Source levels.} The data file contains 44 rows: 21 from the previously supplied receipt views, 20 earlier/reference milestones newly checked against the pinned Git summaries and command history, and three initial-selection rows read from the original Git receipt. New transcription does not create missing raw artifacts or constitute an independent EDA replay. The original 21 receipt files remain unchanged. Every row records its source path, label, and scope. A blank J\_reported field means no independent reported score was transcribed; its score is recomputed from the three energies, not counted as a second validation source.
+
+\textbf{Recorded effort, not a manufactured total.}
+\begin{center}\small\setlength{\tabcolsep}{5pt}
+\begin{tabular}{@{}p{4.1cm}p{3.7cm}p{7.0cm}@{}}\toprule
+Scope & Recorded work & Interpretation\\\midrule
+Initial feasible-selection episode & 3 route submissions & Two timing failures precede a feasible selected RTL. It does not include prior RTL generation.\\
+Earlier campaign, before F & 187 mapped submissions; 104 route submissions; 18 extra profiles & Closed accounting prefix. Includes failures and reuse cases; not 291 unique valid designs or the exact cost of one baseline.\\
+F local-feedback campaign & 8 route submissions; 10 native model calls & Produces the recovered local design and later alternatives. The two-star winner is only one part of this scope.\\
+G32 local-feedback campaign & 2 routes; 4 calls & Three-star/four-star trials; calls include two rate-limit failures. Excludes the earlier projection and local-pair transfer.\\
+Selected final 64-bit operation & Pre-proof 1.147\,s; reroute 19.305\,s; profiles 5.967\,s & Process times from the historical operation; excludes the original edit, model calls, proposal development and prior search.\\
+Selected final 32-bit operation & Pre-proof 0.844\,s; reroute 9.198\,s; profiles 4.247\,s & Same limited interpretation. No end-to-end speedup claim.\\\bottomrule
+\end{tabular}\end{center}
+The effort records establish that the late comparison circuits came from substantive prior work. They do not establish industrial strength, optimality, model superiority, or a new total cost. Different campaign caps are not added to obtain actual consumption.
+
+\textbf{Policy comparison.} An earlier matched comparison gives Flash and a fixed rule the same history, twelve logical mapped queries and four logical route queries per arm. Neither improves the common 0.9913747531 score. Among new queries, fixed reaches 1.0343090192 and Flash 1.0464968606; six fresh routes and two charged exact-context cache hits serve the eight queries. This comparison predates the phase tools. A separate legacy single-activity run's 9-versus-15-route first-hit observation is not mixed into the current three-profile results or used as a general efficiency claim.
+
+\newpage
+\sect{6. Replay artifact and audit map}
+\textbf{Historical versus portable execution.} The repository supplies saved-decision CHIA replay for the final 64-bit and 32-bit operations and an opt-in fixed-plan model gate. The 21-row replay subset and the 44-row selected evidence table serve different purposes. The CLI does not reproduce every historical catalog choice, coordinator query, or operator-development episode; the saved replay-data archive retains the original input bytes.
+
+A saved 32-bit plan was executed from a clean exported checkout, and the 64-bit plan was executed from a source checkout; both returned valid proof, route, and measurement. The assembled code passes offline checking, both saved-plan preflights, and a mock STOP gate with zero routes. This packaging revision did not rerun EDA; live model endpoint use and installation on a second clean host remain unverified.
+
+\textbf{Where to look.}
+\begin{center}\small\begin{tabular}{@{}p{6.2cm}p{8.4cm}@{}}\toprule
+Path from the repository root & Purpose\\\midrule
+\path{paper/CHIA_ECC_Feedback.tex} & Four-page main manuscript and editable vector figures/tables.\\
+\path{evidence/expanded_results.csv} & All 44 selected rows with complete metrics, source and interpretation.\\
+\path{evidence/comparisons_v8.json} & Seventeen declared before/after comparisons and workload-specific deltas.\\
+\path{evidence/experiment_name_map.csv} & Semantic labels mapped to original IDs, source paths and known parents.\\
+\path{evidence/receipts/} & The 21 inherited receipt views, preserved byte-for-byte.\\
+\path{evidence/codex_source/decisions/} & Original retained model prompt/decision files, where provided.\\
+\path{public_release/runtime/} & CLI, identity adapter and fixed-plan model gate.\\
+\path{data/replay-data.zip} & Original final-operation inputs and historical cases.\\
+\path{MANIFEST.json} & SHA-256 and size of each payload file in this distribution.\\
+\path{evidence/provenance/} & Archived source records for the reported milestones.\\\bottomrule
+\end{tabular}\end{center}
+
+\textbf{Tool roles.} CHIA orchestrates nodes; Ray schedules workers. Common Cells supplies the ECC function. Yosys checks complete external-output equivalence and the separate binary count query. OpenROAD edits, places, repairs and routes; OpenRCX extracts parasitics. Icarus Verilog supplies functional activity; OpenSTA reports timing and activity-based power. SKY130 supplies cell and physical models. The main manuscript cites each external tool at its first substantive use; these citations credit the tools, while artifact locks fix the actual execution versions.
+
+The source pins are\begin{quote}\footnotesize\ttfamily CHIA: 16c35e92aaaf9511c6453bf94cd5cf589698f4e3\\ Common Cells: 121182eaa0fa1f67b74eaa97c73b8a7133adda6a\end{quote} The EDA image digest is
+\begin{quote}\footnotesize\ttfamily
+sha256:65852976cad4af640c9d848762215137e87ec125111a6d06c850c3ab4e9695fb
+\end{quote}
+The upstream CHIA/PDK source trees and Docker image are not bundled. Licensing and fetched-dependency requirements remain in the artifact README and NOTICE.
+
+\textbf{Retained gaps.} The earlier runner deleted U/W waveform bytes; original hashes and simulation/power logs remain, but missing bytes have not been replaced with another candidate's waveforms. V03 and X01 were not run at closeout and contribute no measurements. Source/recipe/parent equality is checked before proof reuse; matching a summary score alone is insufficient.
+
+\textbf{Code and results repository.} \url{https://github.com/thisray/2026_CHIA_Hackathon}.
+\end{document}

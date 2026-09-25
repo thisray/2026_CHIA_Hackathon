@@ -1,0 +1,55 @@
+{
+  "action": {
+    "kind": "postroute_setup_repair",
+    "recipe_id": "h_phase_postroute_setup_repair_v1"
+  },
+  "case": "T1",
+  "feasible": true,
+  "functional_valid": true,
+  "goal_id": "routed3_w64_d240_b271F0_v1",
+  "hashes": {
+    "eco_pre_route": "2525e5606fd06eecf7f0383bc7b0b55db2bba5b30c94ea0b2ddbfc0ea33c4280",
+    "eco_routed_netlist": "2525e5606fd06eecf7f0383bc7b0b55db2bba5b30c94ea0b2ddbfc0ea33c4280",
+    "eco_routed_odb": "e70820d44f57a410d9ab9f1019afad4b96b32b30f434f50b6c7f83b1fdc3d577",
+    "eco_routed_spef": "134129eada33da55eddc8704f41681223c57e026fc2fb393b3c83e1af1206c52",
+    "final_proof_log": "71eba98f1be89caf8be23f77bf9b8844e4c7e799789ad27ea2e469c87cf137f0"
+  },
+  "j_score": 0.8966336020139302,
+  "kind": "phase_timing_repair",
+  "measurement_valid": true,
+  "original_sha256": "e4e9ea2662ce04bfbefe4c85c16a90b30607e7dc19e3b9ebd5ab18cf9cd3fa2f",
+  "parent_graph_sha256": "e07e2ce09a974c4ba3bce2e6689bf83570b915572c2cda3e983e04184d16d942",
+  "parent_id": "R02-e07e2ce0",
+  "parent_measurement_meta_sha256": "ae78bbc31adadb22059f58abde3b928532ae732cc2addb8b2b88a923f64c2cc0",
+  "parent_odb_sha256": "167439187c729e19f5e017088f9d8a445b1e5d1e24e4ec2687bd0c9f01f601b4",
+  "parent_proof_log_sha256": "5460d18b9a425345a564b2025275b813c81c036d5f7f09f984233544cd6207cd",
+  "parent_receipt_sha256": "42997b9a015ea4162e3ad1b75a7241863979fc7f113a63d7da6d4b9d3d0e1b64",
+  "parent_spef_sha256": "73ee80f7880c79bc86977cc76778a5c0f6238f462855c4696f17de62f72bff91",
+  "raw_energies_pj": {
+    "stress_encoded": 2.470196341,
+    "valid_low_toggle": 0.3519423262,
+    "valid_uniform": 1.862394856
+  },
+  "route_valid": true,
+  "routed_area_um2": 2424.0,
+  "routed_delay_ns": 2.370334,
+  "selected_metric_row": {
+    "area_um2": 2424.0,
+    "delay_ns": 2.370334,
+    "energy_pj": {
+      "stress_encoded": 2.470196341,
+      "valid_low_toggle": 0.3519423262,
+      "valid_uniform": 1.862394856
+    },
+    "feasible": true,
+    "id": "T1",
+    "j": 0.8966336020139302,
+    "width": 64
+  },
+  "source_commit": "cf8c954626f06c117aa771563c0fba106962d335",
+  "source_pointer": "",
+  "source_revision": "7f72fd9dfa770b3eecbd70aabcc0208b247123e3",
+  "stage": "complete",
+  "status": "OK",
+  "upstream_path": "review/chia_T_arity_repair/20260924/t01-receipt.json"
+}

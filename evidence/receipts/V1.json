@@ -1,0 +1,57 @@
+{
+  "action": {
+    "kind": "mixed_phase_assignment",
+    "proposal": "phase003_xor3_absorb_singleton_v1"
+  },
+  "case": "V1",
+  "feasible": true,
+  "functional_valid": true,
+  "goal_id": "routed3_w32_d240_maskedF0_v1",
+  "hashes": {
+    "eco_pre_route": "8e5b08be4e99d6f34e2fc0afea284f7d99ec7d6fdca5104907300c40a8dcbdd3",
+    "eco_routed_netlist": "8e5b08be4e99d6f34e2fc0afea284f7d99ec7d6fdca5104907300c40a8dcbdd3",
+    "eco_routed_odb": "e1ee0dbfdfcc6a92ed2ddf59b550aaa46b16c9940d73d01075a853a541d5edc5",
+    "eco_routed_spef": "08a724c643df23433725e5e7b55d1c350ff99123490e57bebd7e26b07761e219",
+    "final_proof_log": "d38d2fb433a3e1fd28944c96926ecc1da8175e36f36e60652147d1005e649043"
+  },
+  "j_score": 0.7976856387624334,
+  "kind": "w32_mixed_phase_assignment",
+  "measurement_valid": true,
+  "original_sha256": "30d9fc9e0b6f0dd01a13f583d69842c238169b50d300400c4abe9c58e7d696cc",
+  "parent_binding_sha256": "c42ab645d66dc106ef75cbdc379c55f3b3987796b480c5d8c7887a8dd40c63df",
+  "parent_graph_sha256": "c6c10558e367fd345b17c3b1a70898ddb8bcca9414833f0fcb34e7fd83478d95",
+  "parent_id": "c6c10558",
+  "parent_measurement_meta_sha256": "616889232f3a8054aa34fcc694e74c6090fdf0946ac4b6627caea6ee286cd6f2",
+  "parent_odb_sha256": "195f6735be8d479a979ffae0516931f5667d5cb103c319277fa305445d1fb787",
+  "parent_proof_log_sha256": "69e4c7496d38c468150a9134456f82463c5171b832e23238a26306a1805f46c6",
+  "parent_receipt_sha256": "d84042680c747e7b77076fa77d8b737d0ff1de247022d72414df435802a938d4",
+  "parent_spef_sha256": "00792e4e47293771141c88849f9f7c25d167e37f5274e69bf63886faea9108bb",
+  "raw_energies_pj": {
+    "stress_encoded": 1.2772632179999999,
+    "valid_low_toggle": 0.26733046979999997,
+    "valid_uniform": 0.8862236427
+  },
+  "reference_measurement_id": "ecc_masked_reduction::F0::routed3_w32_v1",
+  "route_valid": true,
+  "routed_area_um2": 1297.0,
+  "routed_delay_ns": 2.080952,
+  "selected_metric_row": {
+    "area_um2": 1297.0,
+    "delay_ns": 2.080952,
+    "energy_pj": {
+      "stress_encoded": 1.2772632179999999,
+      "valid_low_toggle": 0.26733046979999997,
+      "valid_uniform": 0.8862236427
+    },
+    "feasible": true,
+    "id": "V1",
+    "j": 0.7976856387624334,
+    "width": 32
+  },
+  "source_commit": "aa31341222e7573376154eba0ba323028e0945a4",
+  "source_pointer": "",
+  "source_revision": "7799886574c96219b7f2b50a5ec616fa6bd296d7",
+  "stage": "complete",
+  "status": "OK",
+  "upstream_path": "review/chia_V_w32_mixed/20260924/v01-receipt.json"
+}

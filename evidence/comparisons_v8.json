@@ -1,0 +1,356 @@
+[
+  {
+    "before": "ref64",
+    "after": "S2",
+    "before_label": "Searched RTL reference",
+    "after_label": "Final three-input refinement",
+    "energy_reduction_pct": 10.482003798826323,
+    "delay_before_ns": 2.526346,
+    "delay_after_ns": 2.374088,
+    "delay_change_ps": -152.25800000000024,
+    "area_before_um2": 2392,
+    "area_after_um2": 2425.0,
+    "area_reduction_pct": -1.3795986622073597,
+    "profiles_reduction_pct": {
+      "E_stress_pj": 2.78665183914768,
+      "E_uniform_pj": 8.571097848121545,
+      "E_low_pj": 19.291058656905193
+    },
+    "before_feasible": false,
+    "after_feasible": true
+  },
+  {
+    "before": "tuned64",
+    "after": "bbf",
+    "before_label": "RTL + physical tuning (start)",
+    "after_label": "Feedback-recovered local design",
+    "energy_reduction_pct": 5.9810257575810155,
+    "delay_before_ns": 2.372445,
+    "delay_after_ns": 2.362535,
+    "delay_change_ps": -9.910000000000085,
+    "area_before_um2": 2434,
+    "area_after_um2": 2427.0,
+    "area_reduction_pct": 0.2875924404272756,
+    "profiles_reduction_pct": {
+      "E_stress_pj": 4.051845393319975,
+      "E_uniform_pj": 4.926362655135874,
+      "E_low_pj": 8.893410346519936
+    },
+    "before_feasible": true,
+    "after_feasible": true,
+    "before_label_original": "RTL + physical tuning"
+  },
+  {
+    "before": "bbf",
+    "after": "S2",
+    "before_label": "Feedback-recovered local design",
+    "after_label": "Final three-input refinement",
+    "energy_reduction_pct": 3.958930233820357,
+    "delay_before_ns": 2.362535,
+    "delay_after_ns": 2.374088,
+    "delay_change_ps": 11.553000000000146,
+    "area_before_um2": 2427.0,
+    "area_after_um2": 2425.0,
+    "area_reduction_pct": 0.08240626287597808,
+    "profiles_reduction_pct": {
+      "E_stress_pj": 2.5426522882179947,
+      "E_uniform_pj": 2.9902021772133747,
+      "E_low_pj": 6.299743628068999
+    },
+    "before_feasible": true,
+    "after_feasible": true
+  },
+  {
+    "before": "tuned64",
+    "after": "S2",
+    "before_label": "RTL + physical tuning (start)",
+    "after_label": "Final three-input refinement",
+    "energy_reduction_pct": 9.703171354391916,
+    "delay_before_ns": 2.372445,
+    "delay_after_ns": 2.374088,
+    "delay_change_ps": 1.643000000000061,
+    "area_before_um2": 2434,
+    "area_after_um2": 2425.0,
+    "area_reduction_pct": 0.3697617091207861,
+    "profiles_reduction_pct": {
+      "E_stress_pj": 6.491473341929666,
+      "E_uniform_pj": 7.769256628977961,
+      "E_low_pj": 14.632891922966017
+    },
+    "before_feasible": true,
+    "after_feasible": true,
+    "before_label_original": "RTL + physical tuning"
+  },
+  {
+    "before": "composed64",
+    "after": "S2",
+    "before_label": "Pin swaps, downsizing, and tree rotation",
+    "after_label": "Final three-input refinement",
+    "energy_reduction_pct": 9.35930376552595,
+    "delay_before_ns": 2.358853,
+    "delay_after_ns": 2.374088,
+    "delay_change_ps": 15.23500000000011,
+    "area_before_um2": 2416,
+    "area_after_um2": 2425.0,
+    "area_reduction_pct": -0.37251655629138014,
+    "profiles_reduction_pct": {
+      "E_stress_pj": 5.929313917035762,
+      "E_uniform_pj": 7.680490017398512,
+      "E_low_pj": 14.252415221080527
+    },
+    "before_feasible": true,
+    "after_feasible": true,
+    "before_label_original": "Pin/downsize + tree rotation"
+  },
+  {
+    "before": "N2",
+    "after": "S2",
+    "before_label": "Feedback-selected local pair",
+    "after_label": "Final three-input refinement",
+    "energy_reduction_pct": 0.17702806258685921,
+    "delay_before_ns": 2.375917,
+    "delay_after_ns": 2.374088,
+    "delay_change_ps": -1.8289999999998585,
+    "area_before_um2": 2427.0,
+    "area_after_um2": 2425.0,
+    "area_reduction_pct": 0.08240626287597808,
+    "profiles_reduction_pct": {
+      "E_stress_pj": 0.07768889040287164,
+      "E_uniform_pj": 0.03541536059855632,
+      "E_low_pj": 0.4175399778820865
+    },
+    "before_feasible": true,
+    "after_feasible": true,
+    "before_label_original": "Feedback-selected pair refinement"
+  },
+  {
+    "before": "ref32",
+    "after": "projected32",
+    "before_label": "Masked-RTL reference",
+    "after_label": "Projected searched RTL (start)",
+    "energy_reduction_pct": 11.556710746164745,
+    "delay_before_ns": 2.248806,
+    "delay_after_ns": 2.049337,
+    "delay_change_ps": -199.4690000000001,
+    "area_before_um2": 1836,
+    "area_after_um2": 1299,
+    "area_reduction_pct": 29.24836601307189,
+    "profiles_reduction_pct": {
+      "E_stress_pj": 13.534068723463744,
+      "E_uniform_pj": 14.511119366995672,
+      "E_low_pj": 6.407725098158535
+    },
+    "before_feasible": true,
+    "after_feasible": true,
+    "after_label_original": "Projected searched RTL"
+  },
+  {
+    "before": "ref32",
+    "after": "V2",
+    "before_label": "Masked-RTL reference",
+    "after_label": "Final mixed-arity assignment",
+    "energy_reduction_pct": 20.44889591182567,
+    "delay_before_ns": 2.248806,
+    "delay_after_ns": 2.081588,
+    "delay_change_ps": -167.21800000000007,
+    "area_before_um2": 1836,
+    "area_after_um2": 1296.0,
+    "area_reduction_pct": 29.411764705882348,
+    "profiles_reduction_pct": {
+      "E_stress_pj": 20.029492699742956,
+      "E_uniform_pj": 22.49661872478772,
+      "E_low_pj": 18.77529668969453
+    },
+    "before_feasible": true,
+    "after_feasible": true,
+    "after_label_original": "Final mixed-arity plan"
+  },
+  {
+    "before": "projected32",
+    "after": "ff6",
+    "before_label": "Projected searched RTL (start)",
+    "after_label": "Feedback-selected four-star trial",
+    "energy_reduction_pct": 5.064911400590011,
+    "delay_before_ns": 2.049337,
+    "delay_after_ns": 2.110139,
+    "delay_change_ps": 60.80200000000025,
+    "area_before_um2": 1299,
+    "area_after_um2": 1299.0,
+    "area_reduction_pct": 0.0,
+    "profiles_reduction_pct": {
+      "E_stress_pj": 3.456421077583227,
+      "E_uniform_pj": 4.552376443367079,
+      "E_low_pj": 7.147892409448408
+    },
+    "before_feasible": true,
+    "after_feasible": true,
+    "before_label_original": "Projected searched RTL"
+  },
+  {
+    "before": "ff6",
+    "after": "V2",
+    "before_label": "Feedback-selected four-star trial",
+    "after_label": "Final mixed-arity assignment",
+    "energy_reduction_pct": 5.255378379201603,
+    "delay_before_ns": 2.110139,
+    "delay_after_ns": 2.081588,
+    "delay_change_ps": -28.551000000000215,
+    "area_before_um2": 1299.0,
+    "area_after_um2": 1296.0,
+    "area_reduction_pct": 0.2309468822170868,
+    "profiles_reduction_pct": {
+      "E_stress_pj": 4.200899057998342,
+      "E_uniform_pj": 5.016996247224348,
+      "E_low_pj": 6.533417364570204
+    },
+    "before_feasible": true,
+    "after_feasible": true,
+    "after_label_original": "Final mixed-arity plan"
+  },
+  {
+    "before": "projected32",
+    "after": "V2",
+    "before_label": "Projected searched RTL (start)",
+    "after_label": "Final mixed-arity assignment",
+    "energy_reduction_pct": 10.054109521119292,
+    "delay_before_ns": 2.049337,
+    "delay_after_ns": 2.081588,
+    "delay_change_ps": 32.25100000000003,
+    "area_before_um2": 1299,
+    "area_after_um2": 1296.0,
+    "area_reduction_pct": 0.2309468822170868,
+    "profiles_reduction_pct": {
+      "E_stress_pj": 7.512119375092919,
+      "E_uniform_pj": 9.340980135268174,
+      "E_low_pj": 13.214308130138907
+    },
+    "before_feasible": true,
+    "after_feasible": true,
+    "before_label_original": "Projected searched RTL",
+    "after_label_original": "Final mixed-arity plan"
+  },
+  {
+    "before": "G0",
+    "after": "ff6",
+    "before_label": "Transferred local phase pairs",
+    "after_label": "Feedback-selected four-star trial",
+    "energy_reduction_pct": 3.1890992709615484,
+    "delay_before_ns": 2.061026,
+    "delay_after_ns": 2.110139,
+    "delay_change_ps": 49.113000000000184,
+    "area_before_um2": 1299.0,
+    "area_after_um2": 1299.0,
+    "area_reduction_pct": 0.0,
+    "profiles_reduction_pct": {
+      "E_stress_pj": 2.307288733644086,
+      "E_uniform_pj": 3.0136503359752376,
+      "E_low_pj": 4.236501004911775
+    },
+    "before_feasible": true,
+    "after_feasible": true
+  },
+  {
+    "before": "O2",
+    "after": "V2",
+    "before_label": "Power-weighted binary assignment",
+    "after_label": "Final mixed-arity assignment",
+    "energy_reduction_pct": 0.26768622698082334,
+    "delay_before_ns": 2.098243,
+    "delay_after_ns": 2.081588,
+    "delay_change_ps": -16.655000000000086,
+    "area_before_um2": 1299.0,
+    "area_after_um2": 1296.0,
+    "area_reduction_pct": 0.2309468822170868,
+    "profiles_reduction_pct": {
+      "E_stress_pj": 0.2653102733739199,
+      "E_uniform_pj": 0.2770479530345704,
+      "E_low_pj": 0.2606997421211843
+    },
+    "before_feasible": true,
+    "after_feasible": true,
+    "before_label_original": "Power-weighted binary plan",
+    "after_label_original": "Final mixed-arity plan"
+  },
+  {
+    "before": "I2",
+    "after": "I1",
+    "before_label": "Repair-only control",
+    "after_label": "Phase + timing repair",
+    "energy_reduction_pct": 3.0687781106431444,
+    "delay_before_ns": 2.365566,
+    "delay_after_ns": 2.398176,
+    "delay_change_ps": 32.61000000000003,
+    "area_before_um2": 2427.0,
+    "area_after_um2": 2447.0,
+    "area_reduction_pct": -0.8240626287597808,
+    "profiles_reduction_pct": {
+      "E_stress_pj": 2.375277823047639,
+      "E_uniform_pj": 3.3107469271388856,
+      "E_low_pj": 3.516500785917709
+    },
+    "before_feasible": true,
+    "after_feasible": true
+  },
+  {
+    "before": "H2",
+    "after": "I1",
+    "before_label": "Expanded-path protection",
+    "after_label": "Phase + timing repair",
+    "energy_reduction_pct": -2.023957343510663,
+    "delay_before_ns": 2.452134,
+    "delay_after_ns": 2.398176,
+    "delay_change_ps": -53.95800000000017,
+    "area_before_um2": 2427.0,
+    "area_after_um2": 2447.0,
+    "area_reduction_pct": -0.8240626287597808,
+    "profiles_reduction_pct": {
+      "E_stress_pj": -1.4197391316244756,
+      "E_uniform_pj": -1.329164207878164,
+      "E_low_pj": -3.3355001159481423
+    },
+    "before_feasible": false,
+    "after_feasible": true
+  },
+  {
+    "before": "J1",
+    "after": "N1",
+    "before_label": "Multi-path-protected global assignment",
+    "after_label": "Power-weighted global assignment",
+    "energy_reduction_pct": 0.2430683592621108,
+    "delay_before_ns": 2.376334,
+    "delay_after_ns": 2.369255,
+    "delay_change_ps": -7.0790000000000575,
+    "area_before_um2": 2427.0,
+    "area_after_um2": 2427.0,
+    "area_reduction_pct": 0.0,
+    "profiles_reduction_pct": {
+      "E_stress_pj": 0.11372572513139723,
+      "E_uniform_pj": 0.11355261832692864,
+      "E_low_pj": 0.501423822376168
+    },
+    "before_feasible": true,
+    "after_feasible": true,
+    "before_label_original": "Multi-path protection",
+    "after_label_original": "Power-weighted global plan"
+  },
+  {
+    "before": "S2",
+    "after": "U2",
+    "before_label": "Final three-input refinement",
+    "after_label": "Undo: same logic, new route",
+    "energy_reduction_pct": 0.03584083326440002,
+    "delay_before_ns": 2.374088,
+    "delay_after_ns": 2.375888,
+    "delay_change_ps": 1.8000000000002458,
+    "area_before_um2": 2425.0,
+    "area_after_um2": 2425.0,
+    "area_reduction_pct": 0.0,
+    "profiles_reduction_pct": {
+      "E_stress_pj": 0.057177911142347604,
+      "E_uniform_pj": 0.034156517062300384,
+      "E_low_pj": 0.016183847479511737
+    },
+    "before_feasible": true,
+    "after_feasible": true
+  }
+]

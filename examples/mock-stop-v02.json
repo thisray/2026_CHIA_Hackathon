@@ -1,0 +1,10 @@
+{
+  "mode": "MOCK",
+  "responses": [
+    {
+      "decision": "STOP",
+      "parent_id": "c6c10558",
+      "reason": "Skip the route in this example."
+    }
+  ]
+}

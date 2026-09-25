@@ -1,0 +1,60 @@
+{
+  "action": {
+    "kind": "pair_batch",
+    "pairs": [
+      {
+        "lower": "_299_",
+        "upper": "_300_"
+      }
+    ]
+  },
+  "case": "N2",
+  "feasible": true,
+  "functional_valid": true,
+  "goal_id": "routed3_w64_d240_b271F0_v1",
+  "hashes": {
+    "eco_pre_route": "320970ab4870a46b7603f457414d938c47b7971d760c2b07c5fae1983e0ca44f",
+    "eco_routed_netlist": "320970ab4870a46b7603f457414d938c47b7971d760c2b07c5fae1983e0ca44f",
+    "eco_routed_odb": "31ac626cd5e0ec76ae39b69ae9b49eb0e4293bda419429a9ca9a07c920452bff",
+    "eco_routed_spef": "d62064f949382aa95a4fcd149f24806f6aed3922bd754b025b36c066b8505e0b",
+    "final_proof_log": "082cf24fabf12d13f5b5f10a127547ced552d1f854129af2d3cca1b9842372b3"
+  },
+  "j_score": 0.8967674921289613,
+  "kind": "polarity_action",
+  "measurement_valid": true,
+  "original_sha256": "2bb4f045ab14fc882c8347fd70aa7a7abeb5a2ee7c049535cf66e75457fae64c",
+  "parent_graph_sha256": "053c7242b2c4ed51ad391a6af23182b86d9916dba0a96fe9e3b8f1706c0c79f8",
+  "parent_id": "N-weighted-053c7242",
+  "parent_measurement_meta_sha256": "4c16172f15a0fe3347b0059d02d965689010a62b077abcbaa778f7bbaaa64ad8",
+  "parent_odb_sha256": "1ebdaa7cbff98811fe26730c6021f4378b1dcd4db798b0bd4a8a1145c0cf140e",
+  "parent_proof_log_sha256": "f5cec130c2ee8cf9a5ee5cc7741eb2276ac5b5bc58b6a7bbd1ff042a48607f47",
+  "parent_receipt_sha256": "4a07dddbdc2371b8e3ca6420b5f8dc955b1b67e1bf7ba78c11bb54dabb7c72f6",
+  "parent_spef_sha256": "abaebf26e68a7bdf153c3fb75ce547e5cfca36b0b7f70b9fcedab1d8f5bb9b51",
+  "raw_energies_pj": {
+    "stress_encoded": 2.4721192309999998,
+    "valid_low_toggle": 0.35327273509999996,
+    "valid_uniform": 1.854768634
+  },
+  "route_valid": true,
+  "routed_area_um2": 2427.0,
+  "routed_delay_ns": 2.375917,
+  "selected_metric_row": {
+    "area_um2": 2427.0,
+    "delay_ns": 2.375917,
+    "energy_pj": {
+      "stress_encoded": 2.4721192309999998,
+      "valid_low_toggle": 0.35327273509999996,
+      "valid_uniform": 1.854768634
+    },
+    "feasible": true,
+    "id": "N2",
+    "j": 0.8967674921289613,
+    "width": 64
+  },
+  "source_commit": "6a67a161b640d982857efd5fb3995d677415969a",
+  "source_pointer": "",
+  "source_revision": "a59959e331919cc55f1bb7a6526221f84ed5b119",
+  "stage": "complete",
+  "status": "OK",
+  "upstream_path": "review/chia_N_weighted_phase/20260924/n02-receipt.json"
+}

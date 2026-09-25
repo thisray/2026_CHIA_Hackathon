@@ -1,0 +1,65 @@
+{
+  "PPA": "NOT_RUN",
+  "actual_O32_xnor2_count": 11,
+  "claim_scope": "Only the exact ff6f W32 XOR2/XNOR2 GF2 eligible-phase representation and fixed boundaries; not whole-output equivalence, timing, power, or PPA optimality.",
+  "count_bound_checked": 10,
+  "drive_inventory": {
+    "1": 148
+  },
+  "eligible_phase_variable_count": 41,
+  "fixed_unavoidable_xnor_lower_bound": 7,
+  "fixed_xnor_instances": [
+    "_129_",
+    "_244_",
+    "_246_",
+    "_248_",
+    "_250_",
+    "_252_",
+    "_254_"
+  ],
+  "functional_proof": "NOT_RUN",
+  "minimum_count_basis": "UNSAT for count<=10 plus the exact O32 11-XNOR phase witness",
+  "minimum_xnor2_count_within_scope": 11,
+  "mutable_xnor_instances": [
+    "_109_",
+    "_118_",
+    "_148_",
+    "_158_"
+  ],
+  "route": "NOT_RUN",
+  "sat_encoding_check": {
+    "actual_O32_witness_count": 11,
+    "adder_leaves_exactly_once": true,
+    "adder_width_no_truncation": true,
+    "all_88_gate_equations_match_inventory": true,
+    "sample_vectors_checked": 259
+  },
+  "solver": {
+    "actual_sat_invocations": 1,
+    "cpus": 2,
+    "ended_utc": "2026-09-23T23:50:10Z",
+    "exit_code": "0",
+    "image": "docker.io/hpretl/iic-osic-tools@sha256:65852976cad4af640c9d848762215137e87ec125111a6d06c850c3ab4e9695fb",
+    "memory_gb": 8,
+    "pre_sat_container_failure": "Cannot open Yosys log on host-mounted directory with UID mismatch; no read_verilog/prep/SAT ran.",
+    "sat_timeout_s": 30,
+    "started_utc": "2026-09-23T23:50:10Z",
+    "yosys_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "yosys_stdout_sha256": "9c84bafa6afb04374e085cc020ed5ce6342bc136ad130309fc169469257b1425"
+  },
+  "source_hashes": {
+    "O32_receipt": "53af6d9ea28b6ff8e7127ab7bc62ea9d7bfa492216490aa61009a60a0416d31f",
+    "O32_routed_v": "f8a77599cc55287da6f4423c9de3abf1dfdced129616b5c9c3b9aa642f0a3372",
+    "actual_sat_command": "4af39fef7c3439027a25a918ca0645bc62cebf7414ae84326ee307a431a6f43c",
+    "ff6_parent_routed_v": "ff6f3194c3e527005aba7bb2b4153e4a2f47454bf627739f0348cae6d120bf59",
+    "fixed_plan_json": "29626d39e15a6ed8ea5cd600e2f64e87bfc4ab65bfd726faf9411479dae964f6",
+    "fixed_source_proposal_json": "2791fabe6fba623ca1dda83ddf666f7daf95c5c390a9b4f280160da79f23ecf7",
+    "initial_failed_command": "be7dce5408072e711a672bc9baa7ac1c75d7c0584614859d5a723e238c4e38ea",
+    "inventory": "a896bef6a48123814c4534f240c0e316b9e60af4c9cdde637d85dfa78098e198",
+    "sat_encoding_checker": "0b78f9d6f0f26891173afed5e91785d6adb6d91188b1e51f88023879c3dcd899",
+    "sat_generator": "4157356ec566ba5a50b50aab71ac849aa52a669d492eaed3f39dd064e0593138",
+    "sat_verilog": "41ca7cd43c4591f72397dad474c7c48e2461b2ba9402d6be402c60088ebb3bb1"
+  },
+  "status": "UNSAT_COUNT_LE_10",
+  "xor2_xnor2_gate_count": 88
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "file": "solver.log",
+    "original_relative_path": "O32-global-phase-transfer/count-bound-readonly/sat-invoked-stdout.log",
+    "sha256": "9c84bafa6afb04374e085cc020ed5ce6342bc136ad130309fc169469257b1425",
+    "scope": "archived count-bound evidence only; no new SAT or functional proof run"
+  },
+  {
+    "file": "constraint.v",
+    "original_relative_path": "O32-global-phase-transfer/count-bound-readonly/input/phase_count_sat.v",
+    "sha256": "41ca7cd43c4591f72397dad474c7c48e2461b2ba9402d6be402c60088ebb3bb1",
+    "scope": "archived count-bound evidence only; no new SAT or functional proof run"
+  }
+]

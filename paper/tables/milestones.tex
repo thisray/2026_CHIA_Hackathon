@@ -1,0 +1,41 @@
+\begin{table*}[!t]
+\centering
+\caption{Measured milestones before and after local and global optimization. Every row reports one complete candidate under the same width-specific evaluation.}
+\label{tab:milestones}
+\fontsize{9}{10.4}\selectfont
+\setlength{\tabcolsep}{5.0pt}
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+Design / operation & Delay (ns) & Area ($\mu$m$^2$) & Stress & Uniform & Low-toggle & $E_{\mathrm{norm}}$\\
+\midrule
+\multicolumn{7}{@{}l}{\textbf{64-bit decoder}}\\
+Searched RTL reference$^{\dagger}$ & 2.526346 & 2392 & 2.541008 & 2.027927 & 0.435884 & 1.000000\\
+\textbf{RTL + physical tuning (start)} & 2.372445 & 2434 & 2.641683 & 2.010297 & 0.412100 & 0.991375\\
+Pin swaps, downsizing, and tree rotation & 2.358853 & 2416 & 2.625896 & 2.008364 & 0.410271 & 0.987614\\
+Batched local phase refinements & 2.371359 & 2416 & 2.577747 & 1.964015 & 0.387134 & 0.955592\\
+Shared-consumer phase refinement & 2.398144 & 2416 & 2.570336 & 1.956617 & 0.381644 & 0.948946\\
+Fold for additional timing headroom & 2.363135 & 2427 & 2.583333 & 1.958906 & 0.382310 & 0.951466\\
+Feedback-recovered local design & 2.362535 & 2427 & 2.534646 & 1.911262 & 0.375450 & 0.932080\\
+Multi-path-protected global assignment & 2.376334 & 2427 & 2.476977 & 1.859091 & 0.354799 & 0.899342\\
+Power-weighted global assignment & 2.369255 & 2427 & 2.474160 & 1.856980 & 0.353019 & 0.897156\\
+Feedback-selected local pair & 2.375917 & 2427 & 2.472119 & 1.854769 & 0.353273 & 0.896767\\
+\textbf{Final three-input refinement} & \textbf{2.374088} & \textbf{2425} & \textbf{2.470199} & \textbf{1.854112} & \textbf{0.351798} & \textbf{0.895180}\\
+\midrule
+\multicolumn{7}{@{}l}{\textbf{32-bit decoder}}\\
+Masked-RTL reference & 2.248806 & 1836 & 1.595185 & 1.140097 & 0.327811 & 1.000000\\
+\textbf{Projected searched RTL (start)} & 2.049337 & 1299 & 1.379291 & 0.974656 & 0.306806 & 0.884433\\
+Transferred local phase pairs & 2.061026 & 1299 & 1.363067 & 0.959193 & 0.297479 & 0.867296\\
+Three-star local trial & 2.060426 & 1299 & 1.339273 & 0.937648 & 0.286393 & 0.844951\\
+Feedback-selected four-star trial & 2.110139 & 1299 & 1.331617 & 0.930286 & 0.284876 & 0.839637\\
+Minimum-count binary assignment & 2.069854 & 1299 & 1.280010 & 0.889243 & 0.267722 & 0.799553\\
+Power-weighted binary assignment & 2.098243 & 1299 & 1.279071 & 0.886069 & 0.266960 & 0.797646\\
+Mixed-arity single-group trial & 2.080952 & 1297 & 1.277263 & 0.886224 & 0.267330 & 0.797686\\
+\textbf{Final mixed-arity assignment} & \textbf{2.081588} & \textbf{1296} & \textbf{1.275677} & \textbf{0.883614} & \textbf{0.266264} & \textbf{0.795511}\\
+\midrule
+\multicolumn{7}{@{}l}{\textbf{Starting design $\rightarrow$ final:} 64-bit energy score $-9.70\%$, area $-0.37\%$, delay $+1.643$\,ps;}\\
+\multicolumn{7}{@{}l}{32-bit energy score $-10.05\%$, area $-0.23\%$, delay $+32.251$\,ps. Both final designs satisfy the same delay limit.}\\
+\bottomrule
+\end{tabular}
+\vspace{3pt}
+\begin{minipage}{.96\textwidth}\footnotesize Energy columns are pJ/vector: unrestricted encoded-bit patterns (Stress), uniform valid codewords (Uniform), and valid codewords from single-bit-changing payloads (Low-toggle). $E_{\mathrm{norm}}$ is their geometric-mean energy ratio to the reference of the same width (Eq.~\eqref{eq:energy}). \emph{Start} identifies the pre-optimized feasible comparison designs. $^{\dagger}$The 64-bit reference alone fails the 2.40\,ns limit. Row order does not imply direct ancestry. Decimal places preserve tool output, not confidence bounds.\end{minipage}
+\end{table*}

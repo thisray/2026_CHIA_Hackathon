@@ -1,0 +1,47 @@
+{
+  "http_status": 200,
+  "latency_s": 3.44,
+  "model": "google-vertex/gemini-3.8-flash",
+  "normalized_action": {
+    "kind": "pair_batch",
+    "pairs": [
+      {
+        "lower": "_309_",
+        "upper": "_310_"
+      }
+    ]
+  },
+  "parsed_object": {
+    "action": {
+      "kind": "pair_batch",
+      "pairs": [
+        {
+          "lower": "_309_",
+          "upper": "_310_"
+        }
+      ]
+    },
+    "decision": "RUN",
+    "parent_id": "episode-02cfeed4ac274504846fd52dfd8da799",
+    "reason": "Revert the pair batch _309_/_310_ (both currently X in the child) back to N on the infeasible child episode-02cfeed4ac274504846fd52dfd8da799 to repair the timing regression on the data_o[57] critical path while evaluating whether favorable energy gains are preserved."
+  },
+  "response_sha256": "f0f4e10e092d4b53a4478c7ce69918ce45fdbed0d36ae3773085414ed4de54a7",
+  "usage_metadata": {
+    "candidatesTokenCount": 150,
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 150
+      }
+    ],
+    "promptTokenCount": 35314,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 35314
+      }
+    ],
+    "totalTokenCount": 35464,
+    "trafficType": "ON_DEMAND"
+  }
+}

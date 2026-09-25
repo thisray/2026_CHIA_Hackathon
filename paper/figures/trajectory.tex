@@ -1,0 +1,63 @@
+\begin{figure*}[t]
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm,>=Latex,
+ design/.style={draw,align=center,text width=2.30cm,minimum height=1.08cm,inner sep=3pt,font=\footnotesize},
+ fail/.style={design,fill=red!5},final/.style={design,fill=blue!7,line width=.85pt},
+ parent/.style={->,line width=.55pt},info/.style={->,dashed,draw=blue!65!black,line width=.7pt,dash pattern=on 2.2pt off 1.7pt},
+ note/.style={fill=black!7,align=left,text width=2.05cm,inner sep=4pt,font=\footnotesize}]
+\begin{scope}
+\node[font=\small\bfseries] at (2.8,.94) {(a) 64-bit: new failing paths change the plan};
+\node[design] (bbf) at (2.8,0) {Recovered local\\design\\2.363 ns\\Score .9321};
+\node[fail] (H1) at (0,-1.62) {Single-path\\protection\\2.529 ns \textbf{FAIL}\\Score .8803};
+\node[fail] (H2) at (2.8,-1.62) {Expanded-path\\protection\\2.452 ns \textbf{FAIL}\\Score .8858};
+\node[design] (J1) at (5.6,-1.62) {Multi-path\\protection\\2.376 ns\\Score .8993};
+\node[design] (I1) at (2.8,-3.25) {Phase +\\timing repair\\2.398 ns\\Score .9037};
+\node[design] (N1) at (5.6,-3.25) {Power-weighted\\assignment\\2.369 ns\\Score .8972};
+\node[design] (N2) at (5.6,-4.88) {Local pair\\refinement\\2.376 ns\\Score .8968};
+\node[final] (S2) at (5.6,-6.51) {Final three-input\\refinement\\2.374 ns\\Score .8952};
+
+\draw[parent] (bbf.south)--++(0,-.20)-|(H1.north);
+\draw[parent] (bbf.south)--(H2.north);
+\draw[parent] (bbf.south)--++(0,-.20)-|(J1.north);
+\draw[parent] (bbf.east)--(6.95,0)|-(N1.east);
+\draw[info] (H1.east)--(H2.west);
+\draw[info] (H2.east)--(J1.west);
+\draw[parent] (H2.south)--(I1.north);
+\draw[info] (J1.south)--(N1.north);
+\draw[parent] (N1.south)--(N2.north);
+\draw[parent] (N2.south)--(S2.north);
+\node[note] at (0,-3.46) {\textbf{Outer work}\\Protect new paths;\\rank plans using\\measured power.};
+\node[align=left,text width=4.48cm,font=\footnotesize,anchor=north west] at (-1.10,-4.45) {\textbf{Repair-only on the local design:} 2.366\,ns, score .9323, area 2427\,$\mu$m$^2$. Phase + repair adds 20\,$\mu$m$^2$.};
+\node[font=\footnotesize,align=center,text width=4.5cm] at (1.4,-6.42) {Global extension: \textbf{3.96\% lower energy}\\than the recovered local design.};
+\end{scope}
+\begin{scope}[xshift=9.1cm]
+\node[font=\small\bfseries] at (2.8,.94) {(b) 32-bit: local feedback, then a larger space};
+\node[design] (G0) at (1.4,0) {Transferred local\\phase pairs\\2.061 ns\\Score .8673};
+\node[design] (G1) at (0,-1.62) {Three-star\\trial\\2.060 ns\\Score .8450};
+\node[design] (ff6) at (2.8,-1.62) {Four-star\\sibling trial\\2.110 ns\\Score .8396};
+\node[design] (O1) at (0,-3.25) {Binary count-11\\plan\\2.070 ns\\Score .7996};
+\node[design] (O2) at (2.8,-3.25) {Power-weighted\\binary plan\\2.098 ns\\Score .7976};
+\node[design] (V1) at (0,-6.51) {Mixed-arity\\singleton\\2.081 ns\\Score .7977};
+\node[final] (V2) at (2.8,-6.51) {Final mixed-arity\\assignment\\2.082 ns\\Score .7955};
+
+\draw[parent] (G0.south)--++(0,-.20)-|(G1.north);
+\draw[parent] (G0.south)--++(0,-.20)-|(ff6.north);
+\draw[info] (G1.east)--(ff6.west);
+\draw[parent] (ff6.south)--++(0,-.20)-|(O1.north);
+\draw[parent] (ff6.south)--(O2.north);
+\draw[info] (O1.east)--(O2.west);
+\draw[parent] (O2.south)--++(0,-1.65)-|(V1.north);
+\draw[parent] (O2.south)--(V2.north);
+\draw[info] (V1.east)--(V2.west);
+\node[align=left,text width=2.06cm,font=\footnotesize] at (5.61,-1.61) {\textbf{Runtime choice}\\3-star feedback\\informs a 4-star\\sibling trial.};
+\node[align=left,text width=2.06cm,font=\footnotesize] at (5.61,-3.24) {\textbf{Binary limit}\\11 XNOR2 is\\minimum in\\41 variables.};
+\node[note] at (5.61,-4.92) {\textbf{Outer work}\\Admit 3-input\\parity consumers:\\41$\to$56 variables.};
+\node[align=left,text width=2.06cm,font=\footnotesize] at (5.61,-6.48) {\textbf{5.26\% lower energy}\\vs. four-star trial.\\10 XNOR2 in\\the larger space.};
+\end{scope}
+\draw[parent] (-.4,-8.05)--(.65,-8.05) node[right,font=\footnotesize] {actual circuit parent};
+\draw[info] (5.2,-8.05)--(6.25,-8.05) node[right,font=\footnotesize] {recorded feedback};
+\node[note,text width=3.8cm,minimum height=.22cm,inner sep=2pt] at (12.85,-8.05) {gray: outer tool development};
+\end{tikzpicture}
+\caption{Selected feedback episodes after local refinement. Solid arrows identify circuit parents; dashed arrows carry measured feedback to a later decision or outer proposal development. Gray marks outer development. Score denotes normalized energy $E_{\mathrm{norm}}$ (Eq.~\eqref{eq:energy}); FAIL marks delay above 2.40\,ns. The earlier stages and raw workload energies are in Table~\ref{tab:milestones}.}
+\label{fig:trajectory}
+\end{figure*}

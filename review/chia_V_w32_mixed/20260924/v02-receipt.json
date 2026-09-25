@@ -1,0 +1,478 @@
+{
+  "action": {
+    "kind": "mixed_phase_assignment",
+    "proposal": "mixed_global_area_then_xnor2_v1"
+  },
+  "actual_chia_identity": {
+    "chia_job_id": "01000000",
+    "chia_node_id": "f427060e81dd911027e477d2082f8f7e94119c341d4c07be85f48252",
+    "chia_node_ip": "10.148.0.26",
+    "chia_task_id": "c8ef45ccd0112571ffffffffffffffffffffffff01000000",
+    "chia_worker_id": "163ea99e51bcfe89554f9c182e8537670c2928d4411044ebc9ebbaf5",
+    "executable": "/home/vegapunk/miniforge3/envs/chia_familyrtl_260919/bin/python",
+    "hostname": "chia-arm64-eda-02",
+    "in_ray_worker": true,
+    "pid": 316165
+  },
+  "area_check": {
+    "design_after_dbu2": 1536473600,
+    "design_before_dbu2": 1538976000,
+    "design_delta_dbu2": -2502400,
+    "target_after_dbu2": 106352000,
+    "target_before_dbu2": 108854400,
+    "target_delta_dbu2": -2502400
+  },
+  "baseline_xnor2_count": 11,
+  "baseline_xnor3_count": 5,
+  "candidate_xnor2_count": 10,
+  "candidate_xnor3_count": 7,
+  "dpl_moved_instance_count": 0,
+  "dpl_moved_instances": [],
+  "dpl_moved_instances_sha256": "323e1fbe1ef2ed84ba739de9e19dec6007c57393930c83ae98cd4aca90f6b163",
+  "eco": {
+    "command": [
+      "docker",
+      "run",
+      "--rm",
+      "--cpus",
+      "2",
+      "--memory",
+      "12g",
+      "--network",
+      "none",
+      "--entrypoint",
+      "/bin/bash",
+      "-e",
+      "CHIA_W32_MIXED_DB_AREA_DELTA=-2502400",
+      "-e",
+      "CHIA_W32_MIXED_TARGET_COUNT=9",
+      "-v",
+      "/home/vegapunk/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/V-W32-mixed-arity-20260924/run-02/case:/artifacts",
+      "docker.io/hpretl/iic-osic-tools@sha256:65852976cad4af640c9d848762215137e87ec125111a6d06c850c3ab4e9695fb",
+      "-lc",
+      "openroad -no_init -exit /artifacts/eco.tcl"
+    ],
+    "log_path": "/home/vegapunk/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/V-W32-mixed-arity-20260924/run-02/case/eco.log",
+    "log_sha256": "7a1d3bd494fe2aad93a01247c9a7f17f4a49039ae46cf4116b2cad5f45034583",
+    "returncode": 0,
+    "timed_out": false,
+    "wall_s": 0.924
+  },
+  "expected_cell_map_sha256": "e79c5b59a20d697fefbcab3efc6893ae3e0dbd866834c70065a384067f1ff6da",
+  "expected_db_area_delta_dbu2": -2502400,
+  "feasible": true,
+  "final_proof": {
+    "artifact_dir": "/home/vegapunk/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/V-W32-mixed-arity-20260924/run-02/case/final_proof",
+    "complete_marker": true,
+    "error": null,
+    "exit_code": "0",
+    "log_sha256": "152fc6ed42fb79b1afc0a9d91b93032441c25c86df7a2377ebb784052e44ef00",
+    "new_run": false,
+    "original_wall_s": 0.844,
+    "reused_from": {
+      "artifact_dir": "/home/vegapunk/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/V-W32-mixed-arity-20260924/run-02/case/pre_route_proof",
+      "child_sha256": "2a2873494f4d097e9e33786de3db0681e22e62a5e480f7407b1a5e59870acb28",
+      "image": "docker.io/hpretl/iic-osic-tools@sha256:65852976cad4af640c9d848762215137e87ec125111a6d06c850c3ab4e9695fb",
+      "log_sha256": "152fc6ed42fb79b1afc0a9d91b93032441c25c86df7a2377ebb784052e44ef00",
+      "parent_sha256": "c6c10558e367fd345b17c3b1a70898ddb8bcca9414833f0fcb34e7fd83478d95",
+      "proof_recipe_sha256": "d3036fb932303b6e65f59cba7196559b29d2856884096b9f70f98eaab34ff9a0"
+    },
+    "status": "PASS",
+    "wall_s": 0.0
+  },
+  "functional_proof": "PASS",
+  "functional_valid": true,
+  "global_plan_lineage": {
+    "formal_equivalence": "NOT_RUN at intent",
+    "raw_phase_rhs_semantics": "Raw solver progress phase_rhs denotes new intrinsic polarity b-prime; runtime phase_rhs is independently recomputed phase delta.",
+    "remote_pure_checker_sha256": "fcdf462e9a4497a5060e13401a0464caea0da0e5783d022d57e67abb866c438c",
+    "route": "NOT_RUN at intent",
+    "worker1_progress_sha256": "f94de6a564466c7ac3dd2be9372ee4609be93d10ed080eb6ef95996c56297f4a"
+  },
+  "goal_id": "routed3_w32_d240_maskedF0_v1",
+  "hashes": {
+    "eco_pre_route": "2a2873494f4d097e9e33786de3db0681e22e62a5e480f7407b1a5e59870acb28",
+    "eco_routed_netlist": "2a2873494f4d097e9e33786de3db0681e22e62a5e480f7407b1a5e59870acb28",
+    "eco_routed_odb": "7d20c006299a4d8b3fb8edc041b738af6ec3089682a2fefda135c4059365f9fc",
+    "eco_routed_spef": "99e1f71dd690f1c744ece2b0b65d5ff720ee21de7b2d87d2a589f0e9819c6ec4",
+    "final_proof_log": "152fc6ed42fb79b1afc0a9d91b93032441c25c86df7a2377ebb784052e44ef00"
+  },
+  "j_score": 0.7955110408817432,
+  "kind": "w32_mixed_phase_assignment",
+  "lef_sha256": "3a3ea4e9d0973402702764d897659e52fe3d413eb48c306cd811de40a75264fa",
+  "liberty_sha256": "8e78e14442062dba34d414fca6490b2f6b96038d4510d1438ca44fee31487135",
+  "mapped_submission_counted": 0,
+  "measurement": {
+    "claim_scope": "routed three-profile measurement context (stress_encoded, valid_uniform, valid_low_toggle; 1024 vectors, 10000 ps interval, 0.05 ns slew, 0.005 pF load, fixed corner, matched SPEF, feasibility ceiling D <= 2.40 ns)",
+    "critical_path": {
+      "arrival_ns": 2.081588,
+      "endpoint": "data_o[31]",
+      "path_depth_cells": 9,
+      "slack_ns": 7.918412,
+      "startpoint": "data_i[29]"
+    },
+    "delay_ceiling_ns": 2.4,
+    "denominator_energies": {
+      "stress_encoded": 1.595184585,
+      "valid_low_toggle": 0.32781139449999996,
+      "valid_uniform": 1.140097229
+    },
+    "drc": {
+      "available": false,
+      "violations": null
+    },
+    "energy_ratios": {
+      "stress_encoded": 0.7997050730025704,
+      "valid_low_toggle": 0.8122470331030547,
+      "valid_uniform": 0.7750338127521227
+    },
+    "feasible": true,
+    "hashes": {
+      "routed_netlist": "2a2873494f4d097e9e33786de3db0681e22e62a5e480f7407b1a5e59870acb28",
+      "spef": "99e1f71dd690f1c744ece2b0b65d5ff720ee21de7b2d87d2a589f0e9819c6ec4",
+      "vcd": {
+        "stress_encoded": "3d3152519079db728f93e30bc04d37d600a8688fe305ed694fe0eff71d447686",
+        "valid_low_toggle": "19ded8d0678ec4d6e52f818a738689ed2a6c9c60b5a97df1805b0e435956daf2",
+        "valid_uniform": "893e4b19c9f4573fc0f5a6141fabdaa81bbcf39175d02ab2d3b853b47ecc2045"
+      }
+    },
+    "j_score": 0.7955110408817432,
+    "measurement_valid": true,
+    "optional_power_diagnostic": {
+      "enabled": true,
+      "measurement_runner_sha256": "31cbdcf7362f90cea56027d2137e97511ff83059c2afcaf2f057a14208f04d0a",
+      "power_tcl_sha256": "375a0bfd3214c8b4656a83cfa4d0d2851b751b7899ef140d12f98c1fc001a715",
+      "profiles": {
+        "stress_encoded": {
+          "error_sha256": null,
+          "instance_power_sha256": "66af8891f3048e6fb509eb03158351e848908d7d94967f4d453f0a07f82e3048",
+          "pin_net_mapping_sha256": "121e42653a77a4a7c2af9679b0b41b58fea80d5cab25f83792b1451c5bc72249"
+        },
+        "valid_low_toggle": {
+          "error_sha256": null,
+          "instance_power_sha256": "38b38e751ef0505db4f066988dc738da2901bfdd27dc220625d157f2bceaccea",
+          "pin_net_mapping_sha256": "121e42653a77a4a7c2af9679b0b41b58fea80d5cab25f83792b1451c5bc72249"
+        },
+        "valid_uniform": {
+          "error_sha256": null,
+          "instance_power_sha256": "8a68c82fb0ade0925439d3e487609b7a9e77263f5f07ca334ebf9e6eb879c0ad",
+          "pin_net_mapping_sha256": "121e42653a77a4a7c2af9679b0b41b58fea80d5cab25f83792b1451c5bc72249"
+        }
+      },
+      "run_script_sha256": "127bc8a34cc889a4f78bd253a73cdb098b4b31ef10ce68e2ec6fb33ba5f0300c",
+      "scope": "supplemental instance power only; no scoring or glitch attribution",
+      "sidecar_sha256": "5012192461a4317b651fe454e4ec04a8cb422b2c997a7a969c117fb27f2f9dbe",
+      "version": "ecc_instance_power_v1"
+    },
+    "per_profile": {
+      "stress_encoded": {
+        "actual_window_ps": 10240000,
+        "annotated_pins": 541,
+        "completed": 1024,
+        "end_ps": 10250000,
+        "energy_j": 1.30629345792e-09,
+        "energy_pj_per_vector": 1.275677205,
+        "internal_w": 5.453864651e-05,
+        "leakage_w": 7.660306278e-10,
+        "oracle_mismatches": 0,
+        "start_ps": 10000,
+        "switching_w": 7.302829908e-05,
+        "total_w": 0.0001275677205,
+        "unannotated_pins": 0,
+        "valid": true,
+        "vcd_sha256": "3d3152519079db728f93e30bc04d37d600a8688fe305ed694fe0eff71d447686"
+      },
+      "valid_low_toggle": {
+        "actual_window_ps": 10240000,
+        "annotated_pins": 541,
+        "completed": 1024,
+        "end_ps": 10250000,
+        "energy_j": 2.7265416458239997e-10,
+        "energy_pj_per_vector": 0.26626383259999997,
+        "internal_w": 1.334237913e-05,
+        "leakage_w": 7.761273846e-10,
+        "oracle_mismatches": 0,
+        "start_ps": 10000,
+        "switching_w": 1.328322833e-05,
+        "total_w": 2.662638326e-05,
+        "unannotated_pins": 0,
+        "valid": true,
+        "vcd_sha256": "19ded8d0678ec4d6e52f818a738689ed2a6c9c60b5a97df1805b0e435956daf2"
+      },
+      "valid_uniform": {
+        "actual_window_ps": 10240000,
+        "annotated_pins": 541,
+        "completed": 1024,
+        "end_ps": 10250000,
+        "energy_j": 9.048206359551999e-10,
+        "energy_pj_per_vector": 0.8836139022999999,
+        "internal_w": 4.198405077e-05,
+        "leakage_w": 7.782080536e-10,
+        "oracle_mismatches": 0,
+        "start_ps": 10000,
+        "switching_w": 4.637656457e-05,
+        "total_w": 8.836139023e-05,
+        "unannotated_pins": 0,
+        "valid": true,
+        "vcd_sha256": "893e4b19c9f4573fc0f5a6141fabdaa81bbcf39175d02ab2d3b853b47ecc2045"
+      }
+    },
+    "raw_energies_pj": {
+      "stress_encoded": 1.275677205,
+      "valid_low_toggle": 0.26626383259999997,
+      "valid_uniform": 0.8836139022999999
+    },
+    "routed_area_um2": 1296.0,
+    "routed_delay_ns": 2.081588,
+    "stage_status": {
+      "iverilog_compile": 0,
+      "postroute_sta": 0,
+      "power": 0,
+      "simulation": 0
+    },
+    "wall_s": 3.69
+  },
+  "measurement_command": [
+    "/home/vegapunk/miniforge3/envs/chia_familyrtl_260919/bin/python",
+    "/home/vegapunk/projects/260908_CHIA_Hackathon_workers/v-w32-mixed-source-9696c19/research/ecc_perf_bench/bench_ecc_routed_three_profile.py",
+    "--repo-root",
+    "/home/vegapunk/projects/260908_CHIA_Hackathon_workers/v-w32-mixed-source-9696c19",
+    "--routed-netlist",
+    "/home/vegapunk/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/V-W32-mixed-arity-20260924/run-02/case/routed.v",
+    "--spef",
+    "/home/vegapunk/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/V-W32-mixed-arity-20260924/run-02/case/routed.spef",
+    "--artifact-dir",
+    "/home/vegapunk/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/V-W32-mixed-arity-20260924/run-02/case/three_profile",
+    "--width",
+    "32",
+    "--python",
+    "/home/vegapunk/miniforge3/envs/chia_familyrtl_260919/bin/python",
+    "--cpus",
+    "2",
+    "--denominator-json",
+    "/home/vegapunk/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/V-W32-mixed-arity-20260924/run-02/case/denominator.json",
+    "--delay-ceiling",
+    "2.40",
+    "--routed-area-um2",
+    "1296.0",
+    "--power-diagnostic",
+    "--keep-vcd"
+  ],
+  "measurement_exit_code": 0,
+  "measurement_runner_sha256": "31cbdcf7362f90cea56027d2137e97511ff83059c2afcaf2f057a14208f04d0a",
+  "measurement_valid": true,
+  "measurement_wall_s": 4.247,
+  "model_decision_sha256": "d3333f6ebf20da6b5c80e8c0d1542d38d7559ab101a712b86023a1e9821080de",
+  "parent_binding_sha256": "c42ab645d66dc106ef75cbdc379c55f3b3987796b480c5d8c7887a8dd40c63df",
+  "parent_graph_sha256": "c6c10558e367fd345b17c3b1a70898ddb8bcca9414833f0fcb34e7fd83478d95",
+  "parent_id": "c6c10558",
+  "parent_measurement_meta_sha256": "616889232f3a8054aa34fcc694e74c6090fdf0946ac4b6627caea6ee286cd6f2",
+  "parent_odb_sha256": "195f6735be8d479a979ffae0516931f5667d5cb103c319277fa305445d1fb787",
+  "parent_proof_log_sha256": "69e4c7496d38c468150a9134456f82463c5171b832e23238a26306a1805f46c6",
+  "parent_receipt_sha256": "d84042680c747e7b77076fa77d8b737d0ff1de247022d72414df435802a938d4",
+  "parent_root": "/home/vegapunk/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/O32-global-phase-transfer/run-02/case",
+  "parent_spef_sha256": "00792e4e47293771141c88849f9f7c25d167e37f5274e69bf63886faea9108bb",
+  "parity_gate_count": 95,
+  "placement_guard": "DPL_LEGALIZED_MOVEMENTS_RECORDED",
+  "pre_route_proof": {
+    "artifact_dir": "/home/vegapunk/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/V-W32-mixed-arity-20260924/run-02/case/pre_route_proof",
+    "complete_marker": true,
+    "error": null,
+    "exit_code": "0",
+    "log_sha256": "152fc6ed42fb79b1afc0a9d91b93032441c25c86df7a2377ebb784052e44ef00",
+    "new_run": true,
+    "status": "PASS",
+    "wall_s": 0.844
+  },
+  "proof_image": "docker.io/hpretl/iic-osic-tools@sha256:65852976cad4af640c9d848762215137e87ec125111a6d06c850c3ab4e9695fb",
+  "proof_recipe_sha256": "d3036fb932303b6e65f59cba7196559b29d2856884096b9f70f98eaab34ff9a0",
+  "pure_proof_scope": "95-gate structural GF2/truth only; whole-output proof NOT_RUN at intent",
+  "raw_energies_pj": {
+    "stress_encoded": 1.275677205,
+    "valid_low_toggle": 0.26626383259999997,
+    "valid_uniform": 0.8836139022999999
+  },
+  "recipe_hashes": {
+    "eco.tcl": "09bfe8f8ed3d4e8c42810a1560ef1cef258d7bb657de4458bb3cade4f1505842",
+    "reroute.tcl": "b5719238ede2ea929c11bde4982a2eb55f9665f05f7b87706630fc728e5d46b1"
+  },
+  "reference_measurement_id": "ecc_masked_reduction::F0::routed3_w32_v1",
+  "reroute": {
+    "command": [
+      "docker",
+      "run",
+      "--rm",
+      "--cpus",
+      "2",
+      "--memory",
+      "12g",
+      "--network",
+      "none",
+      "--entrypoint",
+      "/bin/bash",
+      "-v",
+      "/home/vegapunk/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/V-W32-mixed-arity-20260924/run-02/case:/artifacts",
+      "docker.io/hpretl/iic-osic-tools@sha256:65852976cad4af640c9d848762215137e87ec125111a6d06c850c3ab4e9695fb",
+      "-lc",
+      "openroad -no_init -exit /artifacts/reroute.tcl"
+    ],
+    "log_path": "/home/vegapunk/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/V-W32-mixed-arity-20260924/run-02/case/reroute.log",
+    "log_sha256": "ea0615eb38a8c482775fc75ac043a01ec3d94f72c87a3b8d04602f5714c993d1",
+    "returncode": 0,
+    "timed_out": false,
+    "wall_s": 9.198
+  },
+  "route_submission_counted": 1,
+  "route_valid": true,
+  "routed_area_um2": 1296.0,
+  "routed_delay_ns": 2.081588,
+  "source_candidate_graph_sha256": "2a2873494f4d097e9e33786de3db0681e22e62a5e480f7407b1a5e59870acb28",
+  "source_commit": "9696c194aa7afa41fda66afe5afdcb7820eec767",
+  "source_expected_cell_map_sha256": "e79c5b59a20d697fefbcab3efc6893ae3e0dbd866834c70065a384067f1ff6da",
+  "source_generator_sha256": "4a21a8f9d5663c6d8189312524f27b31b34c7bb9c60fb3e5f933c9c5d52bb33f",
+  "source_inventory_sha256": "7986f6372c27fe0a9a4bf946c7a69f875ea81a3ee13549a2fb6b90be31a1c5c0",
+  "source_kernel_sha256": "b28ee38015d881f33cdb5c86a36011f528b88783f1b593588d70209f78f251a3",
+  "source_proposal_sha256": "bb39e6169ccce2641530ef7f0814a306e99a8b470c9cbe563c30ab060a511ae9",
+  "stage": "complete",
+  "status": "OK",
+  "target_count": 9,
+  "target_placements": {
+    "_108_": {
+      "after_dpl": [
+        "sky130_fd_sc_hd__xor2_1",
+        "67160",
+        "21760",
+        "N"
+      ],
+      "parent": [
+        "sky130_fd_sc_hd__xnor2_1",
+        "67160",
+        "21760",
+        "N"
+      ]
+    },
+    "_118_": {
+      "after_dpl": [
+        "sky130_fd_sc_hd__xor2_1",
+        "39560",
+        "29920",
+        "FS"
+      ],
+      "parent": [
+        "sky130_fd_sc_hd__xnor2_1",
+        "39560",
+        "29920",
+        "FS"
+      ]
+    },
+    "_125_": {
+      "after_dpl": [
+        "sky130_fd_sc_hd__xnor2_1",
+        "56120",
+        "13600",
+        "FS"
+      ],
+      "parent": [
+        "sky130_fd_sc_hd__xor2_1",
+        "56120",
+        "13600",
+        "FS"
+      ]
+    },
+    "_129_": {
+      "after_dpl": [
+        "sky130_fd_sc_hd__xor2_1",
+        "61640",
+        "24480",
+        "FS"
+      ],
+      "parent": [
+        "sky130_fd_sc_hd__xnor2_1",
+        "61640",
+        "24480",
+        "FS"
+      ]
+    },
+    "_130_": {
+      "after_dpl": [
+        "sky130_fd_sc_hd__xnor3_1",
+        "61640",
+        "38080",
+        "N"
+      ],
+      "parent": [
+        "sky130_fd_sc_hd__xor3_1",
+        "61640",
+        "38080",
+        "N"
+      ]
+    },
+    "_132_": {
+      "after_dpl": [
+        "sky130_fd_sc_hd__xnor2_1",
+        "70380",
+        "24480",
+        "FS"
+      ],
+      "parent": [
+        "sky130_fd_sc_hd__xor2_1",
+        "70380",
+        "24480",
+        "FS"
+      ]
+    },
+    "_155_": {
+      "after_dpl": [
+        "sky130_fd_sc_hd__xnor2_1",
+        "27600",
+        "29920",
+        "FS"
+      ],
+      "parent": [
+        "sky130_fd_sc_hd__xor2_1",
+        "27600",
+        "29920",
+        "FS"
+      ]
+    },
+    "_157_": {
+      "after_dpl": [
+        "sky130_fd_sc_hd__xor2_1",
+        "70840",
+        "27200",
+        "N"
+      ],
+      "parent": [
+        "sky130_fd_sc_hd__xnor2_1",
+        "70840",
+        "27200",
+        "N"
+      ]
+    },
+    "_166_": {
+      "after_dpl": [
+        "sky130_fd_sc_hd__xnor3_1",
+        "29440",
+        "32640",
+        "N"
+      ],
+      "parent": [
+        "sky130_fd_sc_hd__xor3_1",
+        "29440",
+        "32640",
+        "N"
+      ]
+    }
+  },
+  "targets_tsv_sha256": "1d2ea52dc112a9269115c27bbb6ebe05497f0028eb0b2833bc91983bb1c29ff1",
+  "vcd_retention": {
+    "files": {
+      "stress_encoded": "3d3152519079db728f93e30bc04d37d600a8688fe305ed694fe0eff71d447686",
+      "valid_low_toggle": "19ded8d0678ec4d6e52f818a738689ed2a6c9c60b5a97df1805b0e435956daf2",
+      "valid_uniform": "893e4b19c9f4573fc0f5a6141fabdaa81bbcf39175d02ab2d3b853b47ecc2045"
+    },
+    "metadata_retained": true,
+    "requested": true
+  },
+  "width": 32
+}

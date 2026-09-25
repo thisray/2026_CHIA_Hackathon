@@ -1,0 +1,60 @@
+{
+  "action": {
+    "kind": "xor3_phase_replay",
+    "plan": "n02_068"
+  },
+  "case": "S2",
+  "eco_reuse_origin_manifest_sha256": "8cec1d04c06b9f0a4c2e5b71904dc15475366ba037a6720873c18993d52beede",
+  "eco_reuse_origin_receipt_sha256": "8ef05da527de9e70ab2e48874c3f980eee1ec7a65820dd32f13f6459f480d5a4",
+  "eco_reuse_origin_source_commit": "68fafe35c3c553c9d1adadaad29f3b3551b5cfb4",
+  "eco_reuse_status": "VERIFIED_COMPLETED_ECO_ONLY",
+  "feasible": true,
+  "functional_valid": true,
+  "goal_id": "routed3_w64_d240_b271F0_v1",
+  "hashes": {
+    "eco_pre_route": "eefeb2af735a2169fda65d2d8f5ced7507070ade895cfc9f5a261fd8e4c16cf3",
+    "eco_routed_netlist": "eefeb2af735a2169fda65d2d8f5ced7507070ade895cfc9f5a261fd8e4c16cf3",
+    "eco_routed_odb": "efcf7d6be56be055eb86053be820753aa3b7f3d8be24ac3496cbec7d2239f6db",
+    "eco_routed_spef": "ec1f6b9a8f72121df23929a78bd4aefacb9c8461da91de2cc773d37da9b083a7",
+    "final_proof_log": "8015a4ff400520d7276b2cd8ed14d33d43f5d61848a58d5c1a6cbdc8bf503b02"
+  },
+  "j_score": 0.8951799620117368,
+  "kind": "xor3_phase_replay",
+  "measurement_valid": true,
+  "original_sha256": "632f5e0b5a65aaa1836985025b33d9ada0d21c34318ca7da841e1f6632c7eaf1",
+  "parent_binding_sha256": null,
+  "parent_graph_sha256": "320970ab4870a46b7603f457414d938c47b7971d760c2b07c5fae1983e0ca44f",
+  "parent_id": "N02-320970ab",
+  "parent_measurement_meta_sha256": "5c2afa90b32dca89de7489ff4f75c39abe05ffd6153175a5983f55289dc1b51b",
+  "parent_odb_sha256": "31ac626cd5e0ec76ae39b69ae9b49eb0e4293bda419429a9ca9a07c920452bff",
+  "parent_proof_log_sha256": "082cf24fabf12d13f5b5f10a127547ced552d1f854129af2d3cca1b9842372b3",
+  "parent_receipt_sha256": "2bb4f045ab14fc882c8347fd70aa7a7abeb5a2ee7c049535cf66e75457fae64c",
+  "parent_spef_sha256": "d62064f949382aa95a4fcd149f24806f6aed3922bd754b025b36c066b8505e0b",
+  "raw_energies_pj": {
+    "stress_encoded": 2.4701986689999997,
+    "valid_low_toggle": 0.35179768019999996,
+    "valid_uniform": 1.854111761
+  },
+  "route_valid": true,
+  "routed_area_um2": 2425.0,
+  "routed_delay_ns": 2.374088,
+  "selected_metric_row": {
+    "area_um2": 2425.0,
+    "delay_ns": 2.374088,
+    "energy_pj": {
+      "stress_encoded": 2.4701986689999997,
+      "valid_low_toggle": 0.35179768019999996,
+      "valid_uniform": 1.854111761
+    },
+    "feasible": true,
+    "id": "S2",
+    "j": 0.8951799620117368,
+    "width": 64
+  },
+  "source_commit": "9f01c4f67ea95ebd91257307455397514524ac18",
+  "source_pointer": "",
+  "source_revision": "5456a06eb95e846931efe5799e8f32cba3e08c4f",
+  "stage": "complete",
+  "status": "OK",
+  "upstream_path": "review/chia_S_folded_xor3/20260924/s02-receipt.json"
+}

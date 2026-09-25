@@ -1,0 +1,25 @@
+{
+  "source_revision": "5007b19c492cfb009084b159654cbdfbf0f588dd",
+  "source_path": "candidates/ecc_top1_w32_projected_b271/candidate.json",
+  "source_blob_sha": "b60a6d9b63b14223c9f32edb825d2f58b716f337",
+  "rtl_sha256": "3a4f95a3751d487b8010676a74f2929c7fe28995146dd8f163c5c72220dcb295",
+  "linear_style": "radix2",
+  "bit_order": [
+    1,
+    4,
+    2,
+    3,
+    0,
+    5
+  ],
+  "decoder": "tree",
+  "a": 1,
+  "b": 2,
+  "cross": "AB",
+  "basis_transform": "t[0] = s[0] XOR s[1]",
+  "basis_inverse": "self-inverse elementary shear",
+  "linear_xor2_nodes": 69,
+  "extra_ideal_xors": 1,
+  "external_contract": "original corrected-data, syndrome and status outputs retained",
+  "status": "faithful field transcription from the fetched candidate manifest; not a new run"
+}

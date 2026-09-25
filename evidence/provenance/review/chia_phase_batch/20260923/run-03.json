@@ -1,0 +1,455 @@
+{
+  "source_commit": "e93fbfa20e39cd0ab8704eeeead7af8e5b8b1bad",
+  "result": {
+    "analysis_sha256": "82336494e226757cb310ff7f703e681ea7f46001b09ffcbbe93527727399705a",
+    "attribution": "read_only_analysis_phase_pairing_model_selected_in_chia",
+    "cell_change": {
+      "modified_instances": [
+        "_342_",
+        "_343_",
+        "_361_",
+        "_362_"
+      ]
+    },
+    "decision_sha256": "13a6892f47f8d6de9568efff2c78044239487c3c96fc2ba079658970a7cebc9f",
+    "eco": {
+      "command": [
+        "docker",
+        "run",
+        "--rm",
+        "--cpus",
+        "2",
+        "--memory",
+        "12g",
+        "--network",
+        "none",
+        "--entrypoint",
+        "/bin/bash",
+        "-e",
+        "CHIA_PHASE_TARGETS=_342_ _343_ _361_ _362_",
+        "-v",
+        "/home/vegapunk/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/phase-batch-pilot/run-03/case:/artifacts",
+        "docker.io/hpretl/iic-osic-tools@sha256:65852976cad4af640c9d848762215137e87ec125111a6d06c850c3ab4e9695fb",
+        "-lc",
+        "openroad -no_init -exit /artifacts/eco.tcl"
+      ],
+      "log_path": "/home/vegapunk/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/phase-batch-pilot/run-03/case/eco.log",
+      "log_sha256": "973b811975fa2eac939beb593d0d7eefc7ae9f48b6d658ddd0f3171f0723dd88",
+      "returncode": 0,
+      "timed_out": false,
+      "wall_s": 1.045
+    },
+    "eco_pre_route_odb_sha256": "c9bf1233ae19d8e608cf6952e3f3029fa4f74503d881c3e575d1438156c8354a",
+    "eco_pre_route_sha256": "437fa753c395a29e8592ce0f668a6ed2f5d1219f381a3ba137141452991bff39",
+    "feasible": true,
+    "final_proof": {
+      "artifact_dir": "/home/vegapunk/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/phase-batch-pilot/run-03/case/final_proof",
+      "complete_marker": true,
+      "error": null,
+      "exit_code": "0",
+      "log_sha256": "2f0ae6f79e2af670767fc3986256e258e64a05063f6c330f04e998516483a55f",
+      "new_run": true,
+      "status": "PASS",
+      "wall_s": 1.119
+    },
+    "hashes": {
+      "eco_pre_route": "437fa753c395a29e8592ce0f668a6ed2f5d1219f381a3ba137141452991bff39",
+      "eco_routed_netlist": "437fa753c395a29e8592ce0f668a6ed2f5d1219f381a3ba137141452991bff39",
+      "eco_routed_odb": "96c0eb3bd4892db241f455a8d99f4f725a9af724af747e67df9a37c7050af69b",
+      "eco_routed_spef": "54929d9dda44911bf6cf19403971e430b76ba3692e19589f9dead9b206c9a6dd",
+      "final_proof_log": "2f0ae6f79e2af670767fc3986256e258e64a05063f6c330f04e998516483a55f"
+    },
+    "implementation_key_sha256": "e6296eb4e32fdb0897e7cce07bd488e97970378127c317dc8df03adff883dd15",
+    "j_score": 0.9555916600526079,
+    "kind": "phase_batch",
+    "mapped_submission_counted": 0,
+    "measurement": {
+      "claim_scope": "routed three-profile measurement context (stress_encoded, valid_uniform, valid_low_toggle; 1024 vectors, 10000 ps interval, 0.05 ns slew, 0.005 pF load, fixed corner, matched SPEF, feasibility ceiling D <= 2.40 ns)",
+      "critical_path": {
+        "arrival_ns": 2.371359,
+        "endpoint": "data_o[57]",
+        "path_depth_cells": 10,
+        "slack_ns": 7.628641,
+        "startpoint": "data_i[13]"
+      },
+      "delay_ceiling_ns": 2.4,
+      "denominator_energies": {
+        "stress_encoded": 2.541007707,
+        "valid_low_toggle": 0.4358843944,
+        "valid_uniform": 2.027927403
+      },
+      "drc": {
+        "available": false,
+        "violations": null
+      },
+      "energy_ratios": {
+        "stress_encoded": 1.0144585236395744,
+        "valid_low_toggle": 0.888158151045749,
+        "valid_uniform": 0.96848400149559
+      },
+      "feasible": true,
+      "hashes": {
+        "routed_netlist": "437fa753c395a29e8592ce0f668a6ed2f5d1219f381a3ba137141452991bff39",
+        "spef": "54929d9dda44911bf6cf19403971e430b76ba3692e19589f9dead9b206c9a6dd",
+        "vcd": {
+          "stress_encoded": "c806b7e927e906321ae43d8b036c3961b0cb11132cf595bade1739d1ca29af3f",
+          "valid_low_toggle": "814984690e40e2c8785ff466003af72961f7ce8b7811b647387818edc1413a27",
+          "valid_uniform": "1de357a535f012337bc4dc1a455e78325e12ec11870bc76aa39b87f083bd8fe6"
+        }
+      },
+      "j_score": 0.9555916600526079,
+      "measurement_valid": true,
+      "optional_power_diagnostic": {
+        "enabled": true,
+        "measurement_runner_sha256": "4035fd12f3e60f4d72f66d4697986492dcfc2ee3825036a6b28bf83c2dfc0e4b",
+        "power_tcl_sha256": "375a0bfd3214c8b4656a83cfa4d0d2851b751b7899ef140d12f98c1fc001a715",
+        "profiles": {
+          "stress_encoded": {
+            "error_sha256": null,
+            "instance_power_sha256": "15f2d91da1491ce6b5df1c657ed2a8c8ab31ae43c1eb6a63030d8a77cf8dbd49",
+            "pin_net_mapping_sha256": "cfaa1ce8cad5b651de63b5e65baee0d92987f804f441da6d71899d045825436e"
+          },
+          "valid_low_toggle": {
+            "error_sha256": null,
+            "instance_power_sha256": "142d8027eef86fa1b00baafcb6384a40cc4b1947abf2ad17195a321f0e30df90",
+            "pin_net_mapping_sha256": "cfaa1ce8cad5b651de63b5e65baee0d92987f804f441da6d71899d045825436e"
+          },
+          "valid_uniform": {
+            "error_sha256": null,
+            "instance_power_sha256": "282a9904c55ead69a77a13044a1a94610ebf6913f8bc8bc0525b4c8fdd6db939",
+            "pin_net_mapping_sha256": "cfaa1ce8cad5b651de63b5e65baee0d92987f804f441da6d71899d045825436e"
+          }
+        },
+        "run_script_sha256": "9ee19e5422e4cfbb4770399e0fe3eaab0016c6b0647e02357cf558db2e0c267b",
+        "scope": "supplemental instance power only; no scoring or glitch attribution",
+        "sidecar_sha256": "5012192461a4317b651fe454e4ec04a8cb422b2c997a7a969c117fb27f2f9dbe",
+        "version": "ecc_instance_power_v1"
+      },
+      "per_profile": {
+        "stress_encoded": {
+          "actual_window_ps": 10240000,
+          "annotated_pins": 1044,
+          "completed": 1024,
+          "end_ps": 10250000,
+          "energy_j": 2.639612853248e-09,
+          "energy_pj_per_vector": 2.577746927,
+          "internal_w": 0.0001115438572,
+          "leakage_w": 1.166547081e-09,
+          "oracle_mismatches": 0,
+          "start_ps": 10000,
+          "switching_w": 0.0001462296641,
+          "total_w": 0.0002577746927,
+          "unannotated_pins": 0,
+          "valid": true,
+          "vcd_sha256": "c806b7e927e906321ae43d8b036c3961b0cb11132cf595bade1739d1ca29af3f"
+        },
+        "valid_low_toggle": {
+          "actual_window_ps": 10240000,
+          "annotated_pins": 1044,
+          "completed": 1024,
+          "end_ps": 10250000,
+          "energy_j": 3.9642550046720004e-10,
+          "energy_pj_per_vector": 0.38713427780000004,
+          "internal_w": 1.946875454e-05,
+          "leakage_w": 1.186306942e-09,
+          "oracle_mismatches": 0,
+          "start_ps": 10000,
+          "switching_w": 1.924348726e-05,
+          "total_w": 3.871342778e-05,
+          "unannotated_pins": 0,
+          "valid": true,
+          "vcd_sha256": "814984690e40e2c8785ff466003af72961f7ce8b7811b647387818edc1413a27"
+        },
+        "valid_uniform": {
+          "actual_window_ps": 10240000,
+          "annotated_pins": 1044,
+          "completed": 1024,
+          "end_ps": 10250000,
+          "energy_j": 2.0111516119039997e-09,
+          "energy_pj_per_vector": 1.964015246,
+          "internal_w": 9.451848018e-05,
+          "leakage_w": 1.192039356e-09,
+          "oracle_mismatches": 0,
+          "start_ps": 10000,
+          "switching_w": 0.0001018818584,
+          "total_w": 0.0001964015246,
+          "unannotated_pins": 0,
+          "valid": true,
+          "vcd_sha256": "1de357a535f012337bc4dc1a455e78325e12ec11870bc76aa39b87f083bd8fe6"
+        }
+      },
+      "raw_energies_pj": {
+        "stress_encoded": 2.577746927,
+        "valid_low_toggle": 0.38713427780000004,
+        "valid_uniform": 1.964015246
+      },
+      "routed_area_um2": 2416.0,
+      "routed_delay_ns": 2.371359,
+      "stage_status": {
+        "iverilog_compile": 0,
+        "postroute_sta": 0,
+        "power": 0,
+        "simulation": 0
+      },
+      "wall_s": 5.11
+    },
+    "measurement_command": [
+      "/home/vegapunk/miniforge3/envs/chia_familyrtl_260919/bin/python3.10",
+      "/home/vegapunk/projects/chia-top1-20260923/phase-batch-e93fbfa/research/ecc_perf_bench/bench_ecc_routed_three_profile.py",
+      "--repo-root",
+      "/home/vegapunk/projects/chia-top1-20260923/phase-batch-e93fbfa",
+      "--routed-netlist",
+      "/home/vegapunk/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/phase-batch-pilot/run-03/case/routed.v",
+      "--spef",
+      "/home/vegapunk/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/phase-batch-pilot/run-03/case/routed.spef",
+      "--artifact-dir",
+      "/home/vegapunk/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/phase-batch-pilot/run-03/case/three_profile",
+      "--width",
+      "64",
+      "--python",
+      "/home/vegapunk/miniforge3/envs/chia_familyrtl_260919/bin/python3.10",
+      "--cpus",
+      "2",
+      "--denominator-json",
+      "/home/vegapunk/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/phase-batch-pilot/run-03/case/denominator.json",
+      "--delay-ceiling",
+      "2.40",
+      "--routed-area-um2",
+      "2416.0",
+      "--power-diagnostic"
+    ],
+    "measurement_exit_code": 0,
+    "measurement_wall_s": 5.956,
+    "pairs": [
+      {
+        "lower": "_342_",
+        "upper": "_343_"
+      },
+      {
+        "lower": "_361_",
+        "upper": "_362_"
+      }
+    ],
+    "parent_binding_sha256": "feeeed967d9e537a1e6775dd3b3239c1886e5c1aae6c44264f7912ed5f173831",
+    "parent_extracted_delay_ns": 2.36162,
+    "parent_graph_sha256": "9c9a0b3f8929226556bcd309b13858c079c7c1a89a7f7fb11636b4345845ffbe",
+    "parent_odb_sha256": "ac2541f146885006dfb74e0feab872a81b462e29ae2be44a4be0be7435d9a950",
+    "parent_spef_sha256": "e184883f8ef8cca63617537cc4cfc768348665f1e555be1ddd5edd3200f2c690",
+    "placement_guard": "PASS",
+    "pre_route_proof": {
+      "artifact_dir": "/home/vegapunk/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/phase-batch-pilot/run-03/case/pre_route_proof",
+      "complete_marker": true,
+      "error": null,
+      "exit_code": "0",
+      "log_sha256": "c166fd785ffd82549796ba9a5407f72db6f239a651f7d8584abac7e53945af59",
+      "new_run": true,
+      "status": "PASS",
+      "wall_s": 1.101
+    },
+    "raw_energies_pj": {
+      "stress_encoded": 2.577746927,
+      "valid_low_toggle": 0.38713427780000004,
+      "valid_uniform": 1.964015246
+    },
+    "recipe_hashes": {
+      "eco.tcl": "86231a44f6e4374bccb78eda94ac6fe405c5f057459bcb44431f2f1dc1165964",
+      "reroute.tcl": "c8fef1991e68933e55ebd7d86315feae28c93ed5e6d3629ce729c8be84bccfa9"
+    },
+    "reroute": {
+      "command": [
+        "docker",
+        "run",
+        "--rm",
+        "--cpus",
+        "2",
+        "--memory",
+        "12g",
+        "--network",
+        "none",
+        "--entrypoint",
+        "/bin/bash",
+        "-v",
+        "/home/vegapunk/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/phase-batch-pilot/run-03/case:/artifacts",
+        "docker.io/hpretl/iic-osic-tools@sha256:65852976cad4af640c9d848762215137e87ec125111a6d06c850c3ab4e9695fb",
+        "-lc",
+        "openroad -no_init -exit /artifacts/reroute.tcl"
+      ],
+      "log_path": "/home/vegapunk/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/phase-batch-pilot/run-03/case/reroute.log",
+      "log_sha256": "47db9aa532ab88da34fdfc78d56cb8ba8ba0fde1f802f0851ab8fa4f0812b8c8",
+      "returncode": 0,
+      "timed_out": false,
+      "wall_s": 14.461
+    },
+    "route_submission_counted": 1,
+    "routed_area_um2": 2416.0,
+    "routed_delay_ns": 2.371359,
+    "source_commit": "e93fbfa20e39cd0ab8704eeeead7af8e5b8b1bad",
+    "status": "OK",
+    "targets": [
+      "_342_",
+      "_343_",
+      "_361_",
+      "_362_"
+    ]
+  },
+  "actual_chia_identity": {
+    "chia_job_id": "01000000",
+    "chia_node_id": "4756dc715718d2c7feca8dd49b4fb2207fda1eda34f0b12698124715",
+    "chia_node_ip": "10.148.0.26",
+    "chia_task_id": "c8ef45ccd0112571ffffffffffffffffffffffff01000000",
+    "chia_worker_id": "9f4bdd7cd1c88bc7dd574c3d8027d1d3546b30ae527aad1e576ff96d",
+    "executable": "/home/vegapunk/miniforge3/envs/chia_familyrtl_260919/bin/python",
+    "hostname": "chia-arm64-eda-02",
+    "in_ray_worker": true,
+    "pid": 254678
+  },
+  "raw_mirror": "/Volumes/SKC3000D2048G/VegaExternal/Projects/260908_CHIA_Hackathon/Artifacts/chia-top1-20260923/phase-batch-pilot/run-03/raw",
+  "verified_files": 90,
+  "native_decision": {
+    "http_status": 200,
+    "latency_s": 17.823,
+    "usage_metadata": {
+      "promptTokenCount": 33916,
+      "candidatesTokenCount": 241,
+      "totalTokenCount": 34952,
+      "trafficType": "ON_DEMAND",
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 33916
+        }
+      ],
+      "candidatesTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 241
+        }
+      ],
+      "thoughtsTokenCount": 795
+    },
+    "model_version": "gemini-3.1-pro-preview",
+    "parsed_object": {
+      "decision": "EXTEND_BATCH",
+      "pairs": [
+        {
+          "lower": "_342_",
+          "upper": "_343_"
+        },
+        {
+          "lower": "_361_",
+          "upper": "_362_"
+        }
+      ],
+      "operation": "flip_two_xnor2_to_two_xor2",
+      "reason": "Since this is the final route and the operation is a phase flip (replacing two XNOR2_1 with two XOR2_1) rather than a cell merge, area remains unchanged while power might be reduced to improve J. I selected the pairs (_342_, _343_) and (_361_, _362_) because their upper cells have the largest timing margins (slack 0.172ns and 0.215ns respectively). This provides a safe buffer against any minor timing perturbations caused by the footprint-compatible cell swap, maximizing the chance of keeping D <= 2.4ns while attempting to find a better J."
+    },
+    "error": null,
+    "finish_reason": "STOP",
+    "retry_after_s": null,
+    "error_kind": null,
+    "model": "google-vertex/gemini-3.1-pro-preview",
+    "requested_thinking_level": "MEDIUM"
+  },
+  "superseded_incorrect_model_rationale": {
+    "http_status": 200,
+    "latency_s": 12.915,
+    "usage_metadata": {
+      "promptTokenCount": 33094,
+      "candidatesTokenCount": 262,
+      "totalTokenCount": 34588,
+      "trafficType": "ON_DEMAND",
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 33094
+        }
+      ],
+      "candidatesTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 262
+        }
+      ],
+      "thoughtsTokenCount": 1232
+    },
+    "model_version": "gemini-3.8-flash",
+    "parsed_object": {
+      "decision": "EXTEND_BATCH",
+      "pairs": [
+        {
+          "lower": "_342_",
+          "upper": "_343_"
+        },
+        {
+          "lower": "_361_",
+          "upper": "_362_"
+        }
+      ],
+      "reason": "\u5728\u6700\u5f8c1\u500broute\u4e2d\u63a1\u53d6\u9ad8\u4e0a\u9650\u4e14\u7a69\u5065\u76842\u7d44disjoint pairs\u7b56\u7565\u3002STA\u986f\u793a_362_ (D=2.185ns, slack=0.215ns) \u8207_343_ (D=2.227ns, slack=0.173ns) \u5177\u5099\u5145\u8db3\u7684\u6642\u5e8f\u9918\u91cf\uff0c\u4e14\u5b8c\u5168\u907f\u958b\u4e86\u4f4d\u65bc_310_ (D=2.362ns) \u548c_303_ (D=2.351ns) \u7684\u4e3b\u8981\u95dc\u9375\u8def\u5f91\u3002\u5408\u4f75(_342_, _343_)\u8207(_361_, _362_)\u70ba3-input\u9598\u53ef\u9032\u4e00\u6b65\u6d88\u9664\u4e2d\u4ecbnet\u3001\u964d\u4f4e\u529f\u8017\u8207\u9762\u7a4d\u4ee5\u63d0\u5347J\uff0c\u540c\u6642\u78ba\u4fddD <= 2.4ns\u5b89\u5168\u5408\u898f\u3002"
+    },
+    "error": null,
+    "finish_reason": "STOP",
+    "retry_after_s": null,
+    "error_kind": null,
+    "model": "google-vertex/gemini-3.8-flash",
+    "requested_thinking_level": "MEDIUM"
+  },
+  "timing_feedback": {
+    "rows": [
+      {
+        "cell": "_261_",
+        "through_path_D_ns": 2.338334,
+        "slack_to_goal_ns": 0.06166599999999978,
+        "exact_path": "Startpoint: data_i[61] (input port clocked by virtual_clock)\nEndpoint: data_o[60] (output port clocked by virtual_clock)\nPath Group: virtual_clock\nPath Type: max\n\n      Delay        Time   Description\n-----------------------------------------------------------------\n   0.000000    0.000000 v input external delay\n   0.000000    0.000000 v data_i[61] (in)\n   0.187412    0.187412 v _255_/X (sky130_fd_sc_hd__xor2_1)\n   0.304611    0.492023 ^ _257_/Y (sky130_fd_sc_hd__xnor2_1)\n   0.202493    0.694517 ^ _261_/Y (sky130_fd_sc_hd__xnor2_1)\n   0.149901    0.844417 v _270_/Y (sky130_fd_sc_hd__xnor2_1)\n   0.359097    1.203514 ^ _287_/Y (sky130_fd_sc_hd__xnor2_1)\n   0.337751    1.541265 v _288_/Y (sky130_fd_sc_hd__clkinv_1)\n   0.376575    1.917840 ^ _387_/Y (sky130_fd_sc_hd__nor2_1)\n   0.158065    2.075906 v _247_/Y (sky130_fd_sc_hd__nand4_1)\n   0.261780    2.337686 ^ _248_/Y (sky130_fd_sc_hd__xnor2_1)\n   0.000648    2.338334 ^ data_o[60] (out)\n               2.338334   data arrival time\n\n  10.000000   10.000000   max_delay\n   0.000000   10.000000   clock reconvergence pessimism\n   0.000000   10.000000   output external delay\n              10.000000   data required time\n-----------------------------------------------------------------\n              10.000000   data required time\n              -2.338334   data arrival time\n-----------------------------------------------------------------\n               7.661666   slack (MET)\n\n\n"
+      },
+      {
+        "cell": "_273_",
+        "through_path_D_ns": 2.332973,
+        "slack_to_goal_ns": 0.06702699999999995,
+        "exact_path": "Startpoint: data_i[53] (input port clocked by virtual_clock)\nEndpoint: data_o[22] (output port clocked by virtual_clock)\nPath Group: virtual_clock\nPath Type: max\n\n      Delay        Time   Description\n-----------------------------------------------------------------\n   0.000000    0.000000 v input external delay\n   0.000000    0.000000 v data_i[53] (in)\n   0.264967    0.264967 ^ _271_/Y (sky130_fd_sc_hd__xnor2_1)\n   0.170397    0.435365 v _273_/Y (sky130_fd_sc_hd__xnor2_1)\n   0.289422    0.724787 ^ _277_/Y (sky130_fd_sc_hd__xnor2_1)\n   0.167563    0.892350 ^ _306_/Y (sky130_fd_sc_hd__xnor2_1)\n   0.588128    1.480478 ^ _307_/X (sky130_fd_sc_hd__xor2_1)\n   0.413920    1.894398 v _454_/Y (sky130_fd_sc_hd__nand3_1)\n   0.215077    2.109475 ^ _455_/Y (sky130_fd_sc_hd__nor2_1)\n   0.223212    2.332687 ^ _456_/X (sky130_fd_sc_hd__xor2_1)\n   0.000286    2.332973 ^ data_o[22] (out)\n               2.332973   data arrival time\n\n  10.000000   10.000000   max_delay\n   0.000000   10.000000   clock reconvergence pessimism\n   0.000000   10.000000   output external delay\n              10.000000   data required time\n-----------------------------------------------------------------\n              10.000000   data required time\n              -2.332973   data arrival time\n-----------------------------------------------------------------\n               7.667027   slack (MET)\n\n\n"
+      },
+      {
+        "cell": "_277_",
+        "through_path_D_ns": 2.332973,
+        "slack_to_goal_ns": 0.06702699999999995,
+        "exact_path": "Startpoint: data_i[53] (input port clocked by virtual_clock)\nEndpoint: data_o[22] (output port clocked by virtual_clock)\nPath Group: virtual_clock\nPath Type: max\n\n      Delay        Time   Description\n-----------------------------------------------------------------\n   0.000000    0.000000 v input external delay\n   0.000000    0.000000 v data_i[53] (in)\n   0.264967    0.264967 ^ _271_/Y (sky130_fd_sc_hd__xnor2_1)\n   0.170397    0.435365 v _273_/Y (sky130_fd_sc_hd__xnor2_1)\n   0.289422    0.724787 ^ _277_/Y (sky130_fd_sc_hd__xnor2_1)\n   0.167563    0.892350 ^ _306_/Y (sky130_fd_sc_hd__xnor2_1)\n   0.588128    1.480478 ^ _307_/X (sky130_fd_sc_hd__xor2_1)\n   0.413920    1.894398 v _454_/Y (sky130_fd_sc_hd__nand3_1)\n   0.215077    2.109475 ^ _455_/Y (sky130_fd_sc_hd__nor2_1)\n   0.223212    2.332687 ^ _456_/X (sky130_fd_sc_hd__xor2_1)\n   0.000286    2.332973 ^ data_o[22] (out)\n               2.332973   data arrival time\n\n  10.000000   10.000000   max_delay\n   0.000000   10.000000   clock reconvergence pessimism\n   0.000000   10.000000   output external delay\n              10.000000   data required time\n-----------------------------------------------------------------\n              10.000000   data required time\n              -2.332973   data arrival time\n-----------------------------------------------------------------\n               7.667027   slack (MET)\n\n\n"
+      },
+      {
+        "cell": "_303_",
+        "through_path_D_ns": 2.351442,
+        "slack_to_goal_ns": 0.04855799999999988,
+        "exact_path": "Startpoint: data_i[29] (input port clocked by virtual_clock)\nEndpoint: data_o[59] (output port clocked by virtual_clock)\nPath Group: virtual_clock\nPath Type: max\n\n      Delay        Time   Description\n-----------------------------------------------------------------\n   0.000000    0.000000 v input external delay\n   0.000000    0.000000 v data_i[29] (in)\n   0.260460    0.260460 ^ _301_/X (sky130_fd_sc_hd__xor2_1)\n   0.148322    0.408783 v _303_/Y (sky130_fd_sc_hd__xnor2_1)\n   0.261446    0.670229 ^ _304_/Y (sky130_fd_sc_hd__xnor2_1)\n   0.302653    0.972882 ^ _315_/X (sky130_fd_sc_hd__xor2_1)\n   0.234076    1.206958 ^ _316_/Y (sky130_fd_sc_hd__xnor2_1)\n   0.198894    1.405851 v _317_/Y (sky130_fd_sc_hd__inv_1)\n   0.474947    1.880798 v _384_/X (sky130_fd_sc_hd__or3_1)\n   0.220618    2.101417 v _245_/Y (sky130_fd_sc_hd__nand3b_1)\n   0.249722    2.351139 ^ _246_/Y (sky130_fd_sc_hd__xnor2_1)\n   0.000303    2.351442 ^ data_o[59] (out)\n               2.351442   data arrival time\n\n  10.000000   10.000000   max_delay\n   0.000000   10.000000   clock reconvergence pessimism\n   0.000000   10.000000   output external delay\n              10.000000   data required time\n-----------------------------------------------------------------\n              10.000000   data required time\n              -2.351442   data arrival time\n-----------------------------------------------------------------\n               7.648559   slack (MET)\n\n\n"
+      },
+      {
+        "cell": "_310_",
+        "through_path_D_ns": 2.36162,
+        "slack_to_goal_ns": 0.03838000000000008,
+        "exact_path": "Startpoint: data_i[13] (input port clocked by virtual_clock)\nEndpoint: data_o[59] (output port clocked by virtual_clock)\nPath Group: virtual_clock\nPath Type: max\n\n      Delay        Time   Description\n-----------------------------------------------------------------\n   0.000000    0.000000 v input external delay\n   0.000000    0.000000 v data_i[13] (in)\n   0.263923    0.263923 ^ _308_/Y (sky130_fd_sc_hd__xnor2_1)\n   0.222481    0.486404 ^ _310_/Y (sky130_fd_sc_hd__xnor2_1)\n   0.209030    0.695433 ^ _314_/X (sky130_fd_sc_hd__xor2_1)\n   0.287628    0.983061 ^ _315_/X (sky130_fd_sc_hd__xor2_1)\n   0.234075    1.217137 ^ _316_/Y (sky130_fd_sc_hd__xnor2_1)\n   0.198894    1.416030 v _317_/Y (sky130_fd_sc_hd__inv_1)\n   0.474947    1.890977 v _384_/X (sky130_fd_sc_hd__or3_1)\n   0.220618    2.111595 v _245_/Y (sky130_fd_sc_hd__nand3b_1)\n   0.249722    2.361317 ^ _246_/Y (sky130_fd_sc_hd__xnor2_1)\n   0.000303    2.361620 ^ data_o[59] (out)\n               2.361620   data arrival time\n\n  10.000000   10.000000   max_delay\n   0.000000   10.000000   clock reconvergence pessimism\n   0.000000   10.000000   output external delay\n              10.000000   data required time\n-----------------------------------------------------------------\n              10.000000   data required time\n              -2.361620   data arrival time\n-----------------------------------------------------------------\n               7.638380   slack (MET)\n\n\n"
+      },
+      {
+        "cell": "_343_",
+        "through_path_D_ns": 2.227451,
+        "slack_to_goal_ns": 0.17254900000000006,
+        "exact_path": "Startpoint: data_i[36] (input port clocked by virtual_clock)\nEndpoint: data_o[6] (output port clocked by virtual_clock)\nPath Group: virtual_clock\nPath Type: max\n\n      Delay        Time   Description\n-----------------------------------------------------------------\n   0.000000    0.000000 v input external delay\n   0.000000    0.000000 v data_i[36] (in)\n   0.164874    0.164874 v _341_/X (sky130_fd_sc_hd__xor2_1)\n   0.188396    0.353270 ^ _343_/Y (sky130_fd_sc_hd__xnor2_1)\n   0.189469    0.542740 ^ _347_/X (sky130_fd_sc_hd__xor2_1)\n   0.186052    0.728792 ^ _348_/X (sky130_fd_sc_hd__xor2_1)\n   0.554530    1.283322 v _365_/X (sky130_fd_sc_hd__xor3_1)\n   0.194501    1.477823 ^ _366_/Y (sky130_fd_sc_hd__clkinv_1)\n   0.277006    1.754829 v _398_/Y (sky130_fd_sc_hd__nand4_1)\n   0.216140    1.970968 ^ _418_/Y (sky130_fd_sc_hd__nor2_1)\n   0.256170    2.227139 ^ _419_/X (sky130_fd_sc_hd__xor2_1)\n   0.000312    2.227451 ^ data_o[6] (out)\n               2.227451   data arrival time\n\n  10.000000   10.000000   max_delay\n   0.000000   10.000000   clock reconvergence pessimism\n   0.000000   10.000000   output external delay\n              10.000000   data required time\n-----------------------------------------------------------------\n              10.000000   data required time\n              -2.227451   data arrival time\n-----------------------------------------------------------------\n               7.772549   slack (MET)\n\n\n"
+      },
+      {
+        "cell": "_362_",
+        "through_path_D_ns": 2.184846,
+        "slack_to_goal_ns": 0.21515400000000007,
+        "exact_path": "Startpoint: data_i[68] (input port clocked by virtual_clock)\nEndpoint: data_o[6] (output port clocked by virtual_clock)\nPath Group: virtual_clock\nPath Type: max\n\n      Delay        Time   Description\n-----------------------------------------------------------------\n   0.000000    0.000000 v input external delay\n   0.000000    0.000000 v data_i[68] (in)\n   0.259396    0.259396 ^ _321_/Y (sky130_fd_sc_hd__xnor2_1)\n   0.167515    0.426911 ^ _361_/Y (sky130_fd_sc_hd__xnor2_1)\n   0.153343    0.580254 ^ _362_/Y (sky130_fd_sc_hd__xnor2_1)\n   0.202521    0.782775 ^ _363_/X (sky130_fd_sc_hd__xor2_1)\n   0.457942    1.240717 v _365_/X (sky130_fd_sc_hd__xor3_1)\n   0.194501    1.435217 ^ _366_/Y (sky130_fd_sc_hd__clkinv_1)\n   0.277006    1.712223 v _398_/Y (sky130_fd_sc_hd__nand4_1)\n   0.216140    1.928363 ^ _418_/Y (sky130_fd_sc_hd__nor2_1)\n   0.256170    2.184534 ^ _419_/X (sky130_fd_sc_hd__xor2_1)\n   0.000312    2.184846 ^ data_o[6] (out)\n               2.184846   data arrival time\n\n  10.000000   10.000000   max_delay\n   0.000000   10.000000   clock reconvergence pessimism\n   0.000000   10.000000   output external delay\n              10.000000   data required time\n-----------------------------------------------------------------\n              10.000000   data required time\n              -2.184846   data arrival time\n-----------------------------------------------------------------\n               7.815154   slack (MET)\n\n\n"
+      },
+      {
+        "cell": "_375_",
+        "through_path_D_ns": 2.305557,
+        "slack_to_goal_ns": 0.09444300000000005,
+        "exact_path": "Startpoint: data_i[53] (input port clocked by virtual_clock)\nEndpoint: data_o[6] (output port clocked by virtual_clock)\nPath Group: virtual_clock\nPath Type: max\n\n      Delay        Time   Description\n-----------------------------------------------------------------\n   0.000000    0.000000 v input external delay\n   0.000000    0.000000 v data_i[53] (in)\n   0.264967    0.264967 ^ _271_/Y (sky130_fd_sc_hd__xnor2_1)\n   0.130067    0.395034 v _373_/Y (sky130_fd_sc_hd__xnor2_1)\n   0.207360    0.602393 ^ _375_/Y (sky130_fd_sc_hd__xnor2_1)\n   0.230924    0.833317 v _376_/X (sky130_fd_sc_hd__xnor3_1)\n   0.554359    1.387676 ^ _382_/X (sky130_fd_sc_hd__xor3_1)\n   0.283137    1.670813 v _383_/Y (sky130_fd_sc_hd__clkinv_1)\n   0.299037    1.969851 ^ _398_/Y (sky130_fd_sc_hd__nand4_1)\n   0.098266    2.068116 v _418_/Y (sky130_fd_sc_hd__nor2_1)\n   0.237129    2.305245 ^ _419_/X (sky130_fd_sc_hd__xor2_1)\n   0.000312    2.305557 ^ data_o[6] (out)\n               2.305557   data arrival time\n\n  10.000000   10.000000   max_delay\n   0.000000   10.000000   clock reconvergence pessimism\n   0.000000   10.000000   output external delay\n              10.000000   data required time\n-----------------------------------------------------------------\n              10.000000   data required time\n              -2.305557   data arrival time\n-----------------------------------------------------------------\n               7.694443   slack (MET)\n\n\n"
+      }
+    ],
+    "parent_graph_sha256": "9c9a0b3f8929226556bcd309b13858c079c7c1a89a7f7fb11636b4345845ffbe",
+    "new_candidate": false,
+    "new_profile": false,
+    "model_chosen_read_only_action": true,
+    "execution": "direct pinned Docker OpenSTA; not new CHIA Ray leaf",
+    "decision_sha256": "17fce4f7e7f9be3d8b619516512df363c7139fab519813fd1a0c4007c583ec74"
+  }
+}

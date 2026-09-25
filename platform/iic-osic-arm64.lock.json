@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "image": {
+    "reference": "docker.io/hpretl/iic-osic-tools@sha256:65852976cad4af640c9d848762215137e87ec125111a6d06c850c3ab4e9695fb",
+    "architecture": "linux/arm64",
+    "manifest_digest": "sha256:65852976cad4af640c9d848762215137e87ec125111a6d06c850c3ab4e9695fb",
+    "content_digest": "sha256:96bdc869118a48fea3cda83775ace5c29539d13f1e0dba8195d77540b27a3a1e"
+  },
+  "execution": {
+    "cpus": 2,
+    "container_memory": "12g",
+    "network": "none"
+  },
+  "platform": {
+    "pdk": "sky130A",
+    "open_pdk_content_version": "026824c7969ce6f4fc9678e6ca04b0a06a596c4b",
+    "standard_cell_library": "sky130_fd_sc_hd",
+    "corner": "tt_025C_1v80",
+    "liberty": {
+      "path": "/foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib",
+      "sha256": "8e78e14442062dba34d414fca6490b2f6b96038d4510d1438ca44fee31487135"
+    },
+    "technology_lef": {
+      "path": "/foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef",
+      "sha256": "5de46c6f7c2cf82599b93d30a6459465f770f63c85b36182c672782219938519"
+    },
+    "cell_lef": {
+      "path": "/foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef",
+      "sha256": "3a3ea4e9d0973402702764d897659e52fe3d413eb48c306cd811de40a75264fa"
+    }
+  },
+  "tools": {
+    "yosys": "0.68 git 38e001a6f",
+    "eqy": "0.68-dirty",
+    "sby": "0.68-dirty",
+    "opensta": "3.1.0",
+    "openroad": "26Q3-1621-g21512b0ab",
+    "verilator": "5.050"
+  }
+}

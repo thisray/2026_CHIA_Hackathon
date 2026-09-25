@@ -1,0 +1,48 @@
+{
+  "action": {
+    "kind": "phase_assignment",
+    "proposal": "timing_frontier_protected"
+  },
+  "case": "J1",
+  "feasible": true,
+  "functional_valid": true,
+  "goal_id": "routed3_w64_d240_b271F0_v1",
+  "hashes": {
+    "eco_pre_route": "8e038f9f7b28cb284e3b8d14cee4018585df010181c48ebdd45d16dfc30ab6bd",
+    "eco_routed_netlist": "8e038f9f7b28cb284e3b8d14cee4018585df010181c48ebdd45d16dfc30ab6bd",
+    "eco_routed_odb": "4d1b323fc5c0fe243c445a6f33782d5bf2799da3160e462e7cccb1eda8dc5573",
+    "eco_routed_spef": "5b0731a6ee064cdec0d2c829d9f3796fbd9f33914b3dba04f0a2d3b8bbf37623",
+    "final_proof_log": "ff210975796648721bd62cde79bdc8e189ec4e986143b6f6132220dcb2d2f125"
+  },
+  "j_score": 0.899341999486715,
+  "measurement_valid": true,
+  "original_sha256": "d89a543b521d5be90b451b35d718204c6786de90b644113541f27f3f1e27bcf2",
+  "parent_id": "bbf15474",
+  "raw_energies_pj": {
+    "stress_encoded": 2.4769769520000002,
+    "valid_low_toggle": 0.3547985398,
+    "valid_uniform": 1.8590905530000001
+  },
+  "route_valid": true,
+  "routed_area_um2": 2427.0,
+  "routed_delay_ns": 2.376334,
+  "selected_metric_row": {
+    "area_um2": 2427.0,
+    "delay_ns": 2.376334,
+    "energy_pj": {
+      "stress_encoded": 2.4769769520000002,
+      "valid_low_toggle": 0.3547985398,
+      "valid_uniform": 1.8590905530000001
+    },
+    "feasible": true,
+    "id": "J1",
+    "j": 0.899341999486715,
+    "width": 64
+  },
+  "source_commit": "4adaff7929d1dee7941e3f0d4429aadacd2f7121",
+  "source_pointer": "",
+  "source_revision": "a681cd9fec579d5bff0fecdaa8e0267c7dfbae73",
+  "stage": "complete",
+  "status": "OK",
+  "upstream_path": "review/chia_J_timing_frontier/20260924/j01-result.json"
+}

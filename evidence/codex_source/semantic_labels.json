@@ -1,0 +1,62 @@
+{
+  "bbf": {
+    "label": "Earlier feasible design",
+    "original_id": "bbf"
+  },
+  "H1": {
+    "label": "Single-path protection",
+    "original_id": "H1"
+  },
+  "H2": {
+    "label": "New-cone protection",
+    "original_id": "H2"
+  },
+  "I1": {
+    "label": "Phase + timing repair",
+    "original_id": "I1"
+  },
+  "J1": {
+    "label": "Multi-path protection",
+    "original_id": "J1"
+  },
+  "N1": {
+    "label": "Power-weighted assignment",
+    "original_id": "N1"
+  },
+  "N2": {
+    "label": "Local pair refinement",
+    "original_id": "N2"
+  },
+  "S2": {
+    "label": "Final ternary refinement",
+    "original_id": "S2"
+  },
+  "G0": {
+    "label": "Transferred local design",
+    "original_id": "G0"
+  },
+  "G1": {
+    "label": "Three-star trial",
+    "original_id": "G1"
+  },
+  "ff6": {
+    "label": "Four-star sibling trial",
+    "original_id": "ff6"
+  },
+  "O1": {
+    "label": "Binary count-11 plan",
+    "original_id": "O1"
+  },
+  "O2": {
+    "label": "Power-weighted binary plan",
+    "original_id": "O2"
+  },
+  "V1": {
+    "label": "Mixed-arity singleton",
+    "original_id": "V1"
+  },
+  "V2": {
+    "label": "Final mixed-arity global plan",
+    "original_id": "V2"
+  }
+}

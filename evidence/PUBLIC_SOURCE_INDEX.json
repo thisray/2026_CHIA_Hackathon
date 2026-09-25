@@ -1,0 +1,140 @@
+[
+  {
+    "original_path": "candidates/ecc_top1_w32_projected_b271/candidate.json",
+    "source_revision": "5cc185570353e632d4b14464fcf4b3d5f05781e8",
+    "packaged_path": "evidence/provenance/candidates/ecc_top1_w32_projected_b271/candidate.json",
+    "sha256": "ec7bd08d66f311efc7b4fe2c9295bbacd0091f5a9ee504e5c8459f5ddfc8ff63"
+  },
+  {
+    "original_path": "review/chia_F_composable_phase/20260924/VERDICT.md",
+    "source_revision": "5cc185570353e632d4b14464fcf4b3d5f05781e8",
+    "packaged_path": "evidence/provenance/review/chia_F_composable_phase/20260924/VERDICT.md",
+    "sha256": "de214c3871f8ca3989d57df6806a077c96947fb30d312f395432ef8780dc3cbe"
+  },
+  {
+    "original_path": "review/chia_G32_phase_transfer/20260924/VERDICT.md",
+    "source_revision": "5cc185570353e632d4b14464fcf4b3d5f05781e8",
+    "packaged_path": "evidence/provenance/review/chia_G32_phase_transfer/20260924/VERDICT.md",
+    "sha256": "1c559b1a7886d2dc2eed8a23750e1245385287addba8b4979b691dc49a14c00f"
+  },
+  {
+    "original_path": "review/chia_H_phase_assignment/20260924/VERDICT.md",
+    "source_revision": "5cc185570353e632d4b14464fcf4b3d5f05781e8",
+    "packaged_path": "evidence/provenance/review/chia_H_phase_assignment/20260924/VERDICT.md",
+    "sha256": "db5d56441189e369e40187d77be3610fdd9e79b48c72ab66e0079cbf246e0c78"
+  },
+  {
+    "original_path": "review/chia_I_phase_timing_repair/20260924/VERDICT.md",
+    "source_revision": "5cc185570353e632d4b14464fcf4b3d5f05781e8",
+    "packaged_path": "evidence/provenance/review/chia_I_phase_timing_repair/20260924/VERDICT.md",
+    "sha256": "f4bc1bc8635d42d07412a5e89d8dd8b43daeb4a4d43d675767c75e02a54f2395"
+  },
+  {
+    "original_path": "review/chia_J_timing_frontier/20260924/VERDICT.md",
+    "source_revision": "5cc185570353e632d4b14464fcf4b3d5f05781e8",
+    "packaged_path": "evidence/provenance/review/chia_J_timing_frontier/20260924/VERDICT.md",
+    "sha256": "1139633b43d62168d993f8baac119c026f43b91f289023d58b9b6bbc74512e53"
+  },
+  {
+    "original_path": "review/chia_N_weighted_phase/20260924/VERDICT.md",
+    "source_revision": "5cc185570353e632d4b14464fcf4b3d5f05781e8",
+    "packaged_path": "evidence/provenance/review/chia_N_weighted_phase/20260924/VERDICT.md",
+    "sha256": "c595d8bd9113c516db1e6683fe56127ef873528d78b52699b1699708e3bc6178"
+  },
+  {
+    "original_path": "review/chia_O32_global_phase/20260924/VERDICT.md",
+    "source_revision": "5cc185570353e632d4b14464fcf4b3d5f05781e8",
+    "packaged_path": "evidence/provenance/review/chia_O32_global_phase/20260924/VERDICT.md",
+    "sha256": "4e4f69597d932c4bc12e30db3f6ee9fc9a0633c132b2f8e9194aab676780bd87"
+  },
+  {
+    "original_path": "review/chia_S_folded_xor3/20260924/VERDICT.md",
+    "source_revision": "5cc185570353e632d4b14464fcf4b3d5f05781e8",
+    "packaged_path": "evidence/provenance/review/chia_S_folded_xor3/20260924/VERDICT.md",
+    "sha256": "6bf1e267e10b8c1c2c6c7c7512ee0ba69ecb3b0cc3b9e9d2f34f627656451422"
+  },
+  {
+    "original_path": "review/chia_T_arity_repair/20260924/VERDICT.md",
+    "source_revision": "5cc185570353e632d4b14464fcf4b3d5f05781e8",
+    "packaged_path": "evidence/provenance/review/chia_T_arity_repair/20260924/VERDICT.md",
+    "sha256": "d4ad2245255617977b2125cf0b2a37755c3f9c3321b45d1682e2b8bdb9fdcd1a"
+  },
+  {
+    "original_path": "review/chia_U_incumbent_feedback/20260924/VERDICT.md",
+    "source_revision": "5cc185570353e632d4b14464fcf4b3d5f05781e8",
+    "packaged_path": "evidence/provenance/review/chia_U_incumbent_feedback/20260924/VERDICT.md",
+    "sha256": "0dabcf0c70b1fe494e90f4fa91445c9603b3cdbd05ddc76bbf634182a83af411"
+  },
+  {
+    "original_path": "review/chia_V_w32_mixed/20260924/VERDICT.md",
+    "source_revision": "5cc185570353e632d4b14464fcf4b3d5f05781e8",
+    "packaged_path": "evidence/provenance/review/chia_V_w32_mixed/20260924/VERDICT.md",
+    "sha256": "1cad3401eca6d20b4668f34248aa68cfcc702a46d305d82283fa945d57ee93ba"
+  },
+  {
+    "original_path": "review/chia_phase_batch/20260923/run-03.json",
+    "source_revision": "5cc185570353e632d4b14464fcf4b3d5f05781e8",
+    "packaged_path": "evidence/provenance/review/chia_phase_batch/20260923/run-03.json",
+    "sha256": "4eb988e267eb7d8157a46e0468771259ef7c0166c63aa35fde286885d8758d4a"
+  },
+  {
+    "original_path": "review/chia_star_phase/20260923/run-02.json",
+    "source_revision": "5cc185570353e632d4b14464fcf4b3d5f05781e8",
+    "packaged_path": "evidence/provenance/review/chia_star_phase/20260923/run-02.json",
+    "sha256": "9762059c57a2a1e171e3a1eb2919520fba6993f51d548a4220f68403fe9cfbde"
+  },
+  {
+    "original_path": "review/chia_top1_B_b441_selective_downsize/20260923/VERDICT.md",
+    "source_revision": "5cc185570353e632d4b14464fcf4b3d5f05781e8",
+    "packaged_path": "evidence/provenance/review/chia_top1_B_b441_selective_downsize/20260923/VERDICT.md",
+    "sha256": "d8e4470c4f99b232d8c5bab75bb9a91cf82460fb8d060c9a686d90dd31c5f376"
+  },
+  {
+    "original_path": "review/chia_top1_B_postroute_pin_eco/20260923/RESULT.md",
+    "source_revision": "5cc185570353e632d4b14464fcf4b3d5f05781e8",
+    "packaged_path": "evidence/provenance/review/chia_top1_B_postroute_pin_eco/20260923/RESULT.md",
+    "sha256": "85531c1f8e147936a4921091410700f5d0ba6c3c75492247f9c01991bfb2f55f"
+  },
+  {
+    "original_path": "review/chia_top1_B_postroute_pin_eco_02/20260923/VERDICT.md",
+    "source_revision": "5cc185570353e632d4b14464fcf4b3d5f05781e8",
+    "packaged_path": "evidence/provenance/review/chia_top1_B_postroute_pin_eco_02/20260923/VERDICT.md",
+    "sha256": "761eab5727cf81b940f3d64c94e62d891ad26ee5333cdba6dd7b49cd65ea392a"
+  },
+  {
+    "original_path": "review/chia_top1_B_recovery_proxy_v8/20260923/RESULT.md",
+    "source_revision": "5cc185570353e632d4b14464fcf4b3d5f05781e8",
+    "packaged_path": "evidence/provenance/review/chia_top1_B_recovery_proxy_v8/20260923/RESULT.md",
+    "sha256": "0f2ce86d9e39d981b1305d8d9bf5e8d7316af53f5b78f1ab039ba3b2b674f08a"
+  },
+  {
+    "original_path": "review/chia_top1_B_w32_v8_transfer/20260923/RESULT.md",
+    "source_revision": "5cc185570353e632d4b14464fcf4b3d5f05781e8",
+    "packaged_path": "evidence/provenance/review/chia_top1_B_w32_v8_transfer/20260923/RESULT.md",
+    "sha256": "1e63ec6061cbf876a7f402a938ff0a24d5b6a5d08da7d47bd7f621dbc2bbafb8"
+  },
+  {
+    "original_path": "review/chia_top1_E_f441_rotation_complement/20260923/VERDICT.md",
+    "source_revision": "5cc185570353e632d4b14464fcf4b3d5f05781e8",
+    "packaged_path": "evidence/provenance/review/chia_top1_E_f441_rotation_complement/20260923/VERDICT.md",
+    "sha256": "803022cff68b060a41b58c295b1fa3b9603764ee6826e8c3e23092d60e29974c"
+  },
+  {
+    "original_path": "review/chia_top1_f1v3/20260923/README.md",
+    "source_revision": "5cc185570353e632d4b14464fcf4b3d5f05781e8",
+    "packaged_path": "evidence/provenance/review/chia_top1_f1v3/20260923/README.md",
+    "sha256": "b0ca35e0e45afe84833646b8d7d89628a1e37bd3018edec9368fdb0fc7743d55"
+  },
+  {
+    "original_path": "review/chia_top1_freechoice/20260923/receipt.json",
+    "source_revision": "5cc185570353e632d4b14464fcf4b3d5f05781e8",
+    "packaged_path": "evidence/provenance/review/chia_top1_freechoice/20260923/receipt.json",
+    "sha256": "b8bcb3c811845479336528a634481a725413dbf87d16e494ff4eb44109ed7072"
+  },
+  {
+    "original_path": "review/top1_execution/20260923/current.md",
+    "source_revision": "5cc185570353e632d4b14464fcf4b3d5f05781e8",
+    "packaged_path": "evidence/provenance/review/top1_execution/20260923/current.md",
+    "sha256": "10d5b4558dd03938d968e99ff7116b34b271745443fc5fff075c0f644173b962"
+  }
+]

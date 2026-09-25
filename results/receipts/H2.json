@@ -1,0 +1,55 @@
+{
+  "action": {
+    "kind": "phase_assignment",
+    "proposal": "counterexample_protected"
+  },
+  "case": "H2",
+  "feasible": false,
+  "functional_valid": true,
+  "goal_id": "routed3_w64_d240_b271F0_v1",
+  "hashes": {
+    "eco_pre_route": "e267f8bd732eb5181730945c75d0ac61768a72db79ad45d0a716ebd268e6ba83",
+    "eco_routed_netlist": "e267f8bd732eb5181730945c75d0ac61768a72db79ad45d0a716ebd268e6ba83",
+    "eco_routed_odb": "7f648ce705daaf995a5dc2af7508b0f2d82a2cfc789af61322fbd44bee3083a9",
+    "eco_routed_spef": "fa3e941e34c2bbb423463d24072b02dfa0b9e2ebb97e604d76fcc288725d775f",
+    "final_proof_log": "e5794a203a9ce91413b1050cd6caf53c5b9cb3bfa2310b8e9dcf32ffcb0d2380"
+  },
+  "j_score": 0.8857813004427838,
+  "kind": "bounded_phase_assignment",
+  "measurement_valid": true,
+  "original_sha256": "e1576b93e7753686acc4600598512c84ad2f743ff62eff2b92c1366af2de8389",
+  "parent_graph_sha256": "bbf15474e18c61fc0d2356d7c9c471011a6b37a79bf2cfe987a6281892e832ff",
+  "parent_id": "bbf15474",
+  "parent_measurement_meta_sha256": "ecda0114ab596115d5f66c8140bbaae124c6ddb7394a45667297a7cdb423118f",
+  "parent_odb_sha256": "833586c6ad23a4ef8cd2ef2eb3dcd7bdf8f02dfa2da0b965d78b07391f91082d",
+  "parent_proof_log_sha256": "5bbeb2d1111f177c2a8ae820c0c36215d3776140a88e09c7e34aa4b6a0a874a7",
+  "parent_receipt_sha256": "3002a702321c1f476cb8258271dd69e2c6d0840dc06affaf8bfcd7befd012cec",
+  "parent_spef_sha256": "bdfe3d420ccbefb6ebc2c441e485d1f43869cec7051e4d59104b0657f859dc72",
+  "raw_energies_pj": {
+    "stress_encoded": 2.440835378,
+    "valid_low_toggle": 0.3506278517,
+    "valid_uniform": 1.823997882
+  },
+  "route_valid": true,
+  "routed_area_um2": 2427.0,
+  "routed_delay_ns": 2.452134,
+  "selected_metric_row": {
+    "area_um2": 2427.0,
+    "delay_ns": 2.452134,
+    "energy_pj": {
+      "stress_encoded": 2.440835378,
+      "valid_low_toggle": 0.3506278517,
+      "valid_uniform": 1.823997882
+    },
+    "feasible": false,
+    "id": "H2",
+    "j": 0.8857813004427838,
+    "width": 64
+  },
+  "source_commit": "00710c9a05b7d704467903a168cb5c4ce465a319",
+  "source_pointer": "",
+  "source_revision": "baa78b46c795f60451c0cc96d495ad315adf6ce8",
+  "stage": "complete",
+  "status": "OK",
+  "upstream_path": "review/chia_H_phase_assignment/20260924/h02-receipt.json"
+}

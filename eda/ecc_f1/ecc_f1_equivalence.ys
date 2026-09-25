@@ -1,0 +1,33 @@
+# Compare every output of the exact pre-repair and final routed netlists.
+# Only disconnected physical tap and decap instances are excluded.
+read_liberty -ignore_miss_func /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog /artifacts/pre_repair.v
+delete t:sky130_fd_sc_hd__tapvpwrvgnd_1 t:sky130_fd_sc_hd__decap_3
+hierarchy -check -top familyrtl_ecc_ppa
+flatten
+proc
+opt
+techmap
+opt
+rename familyrtl_ecc_ppa gold
+design -stash gold
+design -reset
+read_liberty -ignore_miss_func /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog /artifacts/routed.v
+delete t:sky130_fd_sc_hd__tapvpwrvgnd_1 t:sky130_fd_sc_hd__decap_3
+hierarchy -check -top familyrtl_ecc_ppa
+flatten
+proc
+opt
+techmap
+opt
+rename familyrtl_ecc_ppa gate
+design -stash gate
+design -reset
+design -copy-from gold -as gold gold
+design -copy-from gate -as gate gate
+miter -equiv -flatten gold gate miter
+hierarchy -check -top miter
+flatten
+opt_clean
+sat -verify -prove trigger 0 -set-def-inputs

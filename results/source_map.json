@@ -1,0 +1,212 @@
+[
+  {
+    "execution_source_commit": "3745c1446b231d7063d27f18761e0d21dfc3ad6f",
+    "id": "bbf",
+    "original_source_path": "review/chia_F_composable_phase/20260924/f03-step-01-receipt.json",
+    "original_source_pointer": "",
+    "original_source_revision": "1b455dfd926bc1dd73e189eab7f8f73c0c1516ea",
+    "original_source_sha256": "3002a702321c1f476cb8258271dd69e2c6d0840dc06affaf8bfcd7befd012cec",
+    "receipt_view": "receipts/bbf.json",
+    "receipt_view_sha256": "069effd1730533c44c4345c5b0bc4153bb1fd3e36300b290ed81f8e36f9cc6fd"
+  },
+  {
+    "execution_source_commit": "656e6387ef3fff36b8e243eff8d455ac44be23d6",
+    "id": "H1",
+    "original_source_path": "review/chia_H_phase_assignment/20260924/h01-receipt.json",
+    "original_source_pointer": "",
+    "original_source_revision": "baa78b46c795f60451c0cc96d495ad315adf6ce8",
+    "original_source_sha256": "dca4a2000828f97392737082dd1d8f2366c7a46aaf6162245657901abfe37ba0",
+    "receipt_view": "receipts/H1.json",
+    "receipt_view_sha256": "bcb921235073e75cfe201d9fba9ff840bddef5e50a80f98c12d51cbe084f4ef2"
+  },
+  {
+    "execution_source_commit": "00710c9a05b7d704467903a168cb5c4ce465a319",
+    "id": "H2",
+    "original_source_path": "review/chia_H_phase_assignment/20260924/h02-receipt.json",
+    "original_source_pointer": "",
+    "original_source_revision": "baa78b46c795f60451c0cc96d495ad315adf6ce8",
+    "original_source_sha256": "e1576b93e7753686acc4600598512c84ad2f743ff62eff2b92c1366af2de8389",
+    "receipt_view": "receipts/H2.json",
+    "receipt_view_sha256": "ad2c0b0d3470521b96acf56a4104cc166f6785eae4c6909ff8476eca57e9a1bf"
+  },
+  {
+    "execution_source_commit": "71a8bfff46e46b3cf5f6a7c9bea02fb017b42e24",
+    "id": "I1",
+    "original_source_path": "review/chia_I_phase_timing_repair/20260924/i01-result.json",
+    "original_source_pointer": "",
+    "original_source_revision": "baa78b46c795f60451c0cc96d495ad315adf6ce8",
+    "original_source_sha256": "a0789a71c66651bb7f45682c1c01e493ab88ce02826cf577bdb6991e5f407d7f",
+    "receipt_view": "receipts/I1.json",
+    "receipt_view_sha256": "6cdb3c08b196ab911ed06a6de01ad71c3627be20778a712e9be2adbf699f3ac8"
+  },
+  {
+    "execution_source_commit": "71a8bfff46e46b3cf5f6a7c9bea02fb017b42e24",
+    "id": "I2",
+    "original_source_path": "review/chia_I_phase_timing_repair/20260924/i02-result.json",
+    "original_source_pointer": "",
+    "original_source_revision": "26d4363c476e95395f64b2fd406172eac0aa46bd",
+    "original_source_sha256": "4c94f953b1ffc0a2553ee8fe50e403ebe95f0ea23a579206c4b3337c17b7441c",
+    "receipt_view": "receipts/I2.json",
+    "receipt_view_sha256": "7fd60778f14365ca581b8705d48a9958a113b5f2abf626845af096f0df1b0898"
+  },
+  {
+    "execution_source_commit": "4adaff7929d1dee7941e3f0d4429aadacd2f7121",
+    "id": "J1",
+    "original_source_path": "review/chia_J_timing_frontier/20260924/j01-result.json",
+    "original_source_pointer": "",
+    "original_source_revision": "a681cd9fec579d5bff0fecdaa8e0267c7dfbae73",
+    "original_source_sha256": "d89a543b521d5be90b451b35d718204c6786de90b644113541f27f3f1e27bcf2",
+    "receipt_view": "receipts/J1.json",
+    "receipt_view_sha256": "49af4b5c3fef47cd4019e7a7ebb094ca818af11a0de65bda41ad50ee5c85d7c9"
+  },
+  {
+    "execution_source_commit": "2d0a5f4265e496cd5e8e7d2722c247e9afed6fbe",
+    "id": "N1",
+    "original_source_path": "review/chia_N_weighted_phase/20260924/n01-result.json",
+    "original_source_pointer": "",
+    "original_source_revision": "a59959e331919cc55f1bb7a6526221f84ed5b119",
+    "original_source_sha256": "9c2cf1bac390acf29c7e7a2c1f175ddeb75e059605744e4356b69cdacc755183",
+    "receipt_view": "receipts/N1.json",
+    "receipt_view_sha256": "5b22131175dba9b99804c624185ea42516fa21cc14187732b86624a9e203d3ee"
+  },
+  {
+    "execution_source_commit": "6a67a161b640d982857efd5fb3995d677415969a",
+    "id": "N2",
+    "original_source_path": "review/chia_N_weighted_phase/20260924/n02-receipt.json",
+    "original_source_pointer": "",
+    "original_source_revision": "a59959e331919cc55f1bb7a6526221f84ed5b119",
+    "original_source_sha256": "2bb4f045ab14fc882c8347fd70aa7a7abeb5a2ee7c049535cf66e75457fae64c",
+    "receipt_view": "receipts/N2.json",
+    "receipt_view_sha256": "ddda610d1c5d49494e70e7eb5dd585074319f8f8c4cdf3622767e4427616e2d7"
+  },
+  {
+    "execution_source_commit": "9f01c4f67ea95ebd91257307455397514524ac18",
+    "id": "S2",
+    "original_source_path": "review/chia_S_folded_xor3/20260924/s02-receipt.json",
+    "original_source_pointer": "",
+    "original_source_revision": "5456a06eb95e846931efe5799e8f32cba3e08c4f",
+    "original_source_sha256": "632f5e0b5a65aaa1836985025b33d9ada0d21c34318ca7da841e1f6632c7eaf1",
+    "receipt_view": "receipts/S2.json",
+    "receipt_view_sha256": "e044523f4d048d54055e8b181d3b278c082a380c73a10b4e6e13bc67a5872870"
+  },
+  {
+    "execution_source_commit": "813fed79f6361e537db3da44da3d04a667d94ab0",
+    "id": "U1",
+    "original_source_path": "review/chia_U_incumbent_feedback/20260924/u01-receipt.json",
+    "original_source_pointer": "",
+    "original_source_revision": "7f72fd9dfa770b3eecbd70aabcc0208b247123e3",
+    "original_source_sha256": "b2358b76cf45e815bc9021c541283475388db2f2f6aa9b7c35e1101e4cec7984",
+    "receipt_view": "receipts/U1.json",
+    "receipt_view_sha256": "0248c8c78b7bf8d951a7ba2f220e01a60635189f55d21a079b80b7393db82bc4"
+  },
+  {
+    "execution_source_commit": "813fed79f6361e537db3da44da3d04a667d94ab0",
+    "id": "U2",
+    "original_source_path": "review/chia_U_incumbent_feedback/20260924/u02-receipt.json",
+    "original_source_pointer": "",
+    "original_source_revision": "7f72fd9dfa770b3eecbd70aabcc0208b247123e3",
+    "original_source_sha256": "24be5d6526247aad36d5cebaccc7e2c6c74d9ab50c9447fef067108eb80e0160",
+    "receipt_view": "receipts/U2.json",
+    "receipt_view_sha256": "2cf8ff39ec28b013a7e00e38b305e5840c479f3b7f84724205d26159cafb96ff"
+  },
+  {
+    "execution_source_commit": "813fed79f6361e537db3da44da3d04a667d94ab0",
+    "id": "U3",
+    "original_source_path": "review/chia_U_incumbent_feedback/20260924/u03-receipt.json",
+    "original_source_pointer": "",
+    "original_source_revision": "7f72fd9dfa770b3eecbd70aabcc0208b247123e3",
+    "original_source_sha256": "0f9381721d6adc24e3427c8e7257454cce0d4d4d35802c49dff9e751fce4deb3",
+    "receipt_view": "receipts/U3.json",
+    "receipt_view_sha256": "a7b5665c43c130f01d0434f0401d5db52c37fce8a04b8616723b2a524cfe925d"
+  },
+  {
+    "execution_source_commit": "81089f1b0d94b2b17072bf65af4a808e8c03041d",
+    "id": "R2",
+    "original_source_path": "review/chia_R_xor3_critical/20260924/r02-receipt.json",
+    "original_source_pointer": "",
+    "original_source_revision": "dae45a4cc0da4e924992eca1f9b3462160f33f03",
+    "original_source_sha256": "42997b9a015ea4162e3ad1b75a7241863979fc7f113a63d7da6d4b9d3d0e1b64",
+    "receipt_view": "receipts/R2.json",
+    "receipt_view_sha256": "c641a3db2607241264a477d1367ba235aa37d6b0205341f219e6f56abe4bf252"
+  },
+  {
+    "execution_source_commit": "cf8c954626f06c117aa771563c0fba106962d335",
+    "id": "T1",
+    "original_source_path": "review/chia_T_arity_repair/20260924/t01-receipt.json",
+    "original_source_pointer": "",
+    "original_source_revision": "7f72fd9dfa770b3eecbd70aabcc0208b247123e3",
+    "original_source_sha256": "e4e9ea2662ce04bfbefe4c85c16a90b30607e7dc19e3b9ebd5ab18cf9cd3fa2f",
+    "receipt_view": "receipts/T1.json",
+    "receipt_view_sha256": "c42a4d767349c8b03db53fec4db3adf47d900288f8d386d504dcb77f303a8d2b"
+  },
+  {
+    "execution_source_commit": "191c7c15f4a5b97b0c7523636ecc930610909b63",
+    "id": "ff6",
+    "original_source_path": "review/chia_G32_phase_transfer/20260924/run-02-result.json",
+    "original_source_pointer": "",
+    "original_source_revision": "10eb0697a609af0cd76ff2fe2e19171d794f02ae",
+    "original_source_sha256": "b7b0234120b06e0bd6d2e1edf42a8abc64bf3f73d59130ac0b12fc01bad7603a",
+    "receipt_view": "receipts/ff6.json",
+    "receipt_view_sha256": "3bef7f9ef1ac0fc7339fb6e3421b93aa7ea843ce08297e8ea193749dc604fe40"
+  },
+  {
+    "execution_source_commit": "5da3ccc20bd18cbae9ac8b64b2b451fc547c9984",
+    "id": "O1",
+    "original_source_path": "review/chia_O32_global_phase/20260924/o01-receipt.json",
+    "original_source_pointer": "",
+    "original_source_revision": "919c87a54cae67ff66683231d27d55b2e9bb3389",
+    "original_source_sha256": "53af6d9ea28b6ff8e7127ab7bc62ea9d7bfa492216490aa61009a60a0416d31f",
+    "receipt_view": "receipts/O1.json",
+    "receipt_view_sha256": "60b6432f764a33df0c8160f9eb0ab7155d61933022b17a323d96055f37568f24"
+  },
+  {
+    "execution_source_commit": "9fc6f870cd741a8550c9d182571ae579186c0fe1",
+    "id": "O2",
+    "original_source_path": "review/chia_O32_global_phase/20260924/o02-receipt.json",
+    "original_source_pointer": "",
+    "original_source_revision": "919c87a54cae67ff66683231d27d55b2e9bb3389",
+    "original_source_sha256": "d84042680c747e7b77076fa77d8b737d0ff1de247022d72414df435802a938d4",
+    "receipt_view": "receipts/O2.json",
+    "receipt_view_sha256": "d1368eef9f3b45d079168e26c0166e2c2323f61c576f43af8f92667bde2fed00"
+  },
+  {
+    "execution_source_commit": "aa31341222e7573376154eba0ba323028e0945a4",
+    "id": "V1",
+    "original_source_path": "review/chia_V_w32_mixed/20260924/v01-receipt.json",
+    "original_source_pointer": "",
+    "original_source_revision": "7799886574c96219b7f2b50a5ec616fa6bd296d7",
+    "original_source_sha256": "30d9fc9e0b6f0dd01a13f583d69842c238169b50d300400c4abe9c58e7d696cc",
+    "receipt_view": "receipts/V1.json",
+    "receipt_view_sha256": "08195b2ffd2cbc345fd1906cbc71bea2d3c0d85c8b227e50d469a07c8d18fd83"
+  },
+  {
+    "execution_source_commit": "9696c194aa7afa41fda66afe5afdcb7820eec767",
+    "id": "V2",
+    "original_source_path": "review/chia_V_w32_mixed/20260924/v02-receipt.json",
+    "original_source_pointer": "",
+    "original_source_revision": "7799886574c96219b7f2b50a5ec616fa6bd296d7",
+    "original_source_sha256": "9239d13500f59daac905c51a259f4f860db5dca6b0f0cf1ab74846dc8247238e",
+    "receipt_view": "receipts/V2.json",
+    "receipt_view_sha256": "9aec5c0579925f641aed98496ac9912a1ef950cb7262b75c89e44947ded2b50b"
+  },
+  {
+    "execution_source_commit": "f1e145b0c76c84d4b7d528ae4b519133d58382c9",
+    "id": "G0",
+    "original_source_path": "review/chia_w32_phase_transfer/20260923/receipt.json",
+    "original_source_pointer": "/result",
+    "original_source_revision": "8dc94b6caf5fdab66ddcc6a4384c00f964a7d014",
+    "original_source_sha256": "d25fa13c4e3e9195446ec72b8493124839f79c680f005b90c1fd6e6898c43eef",
+    "receipt_view": "receipts/G0.json",
+    "receipt_view_sha256": "cd9abe862dd06ed42d96d151833d87a76b7d8ce079e6027fbd763bdf51cce739"
+  },
+  {
+    "execution_source_commit": "191c7c15f4a5b97b0c7523636ecc930610909b63",
+    "id": "G1",
+    "original_source_path": "review/chia_G32_phase_transfer/20260924/run-01-result.json",
+    "original_source_pointer": "",
+    "original_source_revision": "10eb0697a609af0cd76ff2fe2e19171d794f02ae",
+    "original_source_sha256": "90c506420d6726e2418e138a0c605d59c59ab5d0d7c0ca0ad952d8f9a63b6351",
+    "receipt_view": "receipts/G1.json",
+    "receipt_view_sha256": "8bf5e45ba19dcd1efe0cb45f6c7eee521e806aeec41bc60819e36780fac45d86"
+  }
+]

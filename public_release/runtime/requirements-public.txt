@@ -1,0 +1,4 @@
+# Pinned runtime packages for the local CHIA replay entry.
+# The CHIA source archive is content-pinned; its declared dependencies resolve normally.
+ray==2.54.0
+chialoops @ https://github.com/ucb-bar/chia/archive/16c35e92aaaf9511c6453bf94cd5cf589698f4e3.tar.gz#sha256=58857f3c4b8aee954447084822505143d2ee7833510e2f871f74391dc2e059f5

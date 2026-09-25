@@ -1,0 +1,40 @@
+{
+  "http_status": 200,
+  "latency_s": 3.277,
+  "usage_metadata": {
+    "promptTokenCount": 2011,
+    "candidatesTokenCount": 183,
+    "totalTokenCount": 2194,
+    "trafficType": "ON_DEMAND",
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 2011
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 183
+      }
+    ]
+  },
+  "model_version": "gemini-3.8-flash",
+  "parsed_object": {
+    "decision": "RUN",
+    "parent_id": "bbf15474",
+    "action": {
+      "kind": "phase_assignment",
+      "proposal": "timing_frontier_power_weighted"
+    },
+    "reason": "The proposed phase assignment respects the identical 34 frozen nets and 33 protected polarities established in the J-winner baseline, preventing critical-cone regressions while targeting a -7.56% reduction in internal power importance surrogate across the 3 profiles within the exact same 37 XNOR budget. It merits an empirical route run under budget N to test whether activity weighting outperforms unweighted count matching without violating timing constraints.",
+    "expected_discriminator": "Physical PPA measurement will determine whether switching XNOR locations guided by gate-internal activity weights reduces post-route energy below J.899342 while preserving delay <= 2.376334ns under identical guard constraints."
+  },
+  "error": null,
+  "finish_reason": "STOP",
+  "retry_after_s": null,
+  "error_kind": null,
+  "model": "google-vertex/gemini-3.8-flash",
+  "thinking_level": "LOW",
+  "response_sha256": "67fe6b8df13a072d0979b621b333e8d8a7f4d6d39cee4a97b3fbed31395d10a5"
+}

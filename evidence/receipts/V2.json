@@ -1,0 +1,64 @@
+{
+  "action": {
+    "kind": "mixed_phase_assignment",
+    "proposal": "mixed_global_area_then_xnor2_v1"
+  },
+  "case": "V2",
+  "feasible": true,
+  "functional_valid": true,
+  "global_plan_lineage": {
+    "formal_equivalence": "NOT_RUN at intent",
+    "raw_phase_rhs_semantics": "Raw solver progress phase_rhs denotes new intrinsic polarity b-prime; runtime phase_rhs is independently recomputed phase delta.",
+    "remote_pure_checker_sha256": "fcdf462e9a4497a5060e13401a0464caea0da0e5783d022d57e67abb866c438c",
+    "route": "NOT_RUN at intent",
+    "worker1_progress_sha256": "f94de6a564466c7ac3dd2be9372ee4609be93d10ed080eb6ef95996c56297f4a"
+  },
+  "goal_id": "routed3_w32_d240_maskedF0_v1",
+  "hashes": {
+    "eco_pre_route": "2a2873494f4d097e9e33786de3db0681e22e62a5e480f7407b1a5e59870acb28",
+    "eco_routed_netlist": "2a2873494f4d097e9e33786de3db0681e22e62a5e480f7407b1a5e59870acb28",
+    "eco_routed_odb": "7d20c006299a4d8b3fb8edc041b738af6ec3089682a2fefda135c4059365f9fc",
+    "eco_routed_spef": "99e1f71dd690f1c744ece2b0b65d5ff720ee21de7b2d87d2a589f0e9819c6ec4",
+    "final_proof_log": "152fc6ed42fb79b1afc0a9d91b93032441c25c86df7a2377ebb784052e44ef00"
+  },
+  "j_score": 0.7955110408817432,
+  "kind": "w32_mixed_phase_assignment",
+  "measurement_valid": true,
+  "original_sha256": "9239d13500f59daac905c51a259f4f860db5dca6b0f0cf1ab74846dc8247238e",
+  "parent_binding_sha256": "c42ab645d66dc106ef75cbdc379c55f3b3987796b480c5d8c7887a8dd40c63df",
+  "parent_graph_sha256": "c6c10558e367fd345b17c3b1a70898ddb8bcca9414833f0fcb34e7fd83478d95",
+  "parent_id": "c6c10558",
+  "parent_measurement_meta_sha256": "616889232f3a8054aa34fcc694e74c6090fdf0946ac4b6627caea6ee286cd6f2",
+  "parent_odb_sha256": "195f6735be8d479a979ffae0516931f5667d5cb103c319277fa305445d1fb787",
+  "parent_proof_log_sha256": "69e4c7496d38c468150a9134456f82463c5171b832e23238a26306a1805f46c6",
+  "parent_receipt_sha256": "d84042680c747e7b77076fa77d8b737d0ff1de247022d72414df435802a938d4",
+  "parent_spef_sha256": "00792e4e47293771141c88849f9f7c25d167e37f5274e69bf63886faea9108bb",
+  "raw_energies_pj": {
+    "stress_encoded": 1.275677205,
+    "valid_low_toggle": 0.26626383259999997,
+    "valid_uniform": 0.8836139022999999
+  },
+  "reference_measurement_id": "ecc_masked_reduction::F0::routed3_w32_v1",
+  "route_valid": true,
+  "routed_area_um2": 1296.0,
+  "routed_delay_ns": 2.081588,
+  "selected_metric_row": {
+    "area_um2": 1296.0,
+    "delay_ns": 2.081588,
+    "energy_pj": {
+      "stress_encoded": 1.275677205,
+      "valid_low_toggle": 0.26626383259999997,
+      "valid_uniform": 0.8836139022999999
+    },
+    "feasible": true,
+    "id": "V2",
+    "j": 0.7955110408817432,
+    "width": 32
+  },
+  "source_commit": "9696c194aa7afa41fda66afe5afdcb7820eec767",
+  "source_pointer": "",
+  "source_revision": "7799886574c96219b7f2b50a5ec616fa6bd296d7",
+  "stage": "complete",
+  "status": "OK",
+  "upstream_path": "review/chia_V_w32_mixed/20260924/v02-receipt.json"
+}

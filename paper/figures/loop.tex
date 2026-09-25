@@ -1,0 +1,22 @@
+\begin{figure}[!t]
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm,>=Latex,
+ box/.style={draw,align=center,font=\footnotesize,inner sep=4pt},
+ process/.style={box,text width=3.10cm,minimum height=.92cm},
+ flow/.style={->,line width=.6pt},outer/.style={->,dashed,line width=.6pt}]
+\node[box,text width=7.12cm] (archive) at (0,0) {\textbf{Measured checkpoint}\\Circuit, equivalence proof, delay, area, energy, path reports};
+\node[process] (agent) at (-1.95,-1.32) {\textbf{Runtime model}\\Circuit + catalog action\\or RUN/STOP fixed plan};
+\node[process] (edit) at (1.95,-1.32) {\textbf{CHIA tool node}\\Exact parity rewrite\\or timing repair};
+\node[process] (eval) at (1.95,-2.85) {\textbf{Evaluate}\\Equivalence; route/extract;\\fresh activity and cost};
+\node[process] (result) at (-1.95,-2.85) {\textbf{Next-trial evidence}\\Delay, area, energy;\\failing paths};
+\draw[flow] (archive.south -| agent.north)--(agent.north);
+\draw[flow] (agent)--(edit);\draw[flow] (edit)--(eval);\draw[flow] (eval)--(result);
+\draw[flow] (result.west)--++(-.18,0)|-(archive.west);
+\node[box,fill=black!7,text width=7.12cm] (development) at (0,-4.18) {\textbf{Between episodes: outer research and development}\\Inspect feedback; extend operators and proposal constraints};
+\draw[outer] (result.south)--(development.north -| result.south);
+\draw[outer] (development.east)--++(.16,0)|-(archive.east);
+\node[box,text width=7.12cm,align=left] at (0,-5.47) {\textbf{Executed 32-bit example.} After measuring three grouped parity edits, the model selects four on the same original circuit. Energy score: $0.8450\to0.8396$; delay: $2.060\to2.110$\,ns, both feasible.};
+\end{tikzpicture}
+\caption{A completed evaluation feeds the next decision. The example is an observed runtime choice; gray separates development of new operations from use of existing operations. Coordinator-executed timing queries can enrich the feedback outside the local controller's RUN/STOP interface.}
+\label{fig:loop}
+\end{figure}

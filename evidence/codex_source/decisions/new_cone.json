@@ -1,0 +1,41 @@
+{
+  "http_status": 200,
+  "latency_s": 6.888,
+  "usage_metadata": {
+    "promptTokenCount": 3265,
+    "candidatesTokenCount": 186,
+    "totalTokenCount": 3809,
+    "trafficType": "ON_DEMAND",
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 3265
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 186
+      }
+    ],
+    "thoughtsTokenCount": 358
+  },
+  "model_version": "gemini-3.1-pro-preview",
+  "parsed_object": {
+    "decision": "RUN",
+    "parent_id": "bbf15474",
+    "action": {
+      "kind": "phase_assignment",
+      "proposal": "counterexample_protected"
+    },
+    "reason": "The parent bbf15474 has a strong J score of 0.932 and D of 2.362ns. The previous critical_protected run failed due to a new critical path emerging, but the counterexample_protected proposal incorporates constraints from both the original critical path and the newly discovered one. With 23 XNOR2s compared to the baseline 60, there is still significant potential for energy reduction, justifying the use of the remaining routing budget to test this refined constraint set.",
+    "expected_discriminator": "counterexample_protected"
+  },
+  "error": null,
+  "finish_reason": "STOP",
+  "error_kind": null,
+  "retry_after_s": null,
+  "model": "google-vertex/gemini-3.1-pro-preview",
+  "thinking_level": "MEDIUM",
+  "response_sha256": "2ff533e66fc63d8ca7f239b2884753054d6ee7801cb4690a0d1a89383f3e000a"
+}

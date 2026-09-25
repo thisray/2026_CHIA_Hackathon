@@ -1,0 +1,18 @@
+# B-postroute-pin-eco：extracted-RC-guided pin ECO 得到較快可行取捨
+
+**執行歸因：這一筆是 native Vertex 決策後的直接 Python→Docker EDA 原型，未經 ChiaFunction／Ray leaf；不得稱為真 CHIA 執行。後繼第二次 pin ECO 才完成該能力的真 CHIA 接線與實驗，另見 `review/chia_top1_B_postroute_pin_eco_02/20260923/`。**
+
+Root／唯讀handoff worker提供唯一具體候選：已route的338a/M0/F1-v8 `_328_ sky130_fd_sc_hd__xnor3_1`，將 B=`_068_`（critical data_i[29]）與 C=`_069_` 對調。Pinned Liberty證明B/C在此cell布林對稱；原B輸入cap0.005284pF、C0.003480pF，但原量到的arc有不同slew，**不能把原弧差當預期收益**。內生Vertex `gemini-3.8-flash`只在 STOP／DIRECT B↔C之間選擇 **ENABLE DIRECT**，沒有自行發明pin候選。模型 prompt SHA256 `0cd6633f242990bcf03782b7f0c96aa394fa7c60493b06bb087134f863b25bbd`；首次Flash HTTP500原樣保留，第二次同prompt HTTP200且有效JSON，無Pro／其他模型。獨立額度 **0 mapped／1 route submission 已用完**。
+
+| W64 b271/F0 goal | D ns | A µm² | J | stress／uniform／low-toggle pJ |
+| --- | ---: | ---: | ---: | --- |
+| 原338a/M0/F1-v8 incumbent | 2.397587 | 2424 | **0.989922994585** | 2.629275259／2.010854514／0.4121138772 |
+| 新B↔C ECO＋fresh reroute/RCX | **2.365314** | **2424** | 0.990335610936 | 2.630400704／2.012901823／0.4120333688 |
+
+新候選 D 比原圖快 **32.273 ps**，final D≤2.40 ns 可行且面積相同；J 增加 0.000412616，**不是新的最低能量解**，是較快timing margin的可行取捨。收益應歸於pin ECO連同必要的fresh routing／RCX，不能把所有PPA差異單獨歸給交換兩個pin。三個profile均1024 vectors、原電氣條件與固定b271/F0分母；新SPEF與三張新VCD不能借舊圖。測量summary `measurement_valid=true`，三profile各valid、oracle mismatches0、annotation pins完整；whole-output Yosys SAT proof在原final→ECO pre-route與原final→fresh routed兩階段均exit0、complete marker與PASS。這是matched open-source flow，非foundry signoff。
+
+原immutable source graph：GCP source commit `83861e81d8bd5658da266b846dc73ba562505d4b`，Verilog SHA256 `f59eb860ebe91df44cc599272d7da6d83cbf90c6f204162d4776f7fb0737f00e`、ODB `c95bba97036f41e6cff7960aa0a1b3ddeb28be8b3da664d9307da49f56719f69`、SPEF `3d0f9e4a1b9dbc94934745e1bc5198ba95af5a94eed0c4633967e56076ec13c2`。Pinned OpenROAD重新由該ODB＋SPEF及0.05ns input slew／0.005pF output load讀回 **2.397587 ns** 才執行ECO。OpenDB exact master/net guard與結構guard確認**唯一 `_328_` B:`_068_→_069_`、C:`_069_→_068_`**，無cell size、instance set、output net或其他input multiset變動。新pin圖pre-route與final routed Verilog SHA256同為 `ef373c207f4220c7eafc38757400ec0e144a8be746b879b6b2a233ecb6b7bd29`；新ODB `eco_pre_route` SHA `944c90c2416a388d0be07361979d545e414c6ca78e78249733d69af17a33d41d`，新SPEF SHA `75f5c04575c71576d12c3b0752cdbc51a9c283bff8a286b2e094ef0d745edd61`。implementation key SHA256 `7e0784eb41cfc1900549911944bd4f9d7548c73f5f5a50bd724ef5648ddb1e24` 綁原routed Verilog/ODB/SPEF、新ECO與reroute Tcl hash、mode及模型decision SHA。
+
+新路由從ECO ODB恢復F1-v8 routing SDC：virtual clock/max-delay2.575ns、input/output delay0、slew0.05ns、load0.005pF；**先只清本task記憶體DB內原360個non-special SIGNAL dbWire geometry**，不改net/instance/placement或原ODB/SPEF檔，才fresh GRT、detailed route與RCX。reroute log具有2.575 context／清wire360／RCX complete markers，Docker回0；detailed router最後一輪log顯示0 violations，但三profile summary的獨立DRC欄位`available=false`，不把它寫成額外signoff。final measure另用原10ns measurement context及真正D≤2.40/J門檻。沒有重做synthesis或原F1-v8全prefix。
+
+**原始證據**：GB10 `/home/thisray/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/postroute-pin-eco/`。`inputs/`保存原三檔、`preflight/`保存pinned help／ODB+SPEF extracted restore／OpenDB pin與dbWire只讀probe，`model/{prompt.json,flash-1/,flash-2/,decision.json}`保存模型歸因，`submit-intent.json`保存唯一提交；`raw/run-01/`保存 `receipt.json`、新ODB/netlist/SPEF、pre/final proof logs、fresh routing log與三profile。新receipt SHA256 `df02f9f1baa88226b73ee703560ad2bcc41c0094210584f4c2de370802898c28`，完整GCP raw **72檔**已逐檔SHA256與GB10 copy核對通過，GCP原件保留。ECO task source checkpoint `6b6f375c64d72b868ef0ed71b1369fbd3451bdb0`，修正stale wire／routing SDC checkpoint `8046709e4deed909fded2070a63bf27c54ca8f8f`；Python都在GB10/GCP conda，GCP02最多2CPU／1job。

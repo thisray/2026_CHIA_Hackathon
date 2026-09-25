@@ -1,0 +1,426 @@
+{
+  "PPA": "NOT_RUN",
+  "candidate_graph_sha256": "eefeb2af735a2169fda65d2d8f5ced7507070ade895cfc9f5a261fd8e4c16cf3",
+  "external_ports_and_noncell_text_unchanged": true,
+  "five_input_truth_rows": [
+    {
+      "A": 0,
+      "B": 0,
+      "C": 0,
+      "D": 0,
+      "E": 0,
+      "new_internal": 1,
+      "new_syndrome2": 0,
+      "old_internal": 0,
+      "old_syndrome2": 0
+    },
+    {
+      "A": 0,
+      "B": 0,
+      "C": 0,
+      "D": 0,
+      "E": 1,
+      "new_internal": 1,
+      "new_syndrome2": 1,
+      "old_internal": 0,
+      "old_syndrome2": 1
+    },
+    {
+      "A": 0,
+      "B": 0,
+      "C": 0,
+      "D": 1,
+      "E": 0,
+      "new_internal": 1,
+      "new_syndrome2": 1,
+      "old_internal": 0,
+      "old_syndrome2": 1
+    },
+    {
+      "A": 0,
+      "B": 0,
+      "C": 0,
+      "D": 1,
+      "E": 1,
+      "new_internal": 1,
+      "new_syndrome2": 0,
+      "old_internal": 0,
+      "old_syndrome2": 0
+    },
+    {
+      "A": 0,
+      "B": 0,
+      "C": 1,
+      "D": 0,
+      "E": 0,
+      "new_internal": 0,
+      "new_syndrome2": 1,
+      "old_internal": 1,
+      "old_syndrome2": 1
+    },
+    {
+      "A": 0,
+      "B": 0,
+      "C": 1,
+      "D": 0,
+      "E": 1,
+      "new_internal": 0,
+      "new_syndrome2": 0,
+      "old_internal": 1,
+      "old_syndrome2": 0
+    },
+    {
+      "A": 0,
+      "B": 0,
+      "C": 1,
+      "D": 1,
+      "E": 0,
+      "new_internal": 0,
+      "new_syndrome2": 0,
+      "old_internal": 1,
+      "old_syndrome2": 0
+    },
+    {
+      "A": 0,
+      "B": 0,
+      "C": 1,
+      "D": 1,
+      "E": 1,
+      "new_internal": 0,
+      "new_syndrome2": 1,
+      "old_internal": 1,
+      "old_syndrome2": 1
+    },
+    {
+      "A": 0,
+      "B": 1,
+      "C": 0,
+      "D": 0,
+      "E": 0,
+      "new_internal": 0,
+      "new_syndrome2": 1,
+      "old_internal": 1,
+      "old_syndrome2": 1
+    },
+    {
+      "A": 0,
+      "B": 1,
+      "C": 0,
+      "D": 0,
+      "E": 1,
+      "new_internal": 0,
+      "new_syndrome2": 0,
+      "old_internal": 1,
+      "old_syndrome2": 0
+    },
+    {
+      "A": 0,
+      "B": 1,
+      "C": 0,
+      "D": 1,
+      "E": 0,
+      "new_internal": 0,
+      "new_syndrome2": 0,
+      "old_internal": 1,
+      "old_syndrome2": 0
+    },
+    {
+      "A": 0,
+      "B": 1,
+      "C": 0,
+      "D": 1,
+      "E": 1,
+      "new_internal": 0,
+      "new_syndrome2": 1,
+      "old_internal": 1,
+      "old_syndrome2": 1
+    },
+    {
+      "A": 0,
+      "B": 1,
+      "C": 1,
+      "D": 0,
+      "E": 0,
+      "new_internal": 1,
+      "new_syndrome2": 0,
+      "old_internal": 0,
+      "old_syndrome2": 0
+    },
+    {
+      "A": 0,
+      "B": 1,
+      "C": 1,
+      "D": 0,
+      "E": 1,
+      "new_internal": 1,
+      "new_syndrome2": 1,
+      "old_internal": 0,
+      "old_syndrome2": 1
+    },
+    {
+      "A": 0,
+      "B": 1,
+      "C": 1,
+      "D": 1,
+      "E": 0,
+      "new_internal": 1,
+      "new_syndrome2": 1,
+      "old_internal": 0,
+      "old_syndrome2": 1
+    },
+    {
+      "A": 0,
+      "B": 1,
+      "C": 1,
+      "D": 1,
+      "E": 1,
+      "new_internal": 1,
+      "new_syndrome2": 0,
+      "old_internal": 0,
+      "old_syndrome2": 0
+    },
+    {
+      "A": 1,
+      "B": 0,
+      "C": 0,
+      "D": 0,
+      "E": 0,
+      "new_internal": 0,
+      "new_syndrome2": 1,
+      "old_internal": 1,
+      "old_syndrome2": 1
+    },
+    {
+      "A": 1,
+      "B": 0,
+      "C": 0,
+      "D": 0,
+      "E": 1,
+      "new_internal": 0,
+      "new_syndrome2": 0,
+      "old_internal": 1,
+      "old_syndrome2": 0
+    },
+    {
+      "A": 1,
+      "B": 0,
+      "C": 0,
+      "D": 1,
+      "E": 0,
+      "new_internal": 0,
+      "new_syndrome2": 0,
+      "old_internal": 1,
+      "old_syndrome2": 0
+    },
+    {
+      "A": 1,
+      "B": 0,
+      "C": 0,
+      "D": 1,
+      "E": 1,
+      "new_internal": 0,
+      "new_syndrome2": 1,
+      "old_internal": 1,
+      "old_syndrome2": 1
+    },
+    {
+      "A": 1,
+      "B": 0,
+      "C": 1,
+      "D": 0,
+      "E": 0,
+      "new_internal": 1,
+      "new_syndrome2": 0,
+      "old_internal": 0,
+      "old_syndrome2": 0
+    },
+    {
+      "A": 1,
+      "B": 0,
+      "C": 1,
+      "D": 0,
+      "E": 1,
+      "new_internal": 1,
+      "new_syndrome2": 1,
+      "old_internal": 0,
+      "old_syndrome2": 1
+    },
+    {
+      "A": 1,
+      "B": 0,
+      "C": 1,
+      "D": 1,
+      "E": 0,
+      "new_internal": 1,
+      "new_syndrome2": 1,
+      "old_internal": 0,
+      "old_syndrome2": 1
+    },
+    {
+      "A": 1,
+      "B": 0,
+      "C": 1,
+      "D": 1,
+      "E": 1,
+      "new_internal": 1,
+      "new_syndrome2": 0,
+      "old_internal": 0,
+      "old_syndrome2": 0
+    },
+    {
+      "A": 1,
+      "B": 1,
+      "C": 0,
+      "D": 0,
+      "E": 0,
+      "new_internal": 1,
+      "new_syndrome2": 0,
+      "old_internal": 0,
+      "old_syndrome2": 0
+    },
+    {
+      "A": 1,
+      "B": 1,
+      "C": 0,
+      "D": 0,
+      "E": 1,
+      "new_internal": 1,
+      "new_syndrome2": 1,
+      "old_internal": 0,
+      "old_syndrome2": 1
+    },
+    {
+      "A": 1,
+      "B": 1,
+      "C": 0,
+      "D": 1,
+      "E": 0,
+      "new_internal": 1,
+      "new_syndrome2": 1,
+      "old_internal": 0,
+      "old_syndrome2": 1
+    },
+    {
+      "A": 1,
+      "B": 1,
+      "C": 0,
+      "D": 1,
+      "E": 1,
+      "new_internal": 1,
+      "new_syndrome2": 0,
+      "old_internal": 0,
+      "old_syndrome2": 0
+    },
+    {
+      "A": 1,
+      "B": 1,
+      "C": 1,
+      "D": 0,
+      "E": 0,
+      "new_internal": 0,
+      "new_syndrome2": 1,
+      "old_internal": 1,
+      "old_syndrome2": 1
+    },
+    {
+      "A": 1,
+      "B": 1,
+      "C": 1,
+      "D": 0,
+      "E": 1,
+      "new_internal": 0,
+      "new_syndrome2": 0,
+      "old_internal": 1,
+      "old_syndrome2": 0
+    },
+    {
+      "A": 1,
+      "B": 1,
+      "C": 1,
+      "D": 1,
+      "E": 0,
+      "new_internal": 0,
+      "new_syndrome2": 0,
+      "old_internal": 1,
+      "old_syndrome2": 0
+    },
+    {
+      "A": 1,
+      "B": 1,
+      "C": 1,
+      "D": 1,
+      "E": 1,
+      "new_internal": 0,
+      "new_syndrome2": 1,
+      "old_internal": 1,
+      "old_syndrome2": 1
+    }
+  ],
+  "full_cell_map_instances": 553,
+  "net_068_unique_driver_and_complete_fanout": true,
+  "non_target_cells_unchanged": true,
+  "parent_graph_sha256": "320970ab4870a46b7603f457414d938c47b7971d760c2b07c5fae1983e0ca44f",
+  "route": "NOT_RUN",
+  "source_function_and_output_pin": {
+    "sky130_fd_sc_hd__xnor3_1": {
+      "area_um2": 22.5216,
+      "function": "(!A&!B&!C) | (A&B&!C) | (A&!B&C) | (!A&B&C)",
+      "functional_pins": [
+        "A",
+        "B",
+        "C",
+        "X"
+      ],
+      "height_um": 2.72,
+      "output_pin": "X",
+      "width_um": 8.28
+    },
+    "sky130_fd_sc_hd__xnor3_2": {
+      "area_um2": 23.7728,
+      "function": "(!A&!B&!C) | (A&B&!C) | (A&!B&C) | (!A&B&C)",
+      "functional_pins": [
+        "A",
+        "B",
+        "C",
+        "X"
+      ],
+      "height_um": 2.72,
+      "output_pin": "X",
+      "width_um": 8.74
+    },
+    "sky130_fd_sc_hd__xor3_1": {
+      "area_um2": 23.7728,
+      "function": "(A&!B&!C) | (!A&B&!C) | (!A&!B&C) | (A&B&C)",
+      "functional_pins": [
+        "A",
+        "B",
+        "C",
+        "X"
+      ],
+      "height_um": 2.72,
+      "output_pin": "X",
+      "width_um": 8.74
+    },
+    "sky130_fd_sc_hd__xor3_2": {
+      "area_um2": 25.024,
+      "function": "(A&!B&!C) | (!A&B&!C) | (!A&!B&C) | (A&B&C)",
+      "functional_pins": [
+        "A",
+        "B",
+        "C",
+        "X"
+      ],
+      "height_um": 2.72,
+      "output_pin": "X",
+      "width_um": 9.2
+    }
+  },
+  "status": "PASS_PURE_CELLMAP_AND_FIVE_INPUT_TRUTH_ONLY",
+  "syndrome_o2_output_net_unchanged": true,
+  "target_AB_C_output_nets_unchanged": true,
+  "target_instances": [
+    "_326_",
+    "_328_"
+  ],
+  "whole_output_proof": "NOT_RUN"
+}

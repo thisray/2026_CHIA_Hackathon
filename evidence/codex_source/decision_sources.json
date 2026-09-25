@@ -1,0 +1,56 @@
+[
+  {
+    "file": "decisions/three_star.json",
+    "original_source": "review/chia_G32_phase_transfer/20260924/model-03.json",
+    "sha256": "9b31a089b487fbd232cb30b2b19be07cecf0de9ecc579be16253e9e39a7cf098",
+    "scope": "saved historical native response; no new model call"
+  },
+  {
+    "file": "decisions/four_star.json",
+    "original_source": "review/chia_G32_phase_transfer/20260924/model-04.json",
+    "sha256": "f94cee44e90e9c173820607a7dd5fb6c8b63b86024e2910a9587594b5a4ed9cb",
+    "scope": "saved historical native response; no new model call"
+  },
+  {
+    "file": "decisions/new_cone.json",
+    "original_source": "review/chia_H_phase_assignment/20260924/h02-pro-model.json",
+    "sha256": "ca094942b3712164c6ab44575a395acc9c0cfba9f545dc848ef3111a832d1842",
+    "scope": "saved historical native response; no new model call"
+  },
+  {
+    "file": "decisions/multi_path.json",
+    "original_source": "review/chia_J_timing_frontier/20260924/j01-model.json",
+    "sha256": "b98a3d1fbcc20b736c69d769bea99092c6089655ce994bf7b247c15ffcf9bdab",
+    "scope": "saved historical native response; no new model call"
+  },
+  {
+    "file": "decisions/weighted64.json",
+    "original_source": "review/chia_N_weighted_phase/20260924/n01-model.json",
+    "sha256": "2a6fc03dc66432656cbb4cc0a6931d103da54b5df32d0fee1001b6a43fc5b2b2",
+    "scope": "saved historical native response; no new model call"
+  },
+  {
+    "file": "decisions/local_pair.json",
+    "original_source": "review/chia_N_weighted_phase/20260924/n02-decision.json",
+    "sha256": "75175a7b2ea3c68abd9591afa28c7c17a51c63f2b4023c322df2408b5ce5c0b0",
+    "scope": "saved historical native response; no new model call"
+  },
+  {
+    "file": "decisions/binary_weighted.json",
+    "original_source": "review/chia_O32_global_phase/20260924/o02-model.json",
+    "sha256": "aeffd751ac50cff02cadd408665889e47731c8a43fd97f5a999f11d39ed6005d",
+    "scope": "saved historical native response; no new model call"
+  },
+  {
+    "file": "decisions/mixed_global.json",
+    "original_source": "review/chia_V_w32_mixed/20260924/model-02.json",
+    "sha256": "d3333f6ebf20da6b5c80e8c0d1542d38d7559ab101a712b86023a1e9821080de",
+    "scope": "saved historical native response; no new model call"
+  },
+  {
+    "file": "decisions/undo.json",
+    "original_source": "review/chia_U_incumbent_feedback/20260924/u02-decision.json",
+    "sha256": "5875d59be7060630d276cbf11451f1b5b718cf1489f7ca04078ac84e1759458e",
+    "scope": "saved historical native response; no new model call"
+  }
+]

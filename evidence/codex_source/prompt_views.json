@@ -1,0 +1,69 @@
+{
+  "J1": {
+    "excerpt": [
+      "You are the native CHIA runtime deciding a new bounded experiment, not the outer coding agent. Prior campaigns are closed. This separate J tranche allows at most2route and6model calls, same funded resources/deadline. No cold-start/fair-search claim.",
+      "Exact bbf parent graph bbf15474e18c61fc0d2356d7c9c471011a6b37a79bf2cfe987a6281892e832ff: D2.362535/A2427/J.932080374; E stress2.534645901/uniform1.911262370/low.3754500722.",
+      "Actual H1 global-phase result J.880344665/D2.528992/A2427 infeasible; protected old path survived but new syndrome5 cone failed. H2 additionally protected this cone, J.885781300/D2.452134/A2427 still infeasible (syndrome3/4 frontier).",
+      "Actual I phase H2+fixed standard repair produced fully-proven feasible39bb D2.398176/A2447/J.903709136; E2.475488873/1.848241809/.3623230441. Matched bbf same repair gave NOP logic then freshroute D2.365566/A2427/J.932319967. Keep existing39bb winner, 1.824psmargin.",
+      "New outer/prog proposal timing_frontier_protected uses H2 all13 failing or near primary-input paths, H1data61, originalbbf protected path;34of103phase variables frozen,33pathgates protected. Bounded GF2 search yields37XNOR instead of60parent or23H2;33changedcells, function localchecker PASS but fullproof/route/3E NOT_RUN. This is not proof of optimality or a PPA estimate, and path constraints cannot guarantee delay. Mechanism differs from earlier few-path protection. It may trade some energy reduction for timing margin without standard repair.",
+      "Choose whether to spend ONE route on this proposal, or STOP. Same full functionality proof, fixedplacement/freshRCX/3E, originalW64 D<=2.4 goal/reference denominator. No changing measurement context. If useful, optionallatersecondslot will depend on actual result, no mandatorymatrix.",
+      "Return only exact JSON object:"
+    ],
+    "original_sha256": "97f647bdd114260eced4bb058d2c7b0377a7ce37318951b8ccdc7308e998cac5",
+    "original_source_path": "J-timing-frontier-assignment/model-01/prompt.txt",
+    "selection": "first_seven_lines_or_selected_json_fields"
+  },
+  "S2": {
+    "excerpt": {
+      "candidate_action": {
+        "kind": "xor3_phase_replay",
+        "plan": "n02_068"
+      },
+      "goal": {
+        "id": "routed3_w64_d240_b271F0_v1",
+        "parent_width": 64,
+        "profiles": [
+          "stress_encoded",
+          "valid_uniform",
+          "valid_low_toggle"
+        ],
+        "routed_delay_ceiling_ns": 2.4
+      },
+      "response_schema": {
+        "exact_RUN_object": {
+          "action": {
+            "kind": "xor3_phase_replay",
+            "plan": "n02_068"
+          },
+          "decision": "RUN",
+          "parent_id": "N02-320970ab",
+          "reason": "Specific evidence-based reason."
+        },
+        "exact_STOP_object": {
+          "decision": "STOP",
+          "parent_id": "N02-320970ab",
+          "reason": "Specific evidence-based reason."
+        },
+        "instruction": "Return exactly one JSON object. For RUN use the key action, not action_if_RUN. Do not repeat the schema or rename keys."
+      },
+      "task": "Choose RUN for the one fixed N02 _068_ XOR3 phase replay candidate or STOP. This is a native runtime decision; do not select other targets, alter files, or predict measured PPA as fact."
+    },
+    "original_sha256": "844109153139723df43dd503228f082d4b3d62ed7ce92980dd15924711d1e9f3",
+    "original_source_path": "S-folded-xor3-phase-20260924/model-02/prompt.json",
+    "selection": "first_seven_lines_or_selected_json_fields"
+  },
+  "V2": {
+    "excerpt": [
+      "You are the native CHIA runtime continuing the fixed W32 mixed-arity study after a real first measurement. Budget remaining:2 route submissions/5API calls from original3/6 tranche. Goal remains W32 energyJ with routedD<=2.4ns and complete area/threeE tradeoffs; same parent/measurement context.",
+      "Verified original parent c6c10558: D2.098243ns A1299 J.79764622997943, E stress1.279070711 uniform.8860687376 low.2669597961 pJ, fullproof/route/threeprofile valid.",
+      "Your first RUN phase003 completed through CHIA: graph8e5b08be4e99d6f34e2fc0afea284f7d99ec7d6fdca5104907300c40a8dcbdd3, fullproof PASS/newroute3E valid, D2.080952 A1297 J.7976856387624334, E1.277263218/.8862236427/.2673304698. Faster17.291ps and area-2, stressE lower butuniform/low higher, J slightlyworse. No movement in DPL; exact DBarea-1.2512um2. Current W32Jbest remains c6. Firstcase98files/3VCDverified. Thus mixed closure is physically executable but an area decrease alone did not reduce J.",
+      "A distinct global proposal is now pure-validated on ORIGINAL c6, not applied on thephase003child: mixed_global_area_then_xnor2_v1. Graph2a2873494f4d097e9e33786de3db0681e22e62a5e480f7407b1a5e59870acb28; full148-cellmap SHAe79c5b59a20d697fefbcab3efc6893ae3e0dbd866834c70065a384067f1ff6da. Twenty phase nets1 within56eligible; exact9master changes:4 XNOR2->XOR2,3 XOR2->XNOR2,2 XOR3->XNOR3, same drives and existing nets. XOR2/XNOR2/XOR3/XNOR3 counts77/11/2/5 ->78/10/0/7. TotalXNOR16->17 is not a power prediction. Two arity3 shrinks give library area proxy-2.5024um2, arity2 footprints unchanged. Actual PPA NOT_RUN. Full paritylaw/ports/assign/nonparity/fullmap checks pass including independentexecutor derivation; formal remains mandatory.",
+      "This best-found proposal came from area-first thenXNOR2 proxy, not energy optimization or provenoptimum. Initial process CPU-limit failure kept no solution; corrected bounded2worker attempt22s each/2CPU total/26s total retained atomic best/candidate but finalresult JSON serialization failed withcircularreference. Independentchecker reconstructed/checksummed saved candidate; no solver repeated. Control/report error is not formal/PPA evidence.",
+      "Choose whether a new trueproof/route3E on ORIGINAL c6 can distinguish combined mixedarity benefit beyond thesingleton. Predict neither monotonic energy nor timing from counts. You maySTOP; do not fillquota automatically. Proposal source is being separately integrated; fixed measurementdenominator/workload andDceiling unchanged. RUNwill retainVCD.",
+      "Return ONLY exactJSON:"
+    ],
+    "original_sha256": "e529999ad123b5f6e3232a7208622ebb3bba7faadf1c7aec0bfd30f1f58bcd6c",
+    "original_source_path": "V-W32-mixed-arity-20260924/model-02/prompt.txt",
+    "selection": "first_seven_lines_or_selected_json_fields"
+  }
+}

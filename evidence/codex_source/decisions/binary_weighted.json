@@ -1,0 +1,40 @@
+{
+  "http_status": 200,
+  "latency_s": 3.392,
+  "usage_metadata": {
+    "promptTokenCount": 2165,
+    "candidatesTokenCount": 157,
+    "totalTokenCount": 2322,
+    "trafficType": "ON_DEMAND",
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 2165
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 157
+      }
+    ]
+  },
+  "model_version": "gemini-3.8-flash",
+  "parsed_object": {
+    "decision": "RUN",
+    "parent_id": "ff6f3194",
+    "action": {
+      "kind": "phase_assignment",
+      "proposal": "w32_count11_power_weighted_v1"
+    },
+    "reason": "11 is the proven minimum count of XNOR replacements on ff6; candidate model 9 provides a structurally distinct 11-XNOR assignment with a 13.2% lower weighted internal power proxy than incumbent f8a77599, warranting the final route probe within the cap.",
+    "expected_discriminator": "Post-route 3-profile energy J vs f8a77599 (J=0.799553) with timing constraint D<=2.4ns preserved."
+  },
+  "error": null,
+  "finish_reason": "STOP",
+  "retry_after_s": null,
+  "error_kind": null,
+  "model": "google-vertex/gemini-3.8-flash",
+  "thinking_level": "LOW",
+  "response_sha256": "4f8da9d2b4d0402a79ae9c9027b1849bcc00f655cc3a622fb81e45254edd98b2"
+}

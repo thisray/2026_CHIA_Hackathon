@@ -1,0 +1,60 @@
+{
+  "action": {
+    "kind": "pair_batch",
+    "pairs": [
+      {
+        "lower": "_299_",
+        "upper": "_300_"
+      }
+    ]
+  },
+  "case": "U3",
+  "feasible": true,
+  "functional_valid": true,
+  "goal_id": "routed3_w64_d240_b271F0_v1",
+  "hashes": {
+    "eco_pre_route": "6c35da5173bb61c49cdf336b67ba5ac0f376d8ad2282dfc9eac9cb447c6ea8ca",
+    "eco_routed_netlist": "6c35da5173bb61c49cdf336b67ba5ac0f376d8ad2282dfc9eac9cb447c6ea8ca",
+    "eco_routed_odb": "6dad0e3a703455472d1611e4f9d30b11c390764ec7055b0aad68cea44779a5db",
+    "eco_routed_spef": "ba9993441d995be339e7061e1a1d680460fa129a2ba286d85d7b0ab5d51b377e",
+    "final_proof_log": "19f32fc574a0b639d90504d634d9a635501c876a673f7981a83e08a66c16394b"
+  },
+  "j_score": 0.8970152663595823,
+  "kind": "polarity_action",
+  "measurement_valid": true,
+  "original_sha256": "0f9381721d6adc24e3427c8e7257454cce0d4d4d35802c49dff9e751fce4deb3",
+  "parent_graph_sha256": "eefeb2af735a2169fda65d2d8f5ced7507070ade895cfc9f5a261fd8e4c16cf3",
+  "parent_id": "S02-eefeb2af",
+  "parent_measurement_meta_sha256": "e6ce61fa1121ea2649b8dadc1898979ca5dba08b87e278e042c1e5242953c799",
+  "parent_odb_sha256": "efcf7d6be56be055eb86053be820753aa3b7f3d8be24ac3496cbec7d2239f6db",
+  "parent_proof_log_sha256": "8015a4ff400520d7276b2cd8ed14d33d43f5d61848a58d5c1a6cbdc8bf503b02",
+  "parent_receipt_sha256": "632f5e0b5a65aaa1836985025b33d9ada0d21c34318ca7da841e1f6632c7eaf1",
+  "parent_spef_sha256": "ec1f6b9a8f72121df23929a78bd4aefacb9c8461da91de2cc773d37da9b083a7",
+  "raw_energies_pj": {
+    "stress_encoded": 2.475585788,
+    "valid_low_toggle": 0.3522472616,
+    "valid_uniform": 1.85910365
+  },
+  "route_valid": true,
+  "routed_area_um2": 2425.0,
+  "routed_delay_ns": 2.373983,
+  "selected_metric_row": {
+    "area_um2": 2425.0,
+    "delay_ns": 2.373983,
+    "energy_pj": {
+      "stress_encoded": 2.475585788,
+      "valid_low_toggle": 0.3522472616,
+      "valid_uniform": 1.85910365
+    },
+    "feasible": true,
+    "id": "U3",
+    "j": 0.8970152663595823,
+    "width": 64
+  },
+  "source_commit": "813fed79f6361e537db3da44da3d04a667d94ab0",
+  "source_pointer": "",
+  "source_revision": "7f72fd9dfa770b3eecbd70aabcc0208b247123e3",
+  "stage": "complete",
+  "status": "OK",
+  "upstream_path": "review/chia_U_incumbent_feedback/20260924/u03-receipt.json"
+}

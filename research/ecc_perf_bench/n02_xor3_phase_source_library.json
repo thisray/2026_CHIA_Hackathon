@@ -1,0 +1,64 @@
+{
+  "cells": {
+    "sky130_fd_sc_hd__xnor3_1": {
+      "area_um2": 22.5216,
+      "function": "(!A&!B&!C) | (A&B&!C) | (A&!B&C) | (!A&B&C)",
+      "functional_pins": [
+        "A",
+        "B",
+        "C",
+        "X"
+      ],
+      "height_um": 2.72,
+      "output_pin": "X",
+      "width_um": 8.28
+    },
+    "sky130_fd_sc_hd__xnor3_2": {
+      "area_um2": 23.7728,
+      "function": "(!A&!B&!C) | (A&B&!C) | (A&!B&C) | (!A&B&C)",
+      "functional_pins": [
+        "A",
+        "B",
+        "C",
+        "X"
+      ],
+      "height_um": 2.72,
+      "output_pin": "X",
+      "width_um": 8.74
+    },
+    "sky130_fd_sc_hd__xor3_1": {
+      "area_um2": 23.7728,
+      "function": "(A&!B&!C) | (!A&B&!C) | (!A&!B&C) | (A&B&C)",
+      "functional_pins": [
+        "A",
+        "B",
+        "C",
+        "X"
+      ],
+      "height_um": 2.72,
+      "output_pin": "X",
+      "width_um": 8.74
+    },
+    "sky130_fd_sc_hd__xor3_2": {
+      "area_um2": 25.024,
+      "function": "(A&!B&!C) | (!A&B&!C) | (!A&!B&C) | (A&B&C)",
+      "functional_pins": [
+        "A",
+        "B",
+        "C",
+        "X"
+      ],
+      "height_um": 2.72,
+      "output_pin": "X",
+      "width_um": 9.2
+    }
+  },
+  "image": "docker.io/hpretl/iic-osic-tools@sha256:65852976cad4af640c9d848762215137e87ec125111a6d06c850c3ab4e9695fb",
+  "source_hashes": {
+    "LEF": "3a3ea4e9d0973402702764d897659e52fe3d413eb48c306cd811de40a75264fa",
+    "Liberty": "8e78e14442062dba34d414fca6490b2f6b96038d4510d1438ca44fee31487135",
+    "Liberty_parser": "9654c59c877b2dc9f4e1ad8ae8b7b1333339483472a7c37e2402cffcda1a0143",
+    "N02_receipt": "2bb4f045ab14fc882c8347fd70aa7a7abeb5a2ee7c049535cf66e75457fae64c",
+    "parent_routed_v": "320970ab4870a46b7603f457414d938c47b7971d760c2b07c5fae1983e0ca44f"
+  }
+}

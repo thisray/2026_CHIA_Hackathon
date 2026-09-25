@@ -1,0 +1,45 @@
+{
+  "case": "G0",
+  "feasible": true,
+  "goal_id": "routed3_w32_d240_maskedF0_v1",
+  "hashes": {
+    "eco_pre_route": "18644d78fe11fa5859ca7f882313e18969dec467d433f1e7b85adab7a8f66aec",
+    "eco_routed_netlist": "18644d78fe11fa5859ca7f882313e18969dec467d433f1e7b85adab7a8f66aec",
+    "eco_routed_odb": "a82f811b4b6acbab9a0020783835e2287d6b4a66b23ae5fb2061edf35e3c7624",
+    "eco_routed_spef": "5e05897ee9d58a2d88de16cb1a9b60b2d178d7fcdc889f59f2f8de28b2730115",
+    "final_proof_log": "e225fb47de151a42e013fe53c1a1839a609084d2e795f6e76102d41f91552de6"
+  },
+  "j_score": 0.8672960832000194,
+  "kind": "w32_phase",
+  "original_sha256": "d25fa13c4e3e9195446ec72b8493124839f79c680f005b90c1fd6e6898c43eef",
+  "parent_binding_sha256": "c42ab645d66dc106ef75cbdc379c55f3b3987796b480c5d8c7887a8dd40c63df",
+  "parent_graph_sha256": "f9843a3bad971d180b418ee547a0c3aaf7bd19c942a56b883a99da94707696b0",
+  "parent_odb_sha256": "e7a97055decdbe47d7822ca370ae3c0fa684ffc029dcfce6aa82f0e9bdd91d75",
+  "parent_spef_sha256": "853a85bc36053c2434a9ae8ecc8391b2d2929aab6c26eb5595c5b9423af218d5",
+  "raw_energies_pj": {
+    "stress_encoded": 1.363066986,
+    "valid_low_toggle": 0.2974786548,
+    "valid_uniform": 0.9591930575
+  },
+  "reference_measurement_id": "ecc_masked_reduction::F0::routed3_w32_v1",
+  "routed_area_um2": 1299.0,
+  "routed_delay_ns": 2.061026,
+  "selected_metric_row": {
+    "area_um2": 1299.0,
+    "delay_ns": 2.061026,
+    "energy_pj": {
+      "stress_encoded": 1.363066986,
+      "valid_low_toggle": 0.2974786548,
+      "valid_uniform": 0.9591930575
+    },
+    "feasible": true,
+    "id": "G0",
+    "j": 0.8672960832000194,
+    "width": 32
+  },
+  "source_commit": "f1e145b0c76c84d4b7d528ae4b519133d58382c9",
+  "source_pointer": "/result",
+  "source_revision": "8dc94b6caf5fdab66ddcc6a4384c00f964a7d014",
+  "status": "OK",
+  "upstream_path": "review/chia_w32_phase_transfer/20260923/receipt.json"
+}

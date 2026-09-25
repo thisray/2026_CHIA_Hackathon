@@ -1,0 +1,60 @@
+{
+  "action": {
+    "kind": "pair_batch",
+    "pairs": [
+      {
+        "lower": "_309_",
+        "upper": "_310_"
+      }
+    ]
+  },
+  "case": "U2",
+  "feasible": true,
+  "functional_valid": true,
+  "goal_id": "routed3_w64_d240_b271F0_v1",
+  "hashes": {
+    "eco_pre_route": "eefeb2af735a2169fda65d2d8f5ced7507070ade895cfc9f5a261fd8e4c16cf3",
+    "eco_routed_netlist": "eefeb2af735a2169fda65d2d8f5ced7507070ade895cfc9f5a261fd8e4c16cf3",
+    "eco_routed_odb": "5365aefcbb81da37884c5268812c1ed7c09b41e4640332079fa9b8e1c77b8c73",
+    "eco_routed_spef": "af07e89e5f8f53a3184e7b60df5927c7ddad80442c37b9188b03faf9144365cf",
+    "final_proof_log": "bf70ab14d5c60af2e1f79c27ec7c1451556d0eae0b46ac65b10aae191bcca442"
+  },
+  "j_score": 0.8948591220541359,
+  "kind": "polarity_action",
+  "measurement_valid": true,
+  "original_sha256": "24be5d6526247aad36d5cebaccc7e2c6c74d9ab50c9447fef067108eb80e0160",
+  "parent_graph_sha256": "cd523afe460cbeae464e2b32d494696813bcbbfa6045f53c843126974f39f2cc",
+  "parent_id": "episode-02cfeed4ac274504846fd52dfd8da799",
+  "parent_measurement_meta_sha256": "bd0e9fd5e4db02d55c5189c16bc3f913b769fc3855092e59eae1b06a64517ac8",
+  "parent_odb_sha256": "ecb2dcee071792a381103da79e987e55c4dd611733c5868c234c1602a94cd0a0",
+  "parent_proof_log_sha256": "beda13da6eb0bedf6f25a6ad68e896883643640fa0734e11ded9fec5390768ac",
+  "parent_receipt_sha256": "b2358b76cf45e815bc9021c541283475388db2f2f6aa9b7c35e1101e4cec7984",
+  "parent_spef_sha256": "fac0edba5bf20a1c439acf4fa99e18ff9b655dc2c3d4512d36a1ea40c6f98671",
+  "raw_energies_pj": {
+    "stress_encoded": 2.468786261,
+    "valid_low_toggle": 0.3517407458,
+    "valid_uniform": 1.853478461
+  },
+  "route_valid": true,
+  "routed_area_um2": 2425.0,
+  "routed_delay_ns": 2.375888,
+  "selected_metric_row": {
+    "area_um2": 2425.0,
+    "delay_ns": 2.375888,
+    "energy_pj": {
+      "stress_encoded": 2.468786261,
+      "valid_low_toggle": 0.3517407458,
+      "valid_uniform": 1.853478461
+    },
+    "feasible": true,
+    "id": "U2",
+    "j": 0.8948591220541359,
+    "width": 64
+  },
+  "source_commit": "813fed79f6361e537db3da44da3d04a667d94ab0",
+  "source_pointer": "",
+  "source_revision": "7f72fd9dfa770b3eecbd70aabcc0208b247123e3",
+  "stage": "complete",
+  "status": "OK",
+  "upstream_path": "review/chia_U_incumbent_feedback/20260924/u02-receipt.json"
+}

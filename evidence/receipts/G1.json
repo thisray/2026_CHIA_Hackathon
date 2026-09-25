@@ -1,0 +1,53 @@
+{
+  "action": {
+    "kind": "star_batch",
+    "roots": [
+      "_120_",
+      "_123_",
+      "_150_"
+    ]
+  },
+  "case": "G1",
+  "feasible": true,
+  "functional_valid": true,
+  "goal_id": "routed3_w32_d240_maskedF0_v1",
+  "hashes": {
+    "eco_pre_route": "00188fb557db0d496d02717a72d4aa4aa5e3a022887f013b374250aa0def746a",
+    "eco_routed_netlist": "00188fb557db0d496d02717a72d4aa4aa5e3a022887f013b374250aa0def746a",
+    "eco_routed_odb": "8bae7647831d5e7182aba12935ee62fc958a2394b5f0d37ab03763164fd6a257",
+    "eco_routed_spef": "571f440bdaf06eac80002f67357ec816f4335ec41dfda12379a97ae83d1622f0",
+    "final_proof_log": "b592f445a44d4cd4bc2f522117b7b14a73bd4b8fc18f8ec18f003054a325db1b"
+  },
+  "j_score": 0.844950729460286,
+  "measurement_valid": true,
+  "original_sha256": "90c506420d6726e2418e138a0c605d59c59ab5d0d7c0ca0ad952d8f9a63b6351",
+  "parent_id": "18644d78-w32",
+  "raw_energies_pj": {
+    "stress_encoded": 1.339273003,
+    "valid_low_toggle": 0.2863927511,
+    "valid_uniform": 0.9376481466
+  },
+  "reference_measurement_id": "ecc_masked_reduction::F0::routed3_w32_v1",
+  "route_valid": true,
+  "routed_area_um2": 1299.0,
+  "routed_delay_ns": 2.060426,
+  "selected_metric_row": {
+    "area_um2": 1299.0,
+    "delay_ns": 2.060426,
+    "energy_pj": {
+      "stress_encoded": 1.339273003,
+      "valid_low_toggle": 0.2863927511,
+      "valid_uniform": 0.9376481466
+    },
+    "feasible": true,
+    "id": "G1",
+    "j": 0.844950729460286,
+    "width": 32
+  },
+  "source_commit": "191c7c15f4a5b97b0c7523636ecc930610909b63",
+  "source_pointer": "",
+  "source_revision": "10eb0697a609af0cd76ff2fe2e19171d794f02ae",
+  "stage": "complete",
+  "status": "OK",
+  "upstream_path": "review/chia_G32_phase_transfer/20260924/run-01-result.json"
+}

@@ -1,0 +1,616 @@
+{
+  "best_feasible": {
+    "area_um2": 2434.0,
+    "bottleneck_input": null,
+    "candidate_id": "ecc-338a75e5eb27a720",
+    "critical_role": null,
+    "delay_ns": 2.379898,
+    "delay_violation_ns": 0.0,
+    "energy_ratios": {
+      "stress_encoded": 1.0418406668768123,
+      "valid_low_toggle": 0.9454052452766591,
+      "valid_uniform": 0.9914324324557687
+    },
+    "feasible": true,
+    "implementation_id": "ecc-338a75e5eb27a720::F1-v2",
+    "j_score": 0.9921122489341929,
+    "measurement_id": "ecc-338a75e5eb27a720::F1-v2::routed3_v1",
+    "rank_key": [
+      0,
+      0.9921122489341929,
+      2434.0,
+      2.379898,
+      "ecc-338a75e5eb27a720"
+    ],
+    "raw_energies_pj": {
+      "stress_encoded": 2.647325164,
+      "valid_low_toggle": 0.4120873928,
+      "valid_uniform": 2.010552998
+    },
+    "valid": true
+  },
+  "comparison": {
+    "338a_v2_delay_improvement_from_f0_ns": 0.12304500000000029,
+    "338a_v2_minus_f0_area_um2": 18.0,
+    "338a_v2_minus_f0_j": 0.002770350902448926,
+    "338a_v2_minus_reference_j": -0.00788775106580708,
+    "338a_v2_timing_margin_ns": 0.020102000000000064,
+    "ad71_v2_delay_improvement_from_f0_ns": 0.09085700000000019,
+    "ad71_v2_minus_f0_area_um2": 22.0,
+    "ad71_v2_minus_f0_j": 0.01273281270847959,
+    "ad71_v2_minus_prior_best_area_um2": -5.0,
+    "ad71_v2_minus_prior_best_j": 0.002531371237822766,
+    "ad71_v2_violation_improvement_over_prior_best_ns": 0.024418000000000273,
+    "b271_v2_minus_v1_area_um2": 15.0,
+    "b271_v2_minus_v1_delay_ns": 0.000124000000000013,
+    "b271_v2_minus_v1_j": 0.009967400972287876
+  },
+  "controller": {
+    "consumed": [
+      "ecc-b271e39ffe25c01c::F1-v2::routed3_v1::fallback_to_ad71_if_delay_violation",
+      "ecc-ad71f3fdad653a86::F1-v2::routed3_v1::fallback_to_ad71_if_delay_violation"
+    ],
+    "pending": null,
+    "receipts": [
+      {
+        "action_id": "ecc-b271e39ffe25c01c::F1-v2",
+        "action_name": "evaluate_route",
+        "attempt_id": "w5-000-59b50305",
+        "completed_utc": "2026-09-22T18:29:50Z",
+        "evaluation": {
+          "area_um2": 2434.0,
+          "bottleneck_input": null,
+          "candidate_id": "ecc-b271e39ffe25c01c",
+          "critical_role": null,
+          "delay_ns": 2.43203,
+          "delay_violation_ns": 0.032030000000000225,
+          "energy_ratios": {
+            "stress_encoded": 1.024680568983414,
+            "valid_low_toggle": 1.0291456853312848,
+            "valid_uniform": 1.0134911417240708
+          },
+          "feasible": false,
+          "implementation_id": "ecc-b271e39ffe25c01c::F1-v2",
+          "j_score": 1.0224178863717446,
+          "measurement_id": "ecc-b271e39ffe25c01c::F1-v2::routed3_v1",
+          "rank_key": [
+            1,
+            0.032030000000000225,
+            1.0224178863717446,
+            2.43203,
+            "ecc-b271e39ffe25c01c"
+          ],
+          "raw_energies_pj": {
+            "stress_encoded": 2.6037212230000004,
+            "valid_low_toggle": 0.4485885438,
+            "valid_uniform": 2.055286459
+          },
+          "valid": true
+        },
+        "measurement_id": "ecc-b271e39ffe25c01c::F1-v2::routed3_v1"
+      },
+      {
+        "action_id": "ecc-ad71f3fdad653a86::F1-v2",
+        "action_name": "evaluate_route",
+        "attempt_id": "w5-001-921f60ab",
+        "completed_utc": "2026-09-22T18:30:25Z",
+        "evaluation": {
+          "area_um2": 2414.0,
+          "bottleneck_input": null,
+          "candidate_id": "ecc-ad71f3fdad653a86",
+          "critical_role": null,
+          "delay_ns": 2.407488,
+          "delay_violation_ns": 0.007487999999999939,
+          "energy_ratios": {
+            "stress_encoded": 1.0150887039399286,
+            "valid_low_toggle": 1.0192203829906143,
+            "valid_uniform": 1.0106545648370038
+          },
+          "feasible": false,
+          "implementation_id": "ecc-ad71f3fdad653a86::F1-v2",
+          "j_score": 1.0149818566372795,
+          "measurement_id": "ecc-ad71f3fdad653a86::F1-v2::routed3_v1",
+          "rank_key": [
+            1,
+            0.007487999999999939,
+            1.0149818566372795,
+            2.407488,
+            "ecc-ad71f3fdad653a86"
+          ],
+          "raw_energies_pj": {
+            "stress_encoded": 2.57934822,
+            "valid_low_toggle": 0.44426225939999997,
+            "valid_uniform": 2.049534087
+          },
+          "valid": true
+        },
+        "measurement_id": "ecc-ad71f3fdad653a86::F1-v2::routed3_v1"
+      },
+      {
+        "action_id": "ecc-338a75e5eb27a720::F1-v2",
+        "action_name": "evaluate_route",
+        "attempt_id": "w5-002-427d14bd",
+        "completed_utc": "2026-09-22T18:51:12Z",
+        "evaluation": {
+          "area_um2": 2434.0,
+          "bottleneck_input": null,
+          "candidate_id": "ecc-338a75e5eb27a720",
+          "critical_role": null,
+          "delay_ns": 2.379898,
+          "delay_violation_ns": 0.0,
+          "energy_ratios": {
+            "stress_encoded": 1.0418406668768123,
+            "valid_low_toggle": 0.9454052452766591,
+            "valid_uniform": 0.9914324324557687
+          },
+          "feasible": true,
+          "implementation_id": "ecc-338a75e5eb27a720::F1-v2",
+          "j_score": 0.9921122489341929,
+          "measurement_id": "ecc-338a75e5eb27a720::F1-v2::routed3_v1",
+          "rank_key": [
+            0,
+            0.9921122489341929,
+            1e+300,
+            2.379898,
+            "ecc-338a75e5eb27a720"
+          ],
+          "raw_energies_pj": {
+            "stress_encoded": 2.647325164,
+            "valid_low_toggle": 0.4120873928,
+            "valid_uniform": 2.010552998
+          },
+          "valid": true
+        },
+        "measurement_id": "ecc-338a75e5eb27a720::F1-v2::routed3_v1"
+      }
+    ],
+    "route_budget": 3,
+    "transitions": 3
+  },
+  "cost": {
+    "actual_submitted_routes": 3,
+    "batch_wall_s_total": 94.372,
+    "reserved_routes": 3,
+    "successful_model_tokens": 9752
+  },
+  "evaluations": [
+    {
+      "area_um2": 2434.0,
+      "bottleneck_input": null,
+      "candidate_id": "ecc-b271e39ffe25c01c",
+      "critical_role": null,
+      "delay_ns": 2.43203,
+      "delay_violation_ns": 0.032030000000000225,
+      "energy_ratios": {
+        "stress_encoded": 1.024680568983414,
+        "valid_low_toggle": 1.0291456853312848,
+        "valid_uniform": 1.0134911417240708
+      },
+      "feasible": false,
+      "implementation_id": "ecc-b271e39ffe25c01c::F1-v2",
+      "j_score": 1.0224178863717446,
+      "measurement_id": "ecc-b271e39ffe25c01c::F1-v2::routed3_v1",
+      "rank_key": [
+        1,
+        0.032030000000000225,
+        1.0224178863717446,
+        2434.0,
+        2.43203,
+        "ecc-b271e39ffe25c01c"
+      ],
+      "raw_energies_pj": {
+        "stress_encoded": 2.6037212230000004,
+        "valid_low_toggle": 0.4485885438,
+        "valid_uniform": 2.055286459
+      },
+      "valid": true
+    },
+    {
+      "area_um2": 2414.0,
+      "bottleneck_input": null,
+      "candidate_id": "ecc-ad71f3fdad653a86",
+      "critical_role": null,
+      "delay_ns": 2.407488,
+      "delay_violation_ns": 0.007487999999999939,
+      "energy_ratios": {
+        "stress_encoded": 1.0150887039399286,
+        "valid_low_toggle": 1.0192203829906143,
+        "valid_uniform": 1.0106545648370038
+      },
+      "feasible": false,
+      "implementation_id": "ecc-ad71f3fdad653a86::F1-v2",
+      "j_score": 1.0149818566372795,
+      "measurement_id": "ecc-ad71f3fdad653a86::F1-v2::routed3_v1",
+      "rank_key": [
+        1,
+        0.007487999999999939,
+        1.0149818566372795,
+        2414.0,
+        2.407488,
+        "ecc-ad71f3fdad653a86"
+      ],
+      "raw_energies_pj": {
+        "stress_encoded": 2.57934822,
+        "valid_low_toggle": 0.44426225939999997,
+        "valid_uniform": 2.049534087
+      },
+      "valid": true
+    },
+    {
+      "area_um2": 2434.0,
+      "bottleneck_input": null,
+      "candidate_id": "ecc-338a75e5eb27a720",
+      "critical_role": null,
+      "delay_ns": 2.379898,
+      "delay_violation_ns": 0.0,
+      "energy_ratios": {
+        "stress_encoded": 1.0418406668768123,
+        "valid_low_toggle": 0.9454052452766591,
+        "valid_uniform": 0.9914324324557687
+      },
+      "feasible": true,
+      "implementation_id": "ecc-338a75e5eb27a720::F1-v2",
+      "j_score": 0.9921122489341929,
+      "measurement_id": "ecc-338a75e5eb27a720::F1-v2::routed3_v1",
+      "rank_key": [
+        0,
+        0.9921122489341929,
+        2434.0,
+        2.379898,
+        "ecc-338a75e5eb27a720"
+      ],
+      "raw_energies_pj": {
+        "stress_encoded": 2.647325164,
+        "valid_low_toggle": 0.4120873928,
+        "valid_uniform": 2.010552998
+      },
+      "valid": true
+    }
+  ],
+  "feasible_pareto": [
+    {
+      "area_um2": 2434.0,
+      "bottleneck_input": null,
+      "candidate_id": "ecc-338a75e5eb27a720",
+      "critical_role": null,
+      "delay_ns": 2.379898,
+      "delay_violation_ns": 0.0,
+      "energy_ratios": {
+        "stress_encoded": 1.0418406668768123,
+        "valid_low_toggle": 0.9454052452766591,
+        "valid_uniform": 0.9914324324557687
+      },
+      "feasible": true,
+      "implementation_id": "ecc-338a75e5eb27a720::F1-v2",
+      "j_score": 0.9921122489341929,
+      "measurement_id": "ecc-338a75e5eb27a720::F1-v2::routed3_v1",
+      "rank_key": [
+        0,
+        0.9921122489341929,
+        2434.0,
+        2.379898,
+        "ecc-338a75e5eb27a720"
+      ],
+      "raw_energies_pj": {
+        "stress_encoded": 2.647325164,
+        "valid_low_toggle": 0.4120873928,
+        "valid_uniform": 2.010552998
+      },
+      "valid": true
+    }
+  ],
+  "goal_id": "routed3_w64_d240_b271F0_v1",
+  "planner": {
+    "attempts": [
+      {
+        "error": "{\"code\": 500, \"message\": \"Internal error encountered.\", \"status\": \"INTERNAL\"}",
+        "http_status": 500,
+        "latency_s": 5.675,
+        "metadata_sha256": "c0a963bad5a7174ea3340d1c76379c918dbf05529e7d73f4be97becc9f62efef",
+        "model_version": null,
+        "parsed_object": null,
+        "prompt_path": "/home/thisray/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/f1v2/freechoice-run-01/controller/model_calls/attempt-0/prompt.json",
+        "prompt_sha256": "f4b9e1d223739482476bc8c4521224eb576a0b08dfbdfaf694ec5ed95394988a",
+        "usage_metadata": null
+      },
+      {
+        "error": null,
+        "http_status": 200,
+        "latency_s": 6.345,
+        "metadata_sha256": "54f5914661487dd913c4ef63d377aff18e03d962bc1668395920db06589d754b",
+        "model_version": "gemini-3.8-flash",
+        "parsed_object": {
+          "branches": [
+            {
+              "branch_id": "fallback_to_ad71_if_delay_violation",
+              "next_action_id": "ecc-ad71f3fdad653a86::F1-v2",
+              "predicate": {
+                "field": "delay_violation_ns",
+                "op": ">",
+                "value": 0.0
+              }
+            }
+          ],
+          "initial_action_id": "ecc-b271e39ffe25c01c::F1-v2",
+          "plan_id": "plan_routed3_tighten_repair_f1_v2"
+        },
+        "prompt_path": "/home/thisray/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/f1v2/freechoice-run-01/controller/model_calls/attempt-1/prompt.json",
+        "prompt_sha256": "7abded1aa3877eed2b7765679eb7c8f3a962e0912a1a69770c94ff2c8370603d",
+        "usage_metadata": {
+          "candidatesTokenCount": 168,
+          "candidatesTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 168
+            }
+          ],
+          "promptTokenCount": 3816,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 3816
+            }
+          ],
+          "thoughtsTokenCount": 706,
+          "totalTokenCount": 4690,
+          "trafficType": "ON_DEMAND"
+        }
+      },
+      {
+        "error": null,
+        "http_status": 200,
+        "latency_s": 66.8,
+        "metadata_sha256": "551639e596e417be9ee471202e15549ba05da13eeffeaa9f3ba9bba4ec607f0b",
+        "model_version": "gemini-3.8-flash",
+        "parsed_object": {
+          "branches": [
+            {
+              "branch_id": "branch_on_timing_violation",
+              "next_action_id": "ecc-28b475373129b76a::F1-v2",
+              "predicate": {
+                "field": "delay_violation_ns",
+                "op": ">",
+                "value": 0.0
+              }
+            }
+          ],
+          "initial_action_id": "ecc-338a75e5eb27a720::F1-v2",
+          "plan_id": "plan_evaluate_f1_v2_timing_closure"
+        },
+        "prompt_path": "/home/thisray/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/f1v2/freechoice-run-01/controller/model_calls/replan-001/attempt-0/prompt.json",
+        "prompt_sha256": "c803c7a5ac9f7209ee19989d39d68dd0a09664d890bc79fcca162eb214a99c5a",
+        "usage_metadata": {
+          "candidatesTokenCount": 164,
+          "candidatesTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 164
+            }
+          ],
+          "promptTokenCount": 4255,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 4255
+            }
+          ],
+          "thoughtsTokenCount": 643,
+          "totalTokenCount": 5062,
+          "trafficType": "ON_DEMAND"
+        }
+      }
+    ],
+    "plan": {
+      "branches": [
+        {
+          "branch_id": "branch_on_timing_violation",
+          "next_action_id": "ecc-28b475373129b76a::F1-v2",
+          "predicate": {
+            "field": "delay_violation_ns",
+            "op": ">",
+            "value": 0.0
+          }
+        }
+      ],
+      "initial_action_id": "ecc-338a75e5eb27a720::F1-v2",
+      "plan_id": "plan_evaluate_f1_v2_timing_closure"
+    },
+    "plan_installed_utc": "2026-09-22T18:50:35Z"
+  },
+  "raw_outputs": [
+    {
+      "actual_chia_identity": {
+        "chia_job_id": "01000000",
+        "chia_node_id": "329bdbde54d94fc48c4673440ec09def020c3715db3fc2d0a04b40b4",
+        "chia_node_ip": "10.148.0.26",
+        "chia_task_id": "c8ef45ccd0112571ffffffffffffffffffffffff01000000",
+        "chia_worker_id": "1aeed0aad312c92dec7845255a045ae2ea9c07e225c118eefefa0284",
+        "executable": "/home/vegapunk/miniforge3/envs/chia_familyrtl_260919/bin/python",
+        "hostname": "chia-arm64-eda-02",
+        "in_ray_worker": true,
+        "pid": 15595
+      },
+      "artifacts": {
+        "artifact_dir": "/home/vegapunk/projects/chia-top1-20260923/f1v2-freechoice-run-01/batches/w5-000-59b50305/d59c93c53a8a9306f67643677df26ba9bf6573c90b4cf264cb33688c95d6fcfc/w64_f1/ecc-b271e39ffe25c01c",
+        "mapped_netlist": "/home/vegapunk/projects/chia-top1-20260923/f1v2-freechoice-run-01/batches/w5-000-59b50305/d59c93c53a8a9306f67643677df26ba9bf6573c90b4cf264cb33688c95d6fcfc/w64_f1/ecc-b271e39ffe25c01c/mapped.v",
+        "openroad_log": "/home/vegapunk/projects/chia-top1-20260923/f1v2-freechoice-run-01/batches/w5-000-59b50305/d59c93c53a8a9306f67643677df26ba9bf6573c90b4cf264cb33688c95d6fcfc/w64_f1/ecc-b271e39ffe25c01c/openroad.log",
+        "pre_repair": "/home/vegapunk/projects/chia-top1-20260923/f1v2-freechoice-run-01/batches/w5-000-59b50305/d59c93c53a8a9306f67643677df26ba9bf6573c90b4cf264cb33688c95d6fcfc/w64_f1/ecc-b271e39ffe25c01c/pre_repair.v",
+        "proof_log": "/home/vegapunk/projects/chia-top1-20260923/f1v2-freechoice-run-01/batches/w5-000-59b50305/d59c93c53a8a9306f67643677df26ba9bf6573c90b4cf264cb33688c95d6fcfc/w64_f1/ecc-b271e39ffe25c01c/proof.log",
+        "proof_recipe": "/home/vegapunk/projects/chia-top1-20260923/f1v2-freechoice-run-01/batches/w5-000-59b50305/d59c93c53a8a9306f67643677df26ba9bf6573c90b4cf264cb33688c95d6fcfc/w64_f1/ecc-b271e39ffe25c01c/f1-equivalence.ys",
+        "routed_netlist": "/home/vegapunk/projects/chia-top1-20260923/f1v2-freechoice-run-01/batches/w5-000-59b50305/d59c93c53a8a9306f67643677df26ba9bf6573c90b4cf264cb33688c95d6fcfc/w64_f1/ecc-b271e39ffe25c01c/routed.v",
+        "spef": "/home/vegapunk/projects/chia-top1-20260923/f1v2-freechoice-run-01/batches/w5-000-59b50305/d59c93c53a8a9306f67643677df26ba9bf6573c90b4cf264cb33688c95d6fcfc/w64_f1/ecc-b271e39ffe25c01c/routed.spef",
+        "tcl_recipe": "/home/vegapunk/projects/chia-top1-20260923/f1v2-freechoice-run-01/batches/w5-000-59b50305/d59c93c53a8a9306f67643677df26ba9bf6573c90b4cf264cb33688c95d6fcfc/w64_f1/ecc-b271e39ffe25c01c/f1-v2.tcl",
+        "worker_receipt": "/home/vegapunk/projects/chia-top1-20260923/f1v2-freechoice-run-01/batches/w5-000-59b50305/d59c93c53a8a9306f67643677df26ba9bf6573c90b4cf264cb33688c95d6fcfc/w64_f1/ecc-b271e39ffe25c01c/chia_f1_worker.json"
+      },
+      "attempt_id": "w5-000-59b50305",
+      "batch_wall_s": 31.937,
+      "candidate_id": "ecc-b271e39ffe25c01c",
+      "flow": "F1-v2",
+      "hashes": {
+        "mapped_netlist": "499c99fb53a48bf2370a445807fc74ccca6acd5a95f60c121efd602e5ee35259",
+        "pre_repair_netlist": "b6cc2002d80d4d7c22e418db57b5a5cc245b84b6b9ebb6085736515afaeca5e0",
+        "proof_recipe": "d3036fb932303b6e65f59cba7196559b29d2856884096b9f70f98eaab34ff9a0",
+        "routed_netlist": "101c1c542c8f2c5c1d84bd9c5214eb575c35d93a2aabd7fb23b8ac9197550bfd",
+        "source_sv": "af31c257d1f9c0b0d648dc4c193b59437f45006bb02c8fce23d214626fa7ee19",
+        "spef": "1b777687b99cb55f62035f5b6217b140bc52d14f10f4f62c775808274e3cf04b",
+        "tcl_recipe": "3e60f578a14a88e05d42206eda175e07115afa46ade80b853ea20481a26fb923"
+      },
+      "path": "/home/thisray/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/f1v2/freechoice-run-01/controller/attempts/w5-000-59b50305/output.json",
+      "proof": {
+        "error": null,
+        "excluded_physical_cells": [
+          "sky130_fd_sc_hd__decap_3",
+          "sky130_fd_sc_hd__tapvpwrvgnd_1"
+        ],
+        "method": "yosys_sat_whole_output_miter",
+        "portless_verified": true,
+        "status": "PASS"
+      },
+      "repo_commit": "ab450816a28fd9f5bac1f0d26740d5a9a8c69127",
+      "request_sha256": "67f2c4c1d834b279efc73a8dcdd00bd048c25431563536bde43e00ac134cba61",
+      "sha256": "c45bce14281d3768ce49df55d34d408a79caa11d879d59d202d5ba85bebdc81f"
+    },
+    {
+      "actual_chia_identity": {
+        "chia_job_id": "01000000",
+        "chia_node_id": "f9b5593172f6b643db566080261d61e3ddcdaf8577a9b082c4e4fde0",
+        "chia_node_ip": "10.148.0.26",
+        "chia_task_id": "c8ef45ccd0112571ffffffffffffffffffffffff01000000",
+        "chia_worker_id": "fac2bc38d368ec948cf40ec76223142ab4c751b6925dbbe1df290b4b",
+        "executable": "/home/vegapunk/miniforge3/envs/chia_familyrtl_260919/bin/python",
+        "hostname": "chia-arm64-eda-02",
+        "in_ray_worker": true,
+        "pid": 16926
+      },
+      "artifacts": {
+        "artifact_dir": "/home/vegapunk/projects/chia-top1-20260923/f1v2-freechoice-run-01/batches/w5-001-921f60ab/56d0e2e54bf606de562822987fe371888223c3eb9d255865a8938ef32d40a60b/w64_f1/ecc-ad71f3fdad653a86",
+        "mapped_netlist": "/home/vegapunk/projects/chia-top1-20260923/f1v2-freechoice-run-01/batches/w5-001-921f60ab/56d0e2e54bf606de562822987fe371888223c3eb9d255865a8938ef32d40a60b/w64_f1/ecc-ad71f3fdad653a86/mapped.v",
+        "openroad_log": "/home/vegapunk/projects/chia-top1-20260923/f1v2-freechoice-run-01/batches/w5-001-921f60ab/56d0e2e54bf606de562822987fe371888223c3eb9d255865a8938ef32d40a60b/w64_f1/ecc-ad71f3fdad653a86/openroad.log",
+        "pre_repair": "/home/vegapunk/projects/chia-top1-20260923/f1v2-freechoice-run-01/batches/w5-001-921f60ab/56d0e2e54bf606de562822987fe371888223c3eb9d255865a8938ef32d40a60b/w64_f1/ecc-ad71f3fdad653a86/pre_repair.v",
+        "proof_log": "/home/vegapunk/projects/chia-top1-20260923/f1v2-freechoice-run-01/batches/w5-001-921f60ab/56d0e2e54bf606de562822987fe371888223c3eb9d255865a8938ef32d40a60b/w64_f1/ecc-ad71f3fdad653a86/proof.log",
+        "proof_recipe": "/home/vegapunk/projects/chia-top1-20260923/f1v2-freechoice-run-01/batches/w5-001-921f60ab/56d0e2e54bf606de562822987fe371888223c3eb9d255865a8938ef32d40a60b/w64_f1/ecc-ad71f3fdad653a86/f1-equivalence.ys",
+        "routed_netlist": "/home/vegapunk/projects/chia-top1-20260923/f1v2-freechoice-run-01/batches/w5-001-921f60ab/56d0e2e54bf606de562822987fe371888223c3eb9d255865a8938ef32d40a60b/w64_f1/ecc-ad71f3fdad653a86/routed.v",
+        "spef": "/home/vegapunk/projects/chia-top1-20260923/f1v2-freechoice-run-01/batches/w5-001-921f60ab/56d0e2e54bf606de562822987fe371888223c3eb9d255865a8938ef32d40a60b/w64_f1/ecc-ad71f3fdad653a86/routed.spef",
+        "tcl_recipe": "/home/vegapunk/projects/chia-top1-20260923/f1v2-freechoice-run-01/batches/w5-001-921f60ab/56d0e2e54bf606de562822987fe371888223c3eb9d255865a8938ef32d40a60b/w64_f1/ecc-ad71f3fdad653a86/f1-v2.tcl",
+        "worker_receipt": "/home/vegapunk/projects/chia-top1-20260923/f1v2-freechoice-run-01/batches/w5-001-921f60ab/56d0e2e54bf606de562822987fe371888223c3eb9d255865a8938ef32d40a60b/w64_f1/ecc-ad71f3fdad653a86/chia_f1_worker.json"
+      },
+      "attempt_id": "w5-001-921f60ab",
+      "batch_wall_s": 30.633,
+      "candidate_id": "ecc-ad71f3fdad653a86",
+      "flow": "F1-v2",
+      "hashes": {
+        "mapped_netlist": "99794c4f2ca2000a8e59a762b3f8d8aca5d775c68507b12c1410cb6ae9679170",
+        "pre_repair_netlist": "75222d339336921f246086cdcefe31b70572849856412da4761acefbca056c25",
+        "proof_recipe": "d3036fb932303b6e65f59cba7196559b29d2856884096b9f70f98eaab34ff9a0",
+        "routed_netlist": "e96133410632775f508d369ee4bfab52c3139b3b739d8995ae82f76062e9e3a6",
+        "source_sv": "4b67cb2a3723f6d8b9d3adb46835a06c57ebc7b81432bb986913a4b6d3bd3cec",
+        "spef": "adde32f26ddd9e8507398028c3cc02cf76cfdb8bf443f55612de8b05647761a3",
+        "tcl_recipe": "3e60f578a14a88e05d42206eda175e07115afa46ade80b853ea20481a26fb923"
+      },
+      "path": "/home/thisray/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/f1v2/freechoice-run-01/controller/attempts/w5-001-921f60ab/output.json",
+      "proof": {
+        "error": null,
+        "excluded_physical_cells": [
+          "sky130_fd_sc_hd__decap_3",
+          "sky130_fd_sc_hd__tapvpwrvgnd_1"
+        ],
+        "method": "yosys_sat_whole_output_miter",
+        "portless_verified": true,
+        "status": "PASS"
+      },
+      "repo_commit": "ab450816a28fd9f5bac1f0d26740d5a9a8c69127",
+      "request_sha256": "c6dff1ee13377fb422b7cbbeb1cd0af17d864e0f37a02c9006f78fd9f18f13aa",
+      "sha256": "45b5e717891a906f23a33d790ab9d707c038a4072291024d9727d16e57c6959a"
+    },
+    {
+      "actual_chia_identity": {
+        "chia_job_id": "01000000",
+        "chia_node_id": "76fdf37777cf5cb9cf405542d1bb1c498be9a5959f3b3900e834acb8",
+        "chia_node_ip": "10.148.0.26",
+        "chia_task_id": "c8ef45ccd0112571ffffffffffffffffffffffff01000000",
+        "chia_worker_id": "8421bb1733d995a8ad05c908d62d5f8b676fb3e66430b9a9ee8177e0",
+        "executable": "/home/vegapunk/miniforge3/envs/chia_familyrtl_260919/bin/python",
+        "hostname": "chia-arm64-eda-02",
+        "in_ray_worker": true,
+        "pid": 19298
+      },
+      "artifacts": {
+        "artifact_dir": "/home/vegapunk/projects/chia-top1-20260923/f1v2-freechoice-run-01/batches/w5-002-427d14bd/b2ceb258cf6b10d772f7da1b58a6613e6e8fd39e73c9e574fe0444c64cd7bf93/w64_f1/ecc-338a75e5eb27a720",
+        "mapped_netlist": "/home/vegapunk/projects/chia-top1-20260923/f1v2-freechoice-run-01/batches/w5-002-427d14bd/b2ceb258cf6b10d772f7da1b58a6613e6e8fd39e73c9e574fe0444c64cd7bf93/w64_f1/ecc-338a75e5eb27a720/mapped.v",
+        "openroad_log": "/home/vegapunk/projects/chia-top1-20260923/f1v2-freechoice-run-01/batches/w5-002-427d14bd/b2ceb258cf6b10d772f7da1b58a6613e6e8fd39e73c9e574fe0444c64cd7bf93/w64_f1/ecc-338a75e5eb27a720/openroad.log",
+        "pre_repair": "/home/vegapunk/projects/chia-top1-20260923/f1v2-freechoice-run-01/batches/w5-002-427d14bd/b2ceb258cf6b10d772f7da1b58a6613e6e8fd39e73c9e574fe0444c64cd7bf93/w64_f1/ecc-338a75e5eb27a720/pre_repair.v",
+        "proof_log": "/home/vegapunk/projects/chia-top1-20260923/f1v2-freechoice-run-01/batches/w5-002-427d14bd/b2ceb258cf6b10d772f7da1b58a6613e6e8fd39e73c9e574fe0444c64cd7bf93/w64_f1/ecc-338a75e5eb27a720/proof.log",
+        "proof_recipe": "/home/vegapunk/projects/chia-top1-20260923/f1v2-freechoice-run-01/batches/w5-002-427d14bd/b2ceb258cf6b10d772f7da1b58a6613e6e8fd39e73c9e574fe0444c64cd7bf93/w64_f1/ecc-338a75e5eb27a720/f1-equivalence.ys",
+        "routed_netlist": "/home/vegapunk/projects/chia-top1-20260923/f1v2-freechoice-run-01/batches/w5-002-427d14bd/b2ceb258cf6b10d772f7da1b58a6613e6e8fd39e73c9e574fe0444c64cd7bf93/w64_f1/ecc-338a75e5eb27a720/routed.v",
+        "spef": "/home/vegapunk/projects/chia-top1-20260923/f1v2-freechoice-run-01/batches/w5-002-427d14bd/b2ceb258cf6b10d772f7da1b58a6613e6e8fd39e73c9e574fe0444c64cd7bf93/w64_f1/ecc-338a75e5eb27a720/routed.spef",
+        "tcl_recipe": "/home/vegapunk/projects/chia-top1-20260923/f1v2-freechoice-run-01/batches/w5-002-427d14bd/b2ceb258cf6b10d772f7da1b58a6613e6e8fd39e73c9e574fe0444c64cd7bf93/w64_f1/ecc-338a75e5eb27a720/f1-v2.tcl",
+        "worker_receipt": "/home/vegapunk/projects/chia-top1-20260923/f1v2-freechoice-run-01/batches/w5-002-427d14bd/b2ceb258cf6b10d772f7da1b58a6613e6e8fd39e73c9e574fe0444c64cd7bf93/w64_f1/ecc-338a75e5eb27a720/chia_f1_worker.json"
+      },
+      "attempt_id": "w5-002-427d14bd",
+      "batch_wall_s": 31.802,
+      "candidate_id": "ecc-338a75e5eb27a720",
+      "flow": "F1-v2",
+      "hashes": {
+        "mapped_netlist": "694baac7b5497db5e4104fc7aaff190e02da7ba99c69de8d728373a8c90e9a16",
+        "pre_repair_netlist": "afb5b818fbded7ff7a3e948a50a475c1dec15d808486ef2e37deea74543901eb",
+        "proof_recipe": "d3036fb932303b6e65f59cba7196559b29d2856884096b9f70f98eaab34ff9a0",
+        "routed_netlist": "98830f6d84df76485fcb2e734a3fb87f452880d8c5b2f30cfc72fc38c04e113f",
+        "source_sv": "63ad383d1477316170b2800bcaf0a9b22744c1c5f579c50a35c811e6b6c05b10",
+        "spef": "48df74013ec41d0678199d6eaf92f1bdafa473e458f571eb11b1c2616fa7b487",
+        "tcl_recipe": "3e60f578a14a88e05d42206eda175e07115afa46ade80b853ea20481a26fb923"
+      },
+      "path": "/home/thisray/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/f1v2/freechoice-run-01/controller/attempts/w5-002-427d14bd/output.json",
+      "proof": {
+        "error": null,
+        "excluded_physical_cells": [
+          "sky130_fd_sc_hd__decap_3",
+          "sky130_fd_sc_hd__tapvpwrvgnd_1"
+        ],
+        "method": "yosys_sat_whole_output_miter",
+        "portless_verified": true,
+        "status": "PASS"
+      },
+      "repo_commit": "ab450816a28fd9f5bac1f0d26740d5a9a8c69127",
+      "request_sha256": "3410ca26b0ec47172a452b7b2276204ebe6f3270690e0ba03a490b751b9c759a",
+      "sha256": "231ca15bc6edcd0f6da99400d2fecf715094e75f1906e1d7a2414bcccaab8f1c"
+    }
+  ],
+  "repair_observations": {
+    "338a": {
+      "pin_swaps": 0,
+      "placement_slack_after_ns": 0.022794,
+      "placement_slack_before_ns": -0.123888,
+      "resized_instances": 5
+    },
+    "ad71": {
+      "pin_swaps": 1,
+      "placement_slack_after_ns": -0.043258,
+      "placement_slack_before_ns": -0.118806,
+      "resized_instances": 3
+    },
+    "b271": {
+      "pin_swaps": 1,
+      "placement_slack_after_ns": -0.056392,
+      "placement_slack_before_ns": -0.15148,
+      "resized_instances": 6
+    }
+  },
+  "runtime_evaluation_count": 3,
+  "schema_version": 1,
+  "source": {
+    "bundle_sha256": "49cc0406fba2e5829221e9eb02ae79dc19db13cd7d4ecc5fa6fa78c499c7b838",
+    "catalog_sha256": "cf51018ec04926cde7251240fe7fcefa1b318be74605d0a546049b279394ca5a",
+    "gcp_repo": "/home/vegapunk/projects/chia-top1-20260923/f1v2-runtime-ab45081",
+    "initial_controller_and_remote_commit": "ab450816a28fd9f5bac1f0d26740d5a9a8c69127",
+    "replan_controller_commit": "10eac8152e94d24dc95d847db5092f70c27f7746",
+    "summary_refresh_commit": "63d896a38c7f803977253012365746470c5adb35"
+  },
+  "status": "CHECKPOINT_REPLAN",
+  "summary_lineage": {
+    "best_feasible_measurement_id": "ecc-338a75e5eb27a720::F1-v2::routed3_v1",
+    "pre_refresh_path": "/home/thisray/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/f1v2/freechoice-run-01/controller/summary.pre-goal-refresh.json",
+    "pre_refresh_sha256": "d944576cb063352b4053a98231ef6c1358877592151ea87de6c8140077ea7762",
+    "refreshed_path": "/home/thisray/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/f1v2/freechoice-run-01/controller/summary.json",
+    "refreshed_sha256": "be6e699cb759f7b9f6a7d1007f798863a8fbbb59c0dcc12531129ef06c6d2724"
+  }
+}

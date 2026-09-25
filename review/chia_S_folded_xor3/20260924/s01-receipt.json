@@ -1,0 +1,103 @@
+{
+  "action": {
+    "kind": "xor3_phase_replay",
+    "plan": "n02_068"
+  },
+  "actual_chia_identity": {
+    "chia_job_id": "01000000",
+    "chia_node_id": "1e55fefea46a5cf8a5832107631b2b9df68c935a67862b074f509be4",
+    "chia_node_ip": "10.148.0.27",
+    "chia_task_id": "c8ef45ccd0112571ffffffffffffffffffffffff01000000",
+    "chia_worker_id": "6dbd3de3e9d5e62492b477e502e9ab0c381eb766b8dae16a9dca54d0",
+    "executable": "/home/vegapunk/miniforge3/envs/chia_familyrtl_260919/bin/python",
+    "hostname": "chia-arm64-eda-03",
+    "in_ray_worker": true,
+    "pid": 195041
+  },
+  "dpl_policy": "detailed_placement max_displacement 25um x 10um",
+  "eco": {
+    "command": [
+      "docker",
+      "run",
+      "--rm",
+      "--cpus",
+      "2",
+      "--memory",
+      "12g",
+      "--network",
+      "none",
+      "--entrypoint",
+      "/bin/bash",
+      "-v",
+      "/home/vegapunk/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/S-folded-xor3-phase-20260924/run-01/case:/artifacts",
+      "docker.io/hpretl/iic-osic-tools@sha256:65852976cad4af640c9d848762215137e87ec125111a6d06c850c3ab4e9695fb",
+      "-lc",
+      "openroad -no_init -exit /artifacts/eco.tcl"
+    ],
+    "log_path": "/home/vegapunk/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/S-folded-xor3-phase-20260924/run-01/case/eco.log",
+    "log_sha256": "956805490bf9132ba62a9abdcda2dddd12ef5213d683162bfe051fca84889279",
+    "returncode": 0,
+    "timed_out": false,
+    "wall_s": 0.945
+  },
+  "error": "EcoError: N02 XOR3 DPL placement check report missing",
+  "expected_cell_map_sha256": "b364a3eb724826d5cd7ed60a7e22050cf71593e3e80fbfad53351c3f38d550bc",
+  "functional_valid": null,
+  "goal_id": "routed3_w64_d240_b271F0_v1",
+  "kind": "xor3_phase_replay",
+  "liberty_sha256": "8e78e14442062dba34d414fca6490b2f6b96038d4510d1438ca44fee31487135",
+  "mapped_submission_counted": 0,
+  "measurement_runner_sha256": "31cbdcf7362f90cea56027d2137e97511ff83059c2afcaf2f057a14208f04d0a",
+  "measurement_valid": null,
+  "model_decision_sha256": "04a50f45494ad6920a265766db805c5da94a01aef1aa3ada4c84849b1dd90054",
+  "n02_area_check": {
+    "design_after_dbu2": 2747635200,
+    "design_before_dbu2": 2750137600,
+    "design_delta_dbu2": -2502400,
+    "pair_after_dbu2": 46294400,
+    "pair_before_dbu2": 48796800,
+    "pair_delta_dbu2": -2502400
+  },
+  "n02_xor3_kernel_sha256": "e6fbcb4b2244eae26cd133056fb9aff30b9b61d8b45d65db63ed5d93a774c549",
+  "parent_binding_sha256": null,
+  "parent_graph_sha256": "320970ab4870a46b7603f457414d938c47b7971d760c2b07c5fae1983e0ca44f",
+  "parent_id": "N02-320970ab",
+  "parent_measurement_meta_sha256": "5c2afa90b32dca89de7489ff4f75c39abe05ffd6153175a5983f55289dc1b51b",
+  "parent_odb_sha256": "31ac626cd5e0ec76ae39b69ae9b49eb0e4293bda419429a9ca9a07c920452bff",
+  "parent_proof_log_sha256": "082cf24fabf12d13f5b5f10a127547ced552d1f854129af2d3cca1b9842372b3",
+  "parent_receipt_sha256": "2bb4f045ab14fc882c8347fd70aa7a7abeb5a2ee7c049535cf66e75457fae64c",
+  "parent_root": "/home/vegapunk/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/N-weighted-phase-assignment/feedback-02/d48cc962484f4e77832c5f2107e3c7db/step-01/artifacts",
+  "parent_spef_sha256": "d62064f949382aa95a4fcd149f24806f6aed3922bd754b025b36c066b8505e0b",
+  "placement_claim": "Both targets shrink; all DPL movement recorded, not fixed placement",
+  "plan": "n02_068",
+  "proof_image": "docker.io/hpretl/iic-osic-tools@sha256:65852976cad4af640c9d848762215137e87ec125111a6d06c850c3ab4e9695fb",
+  "proof_recipe_sha256": "d3036fb932303b6e65f59cba7196559b29d2856884096b9f70f98eaab34ff9a0",
+  "pure_proposal_text_sha256": "eefeb2af735a2169fda65d2d8f5ced7507070ade895cfc9f5a261fd8e4c16cf3",
+  "pure_source_hashes": {
+    "artifact_manifest": "ad8bd591a1f7772cd00a8800c8706570879a65a8246bb03b423fc05eff90e262",
+    "checker": "362fe54880c2292c9233f5d74451711b974a4b66d4749ecda46f64986e332852",
+    "library": "20e3f42ec0dc3864e374204f86d64ad45ee1d9a5c327d52cf9512596826e2d8d",
+    "proposal": "bd7571a5ac6a350dca7ce4e10952c2111986366039c2529468e963ffa779ff2f"
+  },
+  "recipe_hashes": {
+    "eco.tcl": "641a66415433cd317ce8fbb1eb6033f4aca1301aa59b6b8d15d6ff9850ff4b4c",
+    "reroute.tcl": "4ad2b341c1cf3596c7d50961d95c39c43aa436eaccf76cbe39c51f89e609babd"
+  },
+  "route_submission_counted": 1,
+  "route_valid": false,
+  "source_commit": "68fafe35c3c553c9d1adadaad29f3b3551b5cfb4",
+  "stage": "eco",
+  "status": "ERROR_OR_UNKNOWN",
+  "target_count": 2,
+  "target_pair_db_area_delta_dbu2": -2502400,
+  "target_pair_liberty_area_delta_um2": -2.5024,
+  "target_pair_width_deltas_um": {
+    "_326_": -0.46,
+    "_328_": -0.46
+  },
+  "targets_tsv_sha256": "e928450e7acf38d2fafa6016f244b0fc26e3b1b82e2c15227b0b26121fd013c5",
+  "vcd_retention": {
+    "delete_vcd": false,
+    "keep_vcd": true
+  }
+}

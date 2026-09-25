@@ -1,0 +1,40 @@
+{
+  "http_status": 200,
+  "latency_s": 2.846,
+  "usage_metadata": {
+    "promptTokenCount": 1911,
+    "candidatesTokenCount": 149,
+    "totalTokenCount": 2060,
+    "trafficType": "ON_DEMAND",
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1911
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 149
+      }
+    ]
+  },
+  "model_version": "gemini-3.8-flash",
+  "parsed_object": {
+    "decision": "RUN",
+    "parent_id": "bbf15474",
+    "action": {
+      "kind": "phase_assignment",
+      "proposal": "timing_frontier_protected"
+    },
+    "reason": "The proposal directly addresses the frontier paths that caused timing infeasibility in H1 and H2 by freezing 34 phase variables across all 13 failing/near primary-input cones while retaining a 23-gate XNOR reduction versus bbf. Spending one route slot tests whether structural frontier protection achieves D <= 2.4 ns feasibility without standard repair overhead.",
+    "expected_discriminator": "Post-route delay D <= 2.400 ns and energy J < 0.93208 with full equivalence proof pass."
+  },
+  "error": null,
+  "finish_reason": "STOP",
+  "retry_after_s": null,
+  "error_kind": null,
+  "model": "google-vertex/gemini-3.8-flash",
+  "thinking_level": "LOW",
+  "response_sha256": "bccd4e5ea91e44d7750244846d92a5f993f0eb0b8d01b5c1768a38dc11c72442"
+}

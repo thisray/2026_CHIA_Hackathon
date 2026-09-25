@@ -1,0 +1,45 @@
+{
+  "http_status": 200,
+  "latency_s": 3.163,
+  "usage_metadata": {
+    "promptTokenCount": 5682,
+    "candidatesTokenCount": 234,
+    "totalTokenCount": 5916,
+    "trafficType": "ON_DEMAND",
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 5682
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 234
+      }
+    ]
+  },
+  "model_version": "gemini-3.8-flash",
+  "parsed_object": {
+    "decision": "RUN",
+    "parent_id": "18644d78-w32",
+    "action": {
+      "kind": "star_batch",
+      "roots": [
+        "_120_",
+        "_123_",
+        "_150_"
+      ]
+    },
+    "reason": "Roots _120_, _123_, and _150_ have mutually disjoint target sets ({_120_, _121_, _173_}, {_123_, _124_, _135_}, and {_150_, _151_, _172_}) and completely avoid the critical path cells (_107_, _109_), preserving timing margin under 2.4ns while swapping 9 static XNORs to XORs.",
+    "expected_discriminator": "Post-route STA max delay D <= 2.40ns and valid normalized energy J < 0.8673."
+  },
+  "error": null,
+  "finish_reason": "STOP",
+  "error_kind": null,
+  "retry_after_s": null,
+  "model": "google-vertex/gemini-3.8-flash",
+  "thinking_level": "LOW",
+  "max_output_tokens": 2048,
+  "response_sha256": "0931df44e075dccce45ebcbd99761e358003c1a4afcebd7c1dbcb6eab6ee018b"
+}

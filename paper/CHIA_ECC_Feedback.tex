@@ -1,0 +1,128 @@
+\documentclass[conference,10pt]{IEEEtran}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,booktabs,array,url,graphicx}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc}
+\usepackage{flushend}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={A CHIA Loop for ECC Optimization with Routed Feedback},pdfauthor={Ssu-Rui Lee}}
+\title{A CHIA Loop for ECC Optimization\\with Routed Feedback}
+\author{\IEEEauthorblockN{Ssu-Rui Lee}\IEEEauthorblockA{RaydioTek, Taiwan\\\texttt{ssr.lee@raydiotek.tw}}}
+\begin{document}
+\maketitle
+\raggedbottom
+\brokenpenalty=10000
+\begin{abstract}
+We build a CHIA loop that uses routed measurements to select function-preserving changes to error-correcting-code (ECC) decoders. A runtime language model chooses a local edit or decides whether to evaluate a supplied plan; deterministic tools apply the change, prove equivalence, and return physical measurements. Starting from already optimized feasible designs, the normalized three-workload energy score falls from 0.9914 to 0.8952 for 64-bit payloads and from 0.8844 to 0.7955 for 32-bit payloads: reductions of 9.70\% and 10.05\%. Final delays are 2.3741 and 2.0816\,ns, below the same 2.40\,ns limit. Intermediate results explain the gains: measured timing failures lead to broader path protection and repair, while extending binary parity operations to three-input gates opens a new search space. Energy uses routed parasitics and functional activity; it is not measured silicon power.
+\end{abstract}
+
+\section{Introduction}
+
+% P01
+Equivalent Boolean expressions can have different physical costs. In an ECC decoder, complementing an internal parity signal and compensating its consumers preserves the external outputs, yet changes cell types, loads, and routed timing. A low-energy candidate may expose a new critical path. Finding a useful successor then requires the path and workload evidence, as well as the aggregate score.
+
+% P02
+We implement that process in CHIA~\cite{chia}, a framework for agentic hardware/software co-design. The loop's state is a verified, routed circuit with its measurements. A model selects a bounded experiment, CHIA executes the transformation and evaluators, and the returned evidence informs the next choice (Fig.~\ref{fig:loop}). Outer developers also use these reports to extend the operations between episodes.
+
+% P03
+We contribute \textbf{an executed CHIA loop} with reusable, equivalence-checked parity operations; \textbf{decision trajectories} linking measured failures to later choices; and \textbf{two hardware findings}: newly exposed timing paths changed which phase assignments were feasible, while admitting three-input parity consumers expanded a fixed-boundary binary space whose two-input exclusive-NOR count had reached a certified minimum. Table~\ref{tab:milestones} traces the improvements from earlier register-transfer-level (RTL) search and physical-tuning results.
+
+\input{figures/loop.tex}
+
+% P04
+CHIA's processor case study feeds timing reports into successive iterations~\cite[Sec.~5.3]{chia}. Dr. RTL~\cite{drrtl} uses critical-path analysis and parallel RTL rewriting; RTLScout~\cite{rtlscout} combines code and synthesis optimization. Our narrower setting exposes the operation, exact circuit parent, returned measurement, and next decision for parity-rich ECC logic, including cases where conventional repair and new rewrites are complementary.
+
+\input{tables/milestones.tex}
+
+\section{Loop, Operations, and Evaluation}
+\subsection{Decisions and deterministic execution}
+
+% P05
+In local episodes, the runtime model receives eligible circuits, legal edits, previous outcomes, and available diagnostics. It chooses a circuit and edit or stops. In fixed-plan episodes, it chooses RUN or STOP for one supplied circuit--plan pair. The recorded models are Gemini 3.8 Flash and Gemini 3.1 Pro Preview~\cite{gemini}. CHIA schedules evaluation nodes through Ray~\cite{ray}, a distributed execution framework. A completed result returns correctness, delay, area, workload energies, and timing evidence. Failed-timing circuits remain available for repair; only verified feasible results can improve the best feasible score.
+
+% P06
+Outer coordinators and coding agents build new operators, protection constraints, and global plans. Earlier model-requested timing queries were executed by the coordinator, outside the local controller's RUN/STOP schema. Tools evolve between episodes. Sibling trials share a circuit parent while later decisions can use earlier trial feedback.
+
+\subsection{Parity operations and checking}
+
+% P07
+For a parity gate $g$, let $b_g=0$ denote exclusive OR (XOR) and $b_g=1$ exclusive NOR (XNOR). A phase $p_n\in\{0,1\}$ complements net $n$ when set. With input nets $I(g)$ and output $o$, the required new gate polarity is
+\begin{equation}
+ b'_g=b_g\oplus p_o\oplus\bigoplus_{i\in I(g)}p_i.
+ \label{eq:phase}
+\end{equation}
+
+% P08
+External ports and unsupported consumers have fixed phase. A \emph{pair} changes two connected gates; a \emph{star} changes a producer and all its parity consumers. Global assignments handle overlapping choices. XOR2/XNOR2 and XOR3/XNOR3 name two- and three-input cells. Path protection fixes selected phases or cell polarities. For power-weighted proposals, parent-derived internal-power weights rank assignments; they are proxies, not predictions of a candidate's energy. Small components are solved exactly; larger proposals use bounded simulated annealing. Polarity-sensitive mapping is established prior work~\cite{phase}; our contribution concerns its checked use and physical feedback in this loop.
+
+% P09
+The functional reference is Common Cells' \texttt{cc\_ecc\_decode}~\cite{commoncells}, revision \texttt{121182ea}, retaining data, syndrome, and status outputs. Yosys~\cite{yosys} proves each valid child equivalent to its checked parent for defined two-state inputs. OpenROAD~\cite{openroad} edits and routes the circuit; OpenRCX~\cite{openrcx} extracts parasitics. Icarus Verilog~\cite{icarus} generates functional activity, and OpenSTA~\cite{opensta} uses that activity, parasitics, and cell-library models for power and timing. A final circuit may reuse its own new pre-route proof when netlist bytes and proof context are identical.
+\subsection{Measurements and comparison starts}
+
+\input{figures/trajectory.tex}
+
+% P10
+The decoders correct single-bit errors and detect double-bit errors for 64-bit or 32-bit payloads. We use the SkyWater 130-nm high-density library~\cite{sky130} at the typical corner, 1.8\,V and 25\,$^\circ$C, 0.05\,ns input slew, and 0.005\,pF output load. Acceptance requires maximum external-output delay no greater than 2.40\,ns. Routing targets 2.575\,ns; setup repair targets 2.35\,ns. Cell area is reported separately.
+
+% P11
+Each search workload contains 1,024 vectors spaced 10\,ns apart, seed 2026092101: unrestricted encoded-input bits, encoded uniform payloads, or encoded payloads changing one bit per vector. Total estimated power $P_w$ includes internal, switching, and leakage components. For the observed window $T=10.24\,\mu$s, energy per vector and its aggregate are
+\begin{equation}
+ E_w=P_wT/1024,\qquad
+ E_{\mathrm{norm}}(x)=\left[\prod_{w=1}^{3}\frac{E_w(x)}{E_w(\mathrm{ref})}\right]^{1/3}.
+ \label{eq:energy}
+\end{equation}
+
+% P12
+Each width has its own fixed energy reference (Table~\ref{tab:milestones}); cross-width scores are not absolute efficiency comparisons. Both references are in-project RTL variants; the 64-bit reference fails timing. Our headline starts instead from the feasible \emph{RTL + physical tuning} and \emph{projected searched RTL} rows, and includes all later refinements. The workload activity lacks delay back-annotation, so these are routed-parasitic energy estimates without glitch-accurate timing.
+
+
+\section{Results: From Tuned Designs to Further Gains}
+\subsection{Where the comparison designs came from}
+
+% P13
+The 64-bit start already incorporates RTL search, timing repair, and power recovery. In a three-route episode over existing RTL candidates, two choices fail at 2.4320 and 2.4075\,ns; after receiving those results, the model selects a third existing RTL candidate, which reaches 2.3799\,ns. Subsequent downsizing of two inverters and rerouting produces the 2.372445\,ns starting design. Pin swaps, selective downsizing, and tree rotation then create the lower-energy, higher-headroom checkpoint shown in Table~\ref{tab:milestones}. The first pin-swap experiment is a direct tool-execution prototype outside CHIA; its successor and the reported downstream results run through CHIA.
+
+% P14
+Local parity search reduces the score further, but progress is not monotonic. A shared-consumer edit leaves only 1.856\,ps margin; absorbing an inverter into a stronger parity cell restores timing headroom while increasing energy and area. Later, a four-star batch fails timing. A conservative single-star trial succeeds; after receiving the failed batch's path diagnosis, the runtime selects a two-star successor, producing the \emph{feedback-recovered local design}. It is retained for 37.465\,ps margin, although other local branches have slightly lower scores and less margin.
+
+% P15
+The 32-bit start is a fixed width projection of previously searched RTL, using radix-2 parity trees and a reversible XOR recombination of syndrome bits. This transfer is prescribed by the outer coordinator. It already cuts energy score by 11.56\% and area by 29.25\% versus the project's mask-based parity reference. Transferring the 64-bit power-recovery recipe makes zero cell-size changes and preserves its metrics. Local phase pairs nevertheless reduce energy. The model then tries three stars and, after reading their measurements, four stars on the same original circuit. That second trial lowers all three energy estimates but adds 49.713\,ps delay relative to the first; its score is 0.839637.
+\subsection{Timing feedback and conventional repair}
+
+% P16
+Figure~\ref{fig:trajectory} separates circuit ancestry from feedback. On the 64-bit local design, protecting only the old critical path reduces XNOR2 count from 60 to 18 and energy score to 0.880345, but a new path reaches 2.528992\,ns. Adding the newly exposed cone in a sibling plan improves delay to 2.452134\,ns, still infeasible. Conventional repair makes this phase plan feasible at 2.398176\,ns and score 0.903709. Repair alone on the earlier local circuit returns 2.365566\,ns and 0.932320. The composition has lower energy, with 20\,$\mu$m$^2$ more area and less timing margin than that control.
+
+% P17
+Using the measured failing and near-limit paths, outer development protects 34 phase variables and 33 gate polarities. The resulting global assignment keeps 37 XNOR2 cells and meets timing at score 0.899342. A power-weighted sibling from the same local circuit keeps that count but reaches 0.897156. Feedback-selected pair refinement and two XOR3-to-XNOR3 replacements yield the final 0.895180 result. The last edit improves its direct parent by 0.1770\%; the full extension beyond the local design improves it by 3.96\%.
+\subsection{A larger representation on the 32-bit decoder}
+
+% P18
+Binary global assignment lowers XNOR2 count from 31 to 11. A count-11 witness and a Yosys Boolean satisfiability (SAT) check rejecting count $\leq10$ establish the minimum within the exact 41-variable, fixed-boundary binary representation. A power-weighted sibling has the same count and lower measured energy. Both start from the four-star design.
+
+% P19
+Outer development then admits three-input parity consumers, expanding the representation to 56 phase variables. A single-group trial improves area and delay but slightly worsens the energy score. After reading that tradeoff, the runtime chooses RUN for a supplied global plan on the same parent. The supplied plan comes from bounded annealing with an area-first proxy and an XNOR2-count tie-breaker. Its nine cell changes leave 10 XNOR2 and seven XNOR3 cells, outside the old certificate's scope. Delay, area, and all three energy estimates improve over the direct parent. The last step gains 0.2677\%; the extension beyond the four-star result gains 5.26\%.
+\subsection{Full before/after and retained tradeoffs}
+
+% P20
+From the pre-optimized starts, normalized energy falls 9.70\% and 10.05\%, with area reductions of 9 and 3\,$\mu$m$^2$. Final delay increases by 1.643 and 32.251\,ps, respectively, but both remain feasible. Against the masked-RTL reference, the final 32-bit design also has 20.45\% lower energy score, 29.41\% less area, and 167.218\,ps less delay. These comparisons use the same observations and explicitly different starting rows; they are not additive gains.
+
+% P21
+A later undo restores the final 64-bit netlist and placement, then produces a different route with score 0.894859 and 1.800\,ps more delay. We retain this physical result separately from the logic refinement. Another repaired branch offers 2.370334\,ns, 2424\,$\mu$m$^2$, and score 0.896634. No single design is best in every column.
+
+\section{Limits and Reuse}
+
+% P22
+Recorded feedback shows what was available and what choice followed; it does not establish a model-policy advantage. An earlier equal-budget comparison gives each arm 12 post-synthesis queries and four logical route queries. Neither Flash nor a fixed rule improves the shared 0.991375 incumbent; among new queries, the fixed rule reaches 1.034309 versus 1.046497 for Flash. This comparison predates the phase operators. The supplement separates follow-on budgets from earlier search and development.
+
+% P23
+The study uses one library corner and three search workloads, without held-out workloads or repeated-route confidence intervals. Equivalence and routed timing are not physical signoff. The supplied artifact includes saved-decision CHIA replay for the final 64-bit and 32-bit operations, historical result receipts, and a fixed-plan model gate. Earlier portability checks exercised both saved plans; the model-gate code is mock-tested; live endpoint use remains unvalidated. Code and results repository: \url{https://github.com/thisray/2026_CHIA_Hackathon}.
+\section{Conclusion}
+
+% P24
+Routed feedback supported continued optimization after RTL search and physical tuning in these experiments: newly exposed paths prompted protection or repair, and a broader parity representation enabled further improvements. The measured gains retain timing feasibility, with failures and area/delay tradeoffs recorded alongside them.
+\input{references.tex}
+\section*{AI Assistance}
+
+% P25
+The human author set the research objectives, evaluation criteria, and resource boundaries; directed priorities; and critically reviewed the results and manuscript. AI research and coding agents assisted with literature, operator development, experiment coordination, analysis, and writing. Runtime Gemini decisions are separately identified in the methods and traces. The human author retains responsibility for the paper's claims, interpretation, tone, and quality.
+\end{document}

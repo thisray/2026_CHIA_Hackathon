@@ -1,0 +1,271 @@
+{
+  "PPA": "NOT_RUN",
+  "all_candidate_master_counts": {
+    "sky130_fd_sc_hd__clkinv_1": 4,
+    "sky130_fd_sc_hd__nand2b_1": 6,
+    "sky130_fd_sc_hd__nand3_1": 9,
+    "sky130_fd_sc_hd__nand3b_1": 2,
+    "sky130_fd_sc_hd__nor2_1": 28,
+    "sky130_fd_sc_hd__nor2b_1": 1,
+    "sky130_fd_sc_hd__nor3_1": 2,
+    "sky130_fd_sc_hd__or3_1": 1,
+    "sky130_fd_sc_hd__xnor2_1": 11,
+    "sky130_fd_sc_hd__xnor3_1": 6,
+    "sky130_fd_sc_hd__xor2_1": 77,
+    "sky130_fd_sc_hd__xor3_1": 1
+  },
+  "all_parent_master_counts": {
+    "sky130_fd_sc_hd__clkinv_1": 4,
+    "sky130_fd_sc_hd__nand2b_1": 6,
+    "sky130_fd_sc_hd__nand3_1": 9,
+    "sky130_fd_sc_hd__nand3b_1": 2,
+    "sky130_fd_sc_hd__nor2_1": 28,
+    "sky130_fd_sc_hd__nor2b_1": 1,
+    "sky130_fd_sc_hd__nor3_1": 2,
+    "sky130_fd_sc_hd__or3_1": 1,
+    "sky130_fd_sc_hd__xnor2_1": 11,
+    "sky130_fd_sc_hd__xnor3_1": 5,
+    "sky130_fd_sc_hd__xor2_1": 77,
+    "sky130_fd_sc_hd__xor3_1": 2
+  },
+  "baseline_parity_cell_area_um2": 930.8928,
+  "candidate_graph_sha256": "8e5b08be4e99d6f34e2fc0afea284f7d99ec7d6fdca5104907300c40a8dcbdd3",
+  "candidate_parity_cell_area_um2": 929.6416,
+  "candidate_parity_master_counts": {
+    "sky130_fd_sc_hd__xnor2_1": 11,
+    "sky130_fd_sc_hd__xnor3_1": 6,
+    "sky130_fd_sc_hd__xor2_1": 77,
+    "sky130_fd_sc_hd__xor3_1": 1
+  },
+  "candidate_path": "proposal_phase003_mixed_unrouted.v",
+  "candidate_selection": "One of 56 one-net phase vectors; exact parity-cell area first, XNOR2 count as tie-break, then changed-cell count and net name. Not a global optimum claim.",
+  "closure": "Only internal single-driver nets driven by an exact XOR2/XNOR2/XOR3/XNOR3 cell, not a port/assign boundary, and whose every sink is a parity input pin of an exact XOR2/XNOR2/XOR3/XNOR3 cell can receive phase 1.",
+  "continuous_assign_internal_nets": [],
+  "eligible_counts": {
+    "additional_variables": 15,
+    "mixed_arity": 56,
+    "xor2_only": 41
+  },
+  "expected_cell_map": {
+    "cell_count": 148,
+    "path": "expected_cell_map.json",
+    "schema": "JSON mapping instance->{cell,pins}; keys recursively sorted, UTF-8, separators=(',',':'), trailing newline excluded from SHA",
+    "sha256": "a31af6c371b8ff5a5d31c87d7fe3365d7861bdedf59c5b6a5944455b1704c54f"
+  },
+  "formal_equivalence": "NOT_RUN",
+  "generator_path": "inputs/generate_phase003.py",
+  "generator_sha256": "5e6be2e33378934d6317d0c865cd508c40f92c98974e145816c725bb399a7dbb",
+  "lef_path": "inputs/sky130_fd_sc_hd.lef",
+  "lef_sha256": "3a3ea4e9d0973402702764d897659e52fe3d413eb48c306cd811de40a75264fa",
+  "library_path": "inputs/sky130_fd_sc_hd__tt_025C_1v80.lib",
+  "library_sha256": "8e78e14442062dba34d414fca6490b2f6b96038d4510d1438ca44fee31487135",
+  "parent_cell_count": 148,
+  "parent_cell_map_sha256": "8afe8a7dae817035c4e8c5f6690b82580d59f0c75904122cf578d724c86bc7bc",
+  "parent_graph_sha256": "c6c10558e367fd345b17c3b1a70898ddb8bcca9414833f0fcb34e7fd83478d95",
+  "parent_id": "c6c10558",
+  "parent_parity_master_counts": {
+    "sky130_fd_sc_hd__xnor2_1": 11,
+    "sky130_fd_sc_hd__xnor3_1": 5,
+    "sky130_fd_sc_hd__xor2_1": 77,
+    "sky130_fd_sc_hd__xor3_1": 2
+  },
+  "parent_path": "inputs/parent_c6_routed.v",
+  "parity_cell_area_delta_um2": -1.2512,
+  "phase_law": "b_prime = b xor z(output) xor parity(z(inputs)); XOR2/XNOR2 and XOR3/XNOR3 truth functions are classified from the pinned Liberty table.",
+  "phase_one_nets": [
+    "_003_"
+  ],
+  "phase_vector": {
+    "_003_": 1
+  },
+  "ports": [
+    "data_i[0]",
+    "data_i[10]",
+    "data_i[11]",
+    "data_i[12]",
+    "data_i[13]",
+    "data_i[14]",
+    "data_i[15]",
+    "data_i[16]",
+    "data_i[17]",
+    "data_i[18]",
+    "data_i[19]",
+    "data_i[1]",
+    "data_i[20]",
+    "data_i[21]",
+    "data_i[22]",
+    "data_i[23]",
+    "data_i[24]",
+    "data_i[25]",
+    "data_i[26]",
+    "data_i[27]",
+    "data_i[28]",
+    "data_i[29]",
+    "data_i[2]",
+    "data_i[30]",
+    "data_i[31]",
+    "data_i[32]",
+    "data_i[33]",
+    "data_i[34]",
+    "data_i[35]",
+    "data_i[36]",
+    "data_i[37]",
+    "data_i[38]",
+    "data_i[3]",
+    "data_i[4]",
+    "data_i[5]",
+    "data_i[6]",
+    "data_i[7]",
+    "data_i[8]",
+    "data_i[9]",
+    "data_o[0]",
+    "data_o[10]",
+    "data_o[11]",
+    "data_o[12]",
+    "data_o[13]",
+    "data_o[14]",
+    "data_o[15]",
+    "data_o[16]",
+    "data_o[17]",
+    "data_o[18]",
+    "data_o[19]",
+    "data_o[1]",
+    "data_o[20]",
+    "data_o[21]",
+    "data_o[22]",
+    "data_o[23]",
+    "data_o[24]",
+    "data_o[25]",
+    "data_o[26]",
+    "data_o[27]",
+    "data_o[28]",
+    "data_o[29]",
+    "data_o[2]",
+    "data_o[30]",
+    "data_o[31]",
+    "data_o[3]",
+    "data_o[4]",
+    "data_o[5]",
+    "data_o[6]",
+    "data_o[7]",
+    "data_o[8]",
+    "data_o[9]",
+    "double_error_o",
+    "parity_error_o",
+    "single_error_o",
+    "syndrome_o[0]",
+    "syndrome_o[1]",
+    "syndrome_o[2]",
+    "syndrome_o[3]",
+    "syndrome_o[4]",
+    "syndrome_o[5]"
+  ],
+  "proposal_id": "phase003_xor3_absorb_singleton_v1",
+  "pure_checker": {
+    "GB10_details": {
+      "all_phase_one_nets_inside_closed_parity_subgraph": true,
+      "cell_connectivity_preserved": true,
+      "checker": "whole-graph structural GF2 closure plus exact per-cell Liberty truth classification",
+      "continuous_assigns_unchanged": true,
+      "formal_equivalence": "NOT_RUN",
+      "local_truth_check": {
+        "arities": [
+          2,
+          3
+        ],
+        "exhaustive_local_cases": 320,
+        "identity": "F_b(x xor z_in) == F_(b xor z_out xor parity(z_in))(x) xor z_out",
+        "scope": "Library truth functions are separately classified from exact pinned Liberty; this is a local algebra check, not formal proof.",
+        "status": "PASS"
+      },
+      "nonparity_and_untargeted_cells_unchanged": true,
+      "parity_gate_equations_checked": 95,
+      "ports_unchanged": true,
+      "status": "PASS"
+    },
+    "GB10_status": "PASS",
+    "GCP02_status": "PENDING",
+    "structural_validation_contract": "Exact ports and assigns, complete 148-entry cell map and all pin nets; only listed same-drive parity master/output-pin rewrites; per-gate GF2 phase law; all other cells unchanged."
+  },
+  "route": "NOT_RUN",
+  "schema": "w32.mixed_arity_phase_proposal.v1",
+  "source_kernel": "inputs/w32_mixed_arity_phase.py",
+  "source_kernel_sha256": "b28ee38015d881f33cdb5c86a36011f528b88783f1b593588d70209f78f251a3",
+  "target_specs": {
+    "_129_": {
+      "arity": 2,
+      "drive": "1",
+      "input_nets": [
+        "data_i[9]",
+        "data_i[10]"
+      ],
+      "instance": "_129_",
+      "new_master": "sky130_fd_sc_hd__xor2_1",
+      "new_output_pin": "X",
+      "new_pins": {
+        "A": "data_i[9]",
+        "B": "data_i[10]",
+        "X": "_003_"
+      },
+      "old_master": "sky130_fd_sc_hd__xnor2_1",
+      "old_output_pin": "Y",
+      "old_pins": {
+        "A": "data_i[9]",
+        "B": "data_i[10]",
+        "Y": "_003_"
+      },
+      "output_net": "_003_"
+    },
+    "_130_": {
+      "arity": 3,
+      "drive": "1",
+      "input_nets": [
+        "_095_",
+        "_002_",
+        "_003_"
+      ],
+      "instance": "_130_",
+      "new_master": "sky130_fd_sc_hd__xnor3_1",
+      "new_output_pin": "X",
+      "new_pins": {
+        "A": "_095_",
+        "B": "_002_",
+        "C": "_003_",
+        "X": "_004_"
+      },
+      "old_master": "sky130_fd_sc_hd__xor3_1",
+      "old_output_pin": "X",
+      "old_pins": {
+        "A": "_095_",
+        "B": "_002_",
+        "C": "_003_",
+        "X": "_004_"
+      },
+      "output_net": "_004_"
+    },
+    "_135_": {
+      "arity": 2,
+      "drive": "1",
+      "input_nets": [
+        "_104_",
+        "_003_"
+      ],
+      "instance": "_135_",
+      "new_master": "sky130_fd_sc_hd__xnor2_1",
+      "new_output_pin": "Y",
+      "new_pins": {
+        "A": "_104_",
+        "B": "_003_",
+        "Y": "_008_"
+      },
+      "old_master": "sky130_fd_sc_hd__xor2_1",
+      "old_output_pin": "X",
+      "old_pins": {
+        "A": "_104_",
+        "B": "_003_",
+        "X": "_008_"
+      },
+      "output_net": "_008_"
+    }
+  }
+}

@@ -1,0 +1,1057 @@
+{
+  "baseline_xnor2_count": 11,
+  "baseline_xnor3_count": 5,
+  "component_sizes": [
+    56
+  ],
+  "eligible_nets": {
+    "_000_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_127_",
+          "B"
+        ]
+      ],
+      "producer": "_126_"
+    },
+    "_001_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_128_",
+          "B"
+        ]
+      ],
+      "producer": "_127_"
+    },
+    "_002_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_130_",
+          "B"
+        ]
+      ],
+      "producer": "_128_"
+    },
+    "_003_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_130_",
+          "C"
+        ],
+        [
+          "_135_",
+          "B"
+        ]
+      ],
+      "producer": "_129_"
+    },
+    "_005_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_134_",
+          "A"
+        ],
+        [
+          "_171_",
+          "B"
+        ]
+      ],
+      "producer": "_132_"
+    },
+    "_006_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_134_",
+          "B"
+        ]
+      ],
+      "producer": "_133_"
+    },
+    "_007_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_139_",
+          "A"
+        ]
+      ],
+      "producer": "_134_"
+    },
+    "_008_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_139_",
+          "B"
+        ]
+      ],
+      "producer": "_135_"
+    },
+    "_009_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_138_",
+          "A"
+        ]
+      ],
+      "producer": "_136_"
+    },
+    "_010_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_138_",
+          "B"
+        ]
+      ],
+      "producer": "_137_"
+    },
+    "_011_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_139_",
+          "C"
+        ]
+      ],
+      "producer": "_138_"
+    },
+    "_012_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_145_",
+          "A"
+        ]
+      ],
+      "producer": "_140_"
+    },
+    "_013_": {
+      "arity": 3,
+      "consumers": [
+        [
+          "_143_",
+          "A"
+        ],
+        [
+          "_159_",
+          "B"
+        ]
+      ],
+      "producer": "_141_"
+    },
+    "_014_": {
+      "arity": 3,
+      "consumers": [
+        [
+          "_143_",
+          "B"
+        ]
+      ],
+      "producer": "_142_"
+    },
+    "_015_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_144_",
+          "B"
+        ],
+        [
+          "_174_",
+          "B"
+        ]
+      ],
+      "producer": "_143_"
+    },
+    "_016_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_145_",
+          "B"
+        ]
+      ],
+      "producer": "_144_"
+    },
+    "_018_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_148_",
+          "B"
+        ]
+      ],
+      "producer": "_147_"
+    },
+    "_019_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_152_",
+          "A"
+        ]
+      ],
+      "producer": "_148_"
+    },
+    "_020_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_151_",
+          "A"
+        ]
+      ],
+      "producer": "_149_"
+    },
+    "_021_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_151_",
+          "B"
+        ],
+        [
+          "_172_",
+          "A"
+        ]
+      ],
+      "producer": "_150_"
+    },
+    "_022_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_152_",
+          "B"
+        ]
+      ],
+      "producer": "_151_"
+    },
+    "_024_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_156_",
+          "A"
+        ]
+      ],
+      "producer": "_154_"
+    },
+    "_025_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_156_",
+          "B"
+        ]
+      ],
+      "producer": "_155_"
+    },
+    "_026_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_158_",
+          "A"
+        ]
+      ],
+      "producer": "_156_"
+    },
+    "_027_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_158_",
+          "B"
+        ]
+      ],
+      "producer": "_157_"
+    },
+    "_028_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_166_",
+          "A"
+        ]
+      ],
+      "producer": "_158_"
+    },
+    "_029_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_166_",
+          "B"
+        ]
+      ],
+      "producer": "_159_"
+    },
+    "_030_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_162_",
+          "A"
+        ]
+      ],
+      "producer": "_160_"
+    },
+    "_031_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_162_",
+          "B"
+        ]
+      ],
+      "producer": "_161_"
+    },
+    "_032_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_165_",
+          "A"
+        ]
+      ],
+      "producer": "_162_"
+    },
+    "_033_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_165_",
+          "B"
+        ]
+      ],
+      "producer": "_163_"
+    },
+    "_034_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_165_",
+          "C"
+        ]
+      ],
+      "producer": "_164_"
+    },
+    "_035_": {
+      "arity": 3,
+      "consumers": [
+        [
+          "_166_",
+          "C"
+        ]
+      ],
+      "producer": "_165_"
+    },
+    "_040_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_172_",
+          "B"
+        ]
+      ],
+      "producer": "_171_"
+    },
+    "_041_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_173_",
+          "B"
+        ]
+      ],
+      "producer": "_172_"
+    },
+    "_042_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_175_",
+          "A"
+        ]
+      ],
+      "producer": "_173_"
+    },
+    "_043_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_175_",
+          "B"
+        ]
+      ],
+      "producer": "_174_"
+    },
+    "_044_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_176_",
+          "B"
+        ]
+      ],
+      "producer": "_175_"
+    },
+    "_089_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_109_",
+          "A"
+        ],
+        [
+          "_136_",
+          "A"
+        ]
+      ],
+      "producer": "_107_"
+    },
+    "_090_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_109_",
+          "B"
+        ]
+      ],
+      "producer": "_108_"
+    },
+    "_091_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_113_",
+          "A"
+        ],
+        [
+          "_140_",
+          "A"
+        ]
+      ],
+      "producer": "_109_"
+    },
+    "_092_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_112_",
+          "A"
+        ],
+        [
+          "_136_",
+          "B"
+        ]
+      ],
+      "producer": "_110_"
+    },
+    "_093_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_112_",
+          "B"
+        ]
+      ],
+      "producer": "_111_"
+    },
+    "_094_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_113_",
+          "B"
+        ]
+      ],
+      "producer": "_112_"
+    },
+    "_095_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_121_",
+          "A"
+        ],
+        [
+          "_130_",
+          "A"
+        ]
+      ],
+      "producer": "_113_"
+    },
+    "_096_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_116_",
+          "A"
+        ],
+        [
+          "_137_",
+          "A"
+        ]
+      ],
+      "producer": "_114_"
+    },
+    "_097_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_116_",
+          "B"
+        ]
+      ],
+      "producer": "_115_"
+    },
+    "_098_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_120_",
+          "A"
+        ]
+      ],
+      "producer": "_116_"
+    },
+    "_099_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_119_",
+          "A"
+        ],
+        [
+          "_137_",
+          "B"
+        ]
+      ],
+      "producer": "_117_"
+    },
+    "_100_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_119_",
+          "B"
+        ]
+      ],
+      "producer": "_118_"
+    },
+    "_101_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_120_",
+          "B"
+        ],
+        [
+          "_140_",
+          "B"
+        ]
+      ],
+      "producer": "_119_"
+    },
+    "_102_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_121_",
+          "B"
+        ],
+        [
+          "_173_",
+          "A"
+        ]
+      ],
+      "producer": "_120_"
+    },
+    "_103_": {
+      "arity": 3,
+      "consumers": [
+        [
+          "_124_",
+          "A"
+        ]
+      ],
+      "producer": "_122_"
+    },
+    "_104_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_124_",
+          "B"
+        ],
+        [
+          "_135_",
+          "A"
+        ]
+      ],
+      "producer": "_123_"
+    },
+    "_105_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_128_",
+          "A"
+        ],
+        [
+          "_144_",
+          "A"
+        ]
+      ],
+      "producer": "_124_"
+    },
+    "_106_": {
+      "arity": 2,
+      "consumers": [
+        [
+          "_127_",
+          "A"
+        ],
+        [
+          "_163_",
+          "B"
+        ]
+      ],
+      "producer": "_125_"
+    }
+  },
+  "lef_sha256": "3a3ea4e9d0973402702764d897659e52fe3d413eb48c306cd811de40a75264fa",
+  "legacy_boundary_reasons": {
+    "non_xor2_consumer": 14,
+    "public_port": 33
+  },
+  "legacy_xor2_only_eligible_count": 41,
+  "library_sha256": "8e78e14442062dba34d414fca6490b2f6b96038d4510d1438ca44fee31487135",
+  "mapped_cell_count": 148,
+  "mixed_boundary_reasons": {
+    "non_parity_consumer": 5,
+    "public_port": 34
+  },
+  "mixed_eligible_count": 56,
+  "newly_opened_vs_xor2_only": [
+    {
+      "consumers": [
+        {
+          "arity": 3,
+          "instance": "_130_",
+          "pin": "B"
+        }
+      ],
+      "net": "_002_",
+      "producer": "_128_",
+      "producer_arity": 2
+    },
+    {
+      "consumers": [
+        {
+          "arity": 3,
+          "instance": "_130_",
+          "pin": "C"
+        },
+        {
+          "arity": 2,
+          "instance": "_135_",
+          "pin": "B"
+        }
+      ],
+      "net": "_003_",
+      "producer": "_129_",
+      "producer_arity": 2
+    },
+    {
+      "consumers": [
+        {
+          "arity": 3,
+          "instance": "_139_",
+          "pin": "A"
+        }
+      ],
+      "net": "_007_",
+      "producer": "_134_",
+      "producer_arity": 2
+    },
+    {
+      "consumers": [
+        {
+          "arity": 3,
+          "instance": "_139_",
+          "pin": "B"
+        }
+      ],
+      "net": "_008_",
+      "producer": "_135_",
+      "producer_arity": 2
+    },
+    {
+      "consumers": [
+        {
+          "arity": 3,
+          "instance": "_139_",
+          "pin": "C"
+        }
+      ],
+      "net": "_011_",
+      "producer": "_138_",
+      "producer_arity": 2
+    },
+    {
+      "consumers": [
+        {
+          "arity": 2,
+          "instance": "_143_",
+          "pin": "A"
+        },
+        {
+          "arity": 2,
+          "instance": "_159_",
+          "pin": "B"
+        }
+      ],
+      "net": "_013_",
+      "producer": "_141_",
+      "producer_arity": 3
+    },
+    {
+      "consumers": [
+        {
+          "arity": 2,
+          "instance": "_143_",
+          "pin": "B"
+        }
+      ],
+      "net": "_014_",
+      "producer": "_142_",
+      "producer_arity": 3
+    },
+    {
+      "consumers": [
+        {
+          "arity": 3,
+          "instance": "_166_",
+          "pin": "A"
+        }
+      ],
+      "net": "_028_",
+      "producer": "_158_",
+      "producer_arity": 2
+    },
+    {
+      "consumers": [
+        {
+          "arity": 3,
+          "instance": "_166_",
+          "pin": "B"
+        }
+      ],
+      "net": "_029_",
+      "producer": "_159_",
+      "producer_arity": 2
+    },
+    {
+      "consumers": [
+        {
+          "arity": 3,
+          "instance": "_165_",
+          "pin": "A"
+        }
+      ],
+      "net": "_032_",
+      "producer": "_162_",
+      "producer_arity": 2
+    },
+    {
+      "consumers": [
+        {
+          "arity": 3,
+          "instance": "_165_",
+          "pin": "B"
+        }
+      ],
+      "net": "_033_",
+      "producer": "_163_",
+      "producer_arity": 2
+    },
+    {
+      "consumers": [
+        {
+          "arity": 3,
+          "instance": "_165_",
+          "pin": "C"
+        }
+      ],
+      "net": "_034_",
+      "producer": "_164_",
+      "producer_arity": 2
+    },
+    {
+      "consumers": [
+        {
+          "arity": 3,
+          "instance": "_166_",
+          "pin": "C"
+        }
+      ],
+      "net": "_035_",
+      "producer": "_165_",
+      "producer_arity": 3
+    },
+    {
+      "consumers": [
+        {
+          "arity": 2,
+          "instance": "_121_",
+          "pin": "A"
+        },
+        {
+          "arity": 3,
+          "instance": "_130_",
+          "pin": "A"
+        }
+      ],
+      "net": "_095_",
+      "producer": "_113_",
+      "producer_arity": 2
+    },
+    {
+      "consumers": [
+        {
+          "arity": 2,
+          "instance": "_124_",
+          "pin": "A"
+        }
+      ],
+      "net": "_103_",
+      "producer": "_122_",
+      "producer_arity": 3
+    }
+  ],
+  "parent_graph_sha256": "c6c10558e367fd345b17c3b1a70898ddb8bcca9414833f0fcb34e7fd83478d95",
+  "parent_key": "c6",
+  "parent_path": "/home/thisray/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/W32-mixed-arity-phase-prototype/inputs/parent_c6_routed.v",
+  "parity_gate_count": 95,
+  "parity_master_counts": {
+    "sky130_fd_sc_hd__xnor2_1": 11,
+    "sky130_fd_sc_hd__xnor3_1": 5,
+    "sky130_fd_sc_hd__xor2_1": 77,
+    "sky130_fd_sc_hd__xor3_1": 2
+  },
+  "pinned_parity_cell_specs": {
+    "sky130_fd_sc_hd__xnor2_1": {
+      "area_um2": 8.7584,
+      "arity": 2,
+      "drive": "1",
+      "height_um": 2.72,
+      "input_pins": [
+        "A",
+        "B"
+      ],
+      "master": "sky130_fd_sc_hd__xnor2_1",
+      "output_pin": "Y",
+      "polarity": 1,
+      "width_um": 3.22
+    },
+    "sky130_fd_sc_hd__xnor3_1": {
+      "area_um2": 22.5216,
+      "arity": 3,
+      "drive": "1",
+      "height_um": 2.72,
+      "input_pins": [
+        "A",
+        "B",
+        "C"
+      ],
+      "master": "sky130_fd_sc_hd__xnor3_1",
+      "output_pin": "X",
+      "polarity": 1,
+      "width_um": 8.28
+    },
+    "sky130_fd_sc_hd__xor2_1": {
+      "area_um2": 8.7584,
+      "arity": 2,
+      "drive": "1",
+      "height_um": 2.72,
+      "input_pins": [
+        "A",
+        "B"
+      ],
+      "master": "sky130_fd_sc_hd__xor2_1",
+      "output_pin": "X",
+      "polarity": 0,
+      "width_um": 3.22
+    },
+    "sky130_fd_sc_hd__xor3_1": {
+      "area_um2": 23.7728,
+      "arity": 3,
+      "drive": "1",
+      "height_um": 2.72,
+      "input_pins": [
+        "A",
+        "B",
+        "C"
+      ],
+      "master": "sky130_fd_sc_hd__xor3_1",
+      "output_pin": "X",
+      "polarity": 0,
+      "width_um": 8.74
+    }
+  },
+  "xor2_producer_nets_opened_by_xor3_consumers": [
+    {
+      "consumers": [
+        {
+          "arity": 3,
+          "instance": "_130_",
+          "pin": "B"
+        }
+      ],
+      "net": "_002_",
+      "producer": "_128_",
+      "producer_arity": 2
+    },
+    {
+      "consumers": [
+        {
+          "arity": 3,
+          "instance": "_130_",
+          "pin": "C"
+        },
+        {
+          "arity": 2,
+          "instance": "_135_",
+          "pin": "B"
+        }
+      ],
+      "net": "_003_",
+      "producer": "_129_",
+      "producer_arity": 2
+    },
+    {
+      "consumers": [
+        {
+          "arity": 3,
+          "instance": "_139_",
+          "pin": "A"
+        }
+      ],
+      "net": "_007_",
+      "producer": "_134_",
+      "producer_arity": 2
+    },
+    {
+      "consumers": [
+        {
+          "arity": 3,
+          "instance": "_139_",
+          "pin": "B"
+        }
+      ],
+      "net": "_008_",
+      "producer": "_135_",
+      "producer_arity": 2
+    },
+    {
+      "consumers": [
+        {
+          "arity": 3,
+          "instance": "_139_",
+          "pin": "C"
+        }
+      ],
+      "net": "_011_",
+      "producer": "_138_",
+      "producer_arity": 2
+    },
+    {
+      "consumers": [
+        {
+          "arity": 3,
+          "instance": "_166_",
+          "pin": "A"
+        }
+      ],
+      "net": "_028_",
+      "producer": "_158_",
+      "producer_arity": 2
+    },
+    {
+      "consumers": [
+        {
+          "arity": 3,
+          "instance": "_166_",
+          "pin": "B"
+        }
+      ],
+      "net": "_029_",
+      "producer": "_159_",
+      "producer_arity": 2
+    },
+    {
+      "consumers": [
+        {
+          "arity": 3,
+          "instance": "_165_",
+          "pin": "A"
+        }
+      ],
+      "net": "_032_",
+      "producer": "_162_",
+      "producer_arity": 2
+    },
+    {
+      "consumers": [
+        {
+          "arity": 3,
+          "instance": "_165_",
+          "pin": "B"
+        }
+      ],
+      "net": "_033_",
+      "producer": "_163_",
+      "producer_arity": 2
+    },
+    {
+      "consumers": [
+        {
+          "arity": 3,
+          "instance": "_165_",
+          "pin": "C"
+        }
+      ],
+      "net": "_034_",
+      "producer": "_164_",
+      "producer_arity": 2
+    },
+    {
+      "consumers": [
+        {
+          "arity": 2,
+          "instance": "_121_",
+          "pin": "A"
+        },
+        {
+          "arity": 3,
+          "instance": "_130_",
+          "pin": "A"
+        }
+      ],
+      "net": "_095_",
+      "producer": "_113_",
+      "producer_arity": 2
+    }
+  ]
+}

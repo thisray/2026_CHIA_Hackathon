@@ -1,0 +1,46 @@
+{
+  "http_status": 200,
+  "latency_s": 9.584,
+  "usage_metadata": {
+    "promptTokenCount": 7486,
+    "candidatesTokenCount": 301,
+    "totalTokenCount": 7787,
+    "trafficType": "ON_DEMAND",
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 7486
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 301
+      }
+    ]
+  },
+  "model_version": "gemini-3.8-flash",
+  "parsed_object": {
+    "decision": "RUN",
+    "parent_id": "18644d78-w32",
+    "action": {
+      "kind": "star_batch",
+      "roots": [
+        "_107_",
+        "_120_",
+        "_123_",
+        "_150_"
+      ]
+    },
+    "reason": "Targets for _107_ ({_107_, _109_, _136_}), _120_ ({_120_, _121_, _173_}), _123_ ({_123_, _124_, _135_}), and _150_ ({_150_, _151_, _172_}) are mutually pairwise disjoint. The 3-star batch (_120_, _123_, _150_) reduced J to 0.845 while slightly improving routed timing (2.0604ns vs 2.0610ns). Adding disjoint root _107_ from the critical input path converts _107_ and _109_ to faster xor2_1 gates with substantial toggle activity, enabling further J reduction while staying well within the 2.4ns limit.",
+    "expected_discriminator": "Routed STA delay <= 2.40ns and W32 J score < 0.84495"
+  },
+  "error": null,
+  "finish_reason": "STOP",
+  "error_kind": null,
+  "retry_after_s": null,
+  "model": "google-vertex/gemini-3.8-flash",
+  "thinking_level": "LOW",
+  "max_output_tokens": 2048,
+  "response_sha256": "416cf840425469a36b47d4723856fcd19049e223bd84dd4821a057b7f77d2cbb"
+}

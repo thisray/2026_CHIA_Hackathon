@@ -1,0 +1,530 @@
+{
+  "context": {
+    "C_policy_control": {
+      "adaptive_best_new_query_j": 1.0464968605916718,
+      "common_incumbent_j": 0.9913747530659007,
+      "fixed_best_new_query_j": 1.0343090192405093,
+      "source_path": "review/chia_top1_C_policy_compare/20260923/receipt.json",
+      "source_revision": "21ed8af774dbc7047e5deb1bec1594f31f95791e",
+      "source_sha256": "6cfe46b130fc4aef28c5e899baf13bbdff7a6fb085c14d5900e4fd9c387ce7ff",
+      "verdict": "TIE_ON_COMMON_INCUMBENT_FIXED_BETTER_ON_NEW_C_QUERIES"
+    },
+    "legacy_single_context": {
+      "best_routed_delay_ns": 2.393567,
+      "best_routed_energy_pj_per_vector": 2.5235580378417968,
+      "measurement_context": "legacy_single_profile_not_comparable_to_three_profile_J",
+      "source_path": "review/ecc_route_loop/20260922/receipt.json",
+      "source_revision": "40735e454060058b9bbccabeb9ba78d7cd61f4a2",
+      "source_sha256": "8781103a62b75b8848817ec6f0e6288a39377a115798ea946f4847321ff3f592"
+    }
+  },
+  "delay_ceiling_ns": 2.4,
+  "denominators_pj_by_width": {
+    "32": {
+      "stress_encoded": 1.595184585,
+      "valid_low_toggle": 0.32781139449999996,
+      "valid_uniform": 1.140097229
+    },
+    "64": {
+      "stress_encoded": 2.541007707,
+      "valid_low_toggle": 0.4358843944,
+      "valid_uniform": 2.027927403
+    }
+  },
+  "missing_original_vcd_bytes": [
+    "U",
+    "W"
+  ],
+  "missing_original_vcd_status": "not_retained_by_original_runner",
+  "profiles": [
+    "stress_encoded",
+    "valid_uniform",
+    "valid_low_toggle"
+  ],
+  "rows": [
+    {
+      "area_um2": 2427.0,
+      "delay_ns": 2.362535,
+      "energy_pj": {
+        "stress_encoded": 2.534645901,
+        "valid_low_toggle": 0.37545007220000004,
+        "valid_uniform": 1.9112623699999998
+      },
+      "execution_source_commit": "3745c1446b231d7063d27f18761e0d21dfc3ad6f",
+      "feasible": true,
+      "functional_valid": true,
+      "id": "bbf",
+      "j": 0.9320803737308742,
+      "measurement_valid": true,
+      "netlist_sha256": "bbf15474e18c61fc0d2356d7c9c471011a6b37a79bf2cfe987a6281892e832ff",
+      "route_valid": true,
+      "source_path": "review/chia_F_composable_phase/20260924/f03-step-01-receipt.json",
+      "source_pointer": "",
+      "source_revision": "1b455dfd926bc1dd73e189eab7f8f73c0c1516ea",
+      "source_sha256": "3002a702321c1f476cb8258271dd69e2c6d0840dc06affaf8bfcd7befd012cec",
+      "spef_sha256": "bdfe3d420ccbefb6ebc2c441e485d1f43869cec7051e4d59104b0657f859dc72",
+      "width": 64
+    },
+    {
+      "area_um2": 2427.0,
+      "delay_ns": 2.528992,
+      "energy_pj": {
+        "stress_encoded": 2.4287297860000003,
+        "valid_low_toggle": 0.3478267172,
+        "valid_uniform": 1.8140354950000002
+      },
+      "execution_source_commit": "656e6387ef3fff36b8e243eff8d455ac44be23d6",
+      "feasible": false,
+      "functional_valid": true,
+      "id": "H1",
+      "j": 0.8803446654964827,
+      "measurement_valid": true,
+      "netlist_sha256": "a4202284d2061009fdaa0c2eea5a3880771a8886e64b6485559b712d80af9ade",
+      "route_valid": true,
+      "source_path": "review/chia_H_phase_assignment/20260924/h01-receipt.json",
+      "source_pointer": "",
+      "source_revision": "baa78b46c795f60451c0cc96d495ad315adf6ce8",
+      "source_sha256": "dca4a2000828f97392737082dd1d8f2366c7a46aaf6162245657901abfe37ba0",
+      "spef_sha256": "7d9a50ecee50e4e3b04d4ac2fb42e36094028ce0fb1ab893913e67f2886b7af5",
+      "width": 64
+    },
+    {
+      "area_um2": 2427.0,
+      "delay_ns": 2.452134,
+      "energy_pj": {
+        "stress_encoded": 2.440835378,
+        "valid_low_toggle": 0.3506278517,
+        "valid_uniform": 1.823997882
+      },
+      "execution_source_commit": "00710c9a05b7d704467903a168cb5c4ce465a319",
+      "feasible": false,
+      "functional_valid": true,
+      "id": "H2",
+      "j": 0.8857813004427838,
+      "measurement_valid": true,
+      "netlist_sha256": "e267f8bd732eb5181730945c75d0ac61768a72db79ad45d0a716ebd268e6ba83",
+      "route_valid": true,
+      "source_path": "review/chia_H_phase_assignment/20260924/h02-receipt.json",
+      "source_pointer": "",
+      "source_revision": "baa78b46c795f60451c0cc96d495ad315adf6ce8",
+      "source_sha256": "e1576b93e7753686acc4600598512c84ad2f743ff62eff2b92c1366af2de8389",
+      "spef_sha256": "fa3e941e34c2bbb423463d24072b02dfa0b9e2ebb97e604d76fcc288725d775f",
+      "width": 64
+    },
+    {
+      "area_um2": 2447.0,
+      "delay_ns": 2.398176,
+      "energy_pj": {
+        "stress_encoded": 2.475488873,
+        "valid_low_toggle": 0.36232304410000005,
+        "valid_uniform": 1.848241809
+      },
+      "execution_source_commit": "71a8bfff46e46b3cf5f6a7c9bea02fb017b42e24",
+      "feasible": true,
+      "functional_valid": true,
+      "id": "I1",
+      "j": 0.9037091361205398,
+      "measurement_valid": true,
+      "netlist_sha256": "39bb3c78f833f66da8b508fcfdabea8bb185e74e75919b25536899fb57478a0c",
+      "route_valid": true,
+      "source_path": "review/chia_I_phase_timing_repair/20260924/i01-result.json",
+      "source_pointer": "",
+      "source_revision": "baa78b46c795f60451c0cc96d495ad315adf6ce8",
+      "source_sha256": "a0789a71c66651bb7f45682c1c01e493ab88ce02826cf577bdb6991e5f407d7f",
+      "spef_sha256": "5dda55ae6e4064ff138730f673dcc161b9320de7230ae089eadfe3ce3f08918e",
+      "width": 64
+    },
+    {
+      "area_um2": 2427.0,
+      "delay_ns": 2.365566,
+      "energy_pj": {
+        "stress_encoded": 2.53571925,
+        "valid_low_toggle": 0.375528507,
+        "valid_uniform": 1.911527652
+      },
+      "execution_source_commit": "71a8bfff46e46b3cf5f6a7c9bea02fb017b42e24",
+      "feasible": true,
+      "functional_valid": true,
+      "id": "I2",
+      "j": 0.9323199671949746,
+      "measurement_valid": true,
+      "netlist_sha256": "bbf15474e18c61fc0d2356d7c9c471011a6b37a79bf2cfe987a6281892e832ff",
+      "route_valid": true,
+      "source_path": "review/chia_I_phase_timing_repair/20260924/i02-result.json",
+      "source_pointer": "",
+      "source_revision": "26d4363c476e95395f64b2fd406172eac0aa46bd",
+      "source_sha256": "4c94f953b1ffc0a2553ee8fe50e403ebe95f0ea23a579206c4b3337c17b7441c",
+      "spef_sha256": "59d5c765b699b0fa2ce979b9f8ece617ef0613beacb86f406eac0b272c6aa802",
+      "width": 64
+    },
+    {
+      "area_um2": 2427.0,
+      "delay_ns": 2.376334,
+      "energy_pj": {
+        "stress_encoded": 2.4769769520000002,
+        "valid_low_toggle": 0.3547985398,
+        "valid_uniform": 1.8590905530000001
+      },
+      "execution_source_commit": "4adaff7929d1dee7941e3f0d4429aadacd2f7121",
+      "feasible": true,
+      "functional_valid": true,
+      "id": "J1",
+      "j": 0.899341999486715,
+      "measurement_valid": true,
+      "netlist_sha256": "8e038f9f7b28cb284e3b8d14cee4018585df010181c48ebdd45d16dfc30ab6bd",
+      "route_valid": true,
+      "source_path": "review/chia_J_timing_frontier/20260924/j01-result.json",
+      "source_pointer": "",
+      "source_revision": "a681cd9fec579d5bff0fecdaa8e0267c7dfbae73",
+      "source_sha256": "d89a543b521d5be90b451b35d718204c6786de90b644113541f27f3f1e27bcf2",
+      "spef_sha256": "5b0731a6ee064cdec0d2c829d9f3796fbd9f33914b3dba04f0a2d3b8bbf37623",
+      "width": 64
+    },
+    {
+      "area_um2": 2427.0,
+      "delay_ns": 2.369255,
+      "energy_pj": {
+        "stress_encoded": 2.4741599919999997,
+        "valid_low_toggle": 0.3530194954,
+        "valid_uniform": 1.856979507
+      },
+      "execution_source_commit": "2d0a5f4265e496cd5e8e7d2722c247e9afed6fbe",
+      "feasible": true,
+      "functional_valid": true,
+      "id": "N1",
+      "j": 0.8971559836444075,
+      "measurement_valid": true,
+      "netlist_sha256": "053c7242b2c4ed51ad391a6af23182b86d9916dba0a96fe9e3b8f1706c0c79f8",
+      "route_valid": true,
+      "source_path": "review/chia_N_weighted_phase/20260924/n01-result.json",
+      "source_pointer": "",
+      "source_revision": "a59959e331919cc55f1bb7a6526221f84ed5b119",
+      "source_sha256": "9c2cf1bac390acf29c7e7a2c1f175ddeb75e059605744e4356b69cdacc755183",
+      "spef_sha256": "abaebf26e68a7bdf153c3fb75ce547e5cfca36b0b7f70b9fcedab1d8f5bb9b51",
+      "width": 64
+    },
+    {
+      "area_um2": 2427.0,
+      "delay_ns": 2.375917,
+      "energy_pj": {
+        "stress_encoded": 2.4721192309999998,
+        "valid_low_toggle": 0.35327273509999996,
+        "valid_uniform": 1.854768634
+      },
+      "execution_source_commit": "6a67a161b640d982857efd5fb3995d677415969a",
+      "feasible": true,
+      "functional_valid": true,
+      "id": "N2",
+      "j": 0.8967674921289613,
+      "measurement_valid": true,
+      "netlist_sha256": "320970ab4870a46b7603f457414d938c47b7971d760c2b07c5fae1983e0ca44f",
+      "route_valid": true,
+      "source_path": "review/chia_N_weighted_phase/20260924/n02-receipt.json",
+      "source_pointer": "",
+      "source_revision": "a59959e331919cc55f1bb7a6526221f84ed5b119",
+      "source_sha256": "2bb4f045ab14fc882c8347fd70aa7a7abeb5a2ee7c049535cf66e75457fae64c",
+      "spef_sha256": "d62064f949382aa95a4fcd149f24806f6aed3922bd754b025b36c066b8505e0b",
+      "width": 64
+    },
+    {
+      "area_um2": 2425.0,
+      "delay_ns": 2.374088,
+      "energy_pj": {
+        "stress_encoded": 2.4701986689999997,
+        "valid_low_toggle": 0.35179768019999996,
+        "valid_uniform": 1.854111761
+      },
+      "execution_source_commit": "9f01c4f67ea95ebd91257307455397514524ac18",
+      "feasible": true,
+      "functional_valid": true,
+      "id": "S2",
+      "j": 0.8951799620117368,
+      "measurement_valid": true,
+      "netlist_sha256": "eefeb2af735a2169fda65d2d8f5ced7507070ade895cfc9f5a261fd8e4c16cf3",
+      "route_valid": true,
+      "source_path": "review/chia_S_folded_xor3/20260924/s02-receipt.json",
+      "source_pointer": "",
+      "source_revision": "5456a06eb95e846931efe5799e8f32cba3e08c4f",
+      "source_sha256": "632f5e0b5a65aaa1836985025b33d9ada0d21c34318ca7da841e1f6632c7eaf1",
+      "spef_sha256": "ec1f6b9a8f72121df23929a78bd4aefacb9c8461da91de2cc773d37da9b083a7",
+      "width": 64
+    },
+    {
+      "area_um2": 2425.0,
+      "delay_ns": 2.430113,
+      "energy_pj": {
+        "stress_encoded": 2.4614430730000003,
+        "valid_low_toggle": 0.35134537029999996,
+        "valid_uniform": 1.8465147880000001
+      },
+      "execution_source_commit": "813fed79f6361e537db3da44da3d04a667d94ab0",
+      "feasible": false,
+      "functional_valid": true,
+      "id": "U1",
+      "j": 0.8925153721687227,
+      "measurement_valid": true,
+      "netlist_sha256": "cd523afe460cbeae464e2b32d494696813bcbbfa6045f53c843126974f39f2cc",
+      "route_valid": true,
+      "source_path": "review/chia_U_incumbent_feedback/20260924/u01-receipt.json",
+      "source_pointer": "",
+      "source_revision": "7f72fd9dfa770b3eecbd70aabcc0208b247123e3",
+      "source_sha256": "b2358b76cf45e815bc9021c541283475388db2f2f6aa9b7c35e1101e4cec7984",
+      "spef_sha256": "fac0edba5bf20a1c439acf4fa99e18ff9b655dc2c3d4512d36a1ea40c6f98671",
+      "width": 64
+    },
+    {
+      "area_um2": 2425.0,
+      "delay_ns": 2.375888,
+      "energy_pj": {
+        "stress_encoded": 2.468786261,
+        "valid_low_toggle": 0.3517407458,
+        "valid_uniform": 1.853478461
+      },
+      "execution_source_commit": "813fed79f6361e537db3da44da3d04a667d94ab0",
+      "feasible": true,
+      "functional_valid": true,
+      "id": "U2",
+      "j": 0.8948591220541359,
+      "measurement_valid": true,
+      "netlist_sha256": "eefeb2af735a2169fda65d2d8f5ced7507070ade895cfc9f5a261fd8e4c16cf3",
+      "route_valid": true,
+      "source_path": "review/chia_U_incumbent_feedback/20260924/u02-receipt.json",
+      "source_pointer": "",
+      "source_revision": "7f72fd9dfa770b3eecbd70aabcc0208b247123e3",
+      "source_sha256": "24be5d6526247aad36d5cebaccc7e2c6c74d9ab50c9447fef067108eb80e0160",
+      "spef_sha256": "af07e89e5f8f53a3184e7b60df5927c7ddad80442c37b9188b03faf9144365cf",
+      "width": 64
+    },
+    {
+      "area_um2": 2425.0,
+      "delay_ns": 2.373983,
+      "energy_pj": {
+        "stress_encoded": 2.475585788,
+        "valid_low_toggle": 0.3522472616,
+        "valid_uniform": 1.85910365
+      },
+      "execution_source_commit": "813fed79f6361e537db3da44da3d04a667d94ab0",
+      "feasible": true,
+      "functional_valid": true,
+      "id": "U3",
+      "j": 0.8970152663595823,
+      "measurement_valid": true,
+      "netlist_sha256": "6c35da5173bb61c49cdf336b67ba5ac0f376d8ad2282dfc9eac9cb447c6ea8ca",
+      "route_valid": true,
+      "source_path": "review/chia_U_incumbent_feedback/20260924/u03-receipt.json",
+      "source_pointer": "",
+      "source_revision": "7f72fd9dfa770b3eecbd70aabcc0208b247123e3",
+      "source_sha256": "0f9381721d6adc24e3427c8e7257454cce0d4d4d35802c49dff9e751fce4deb3",
+      "spef_sha256": "ba9993441d995be339e7061e1a1d680460fa129a2ba286d85d7b0ab5d51b377e",
+      "width": 64
+    },
+    {
+      "area_um2": 2416.0,
+      "delay_ns": 2.425037,
+      "energy_pj": {
+        "stress_encoded": 2.466217848,
+        "valid_low_toggle": 0.3514162017,
+        "valid_uniform": 1.856532035
+      },
+      "execution_source_commit": "81089f1b0d94b2b17072bf65af4a808e8c03041d",
+      "feasible": false,
+      "functional_valid": true,
+      "id": "R2",
+      "j": 0.8947643094093487,
+      "measurement_valid": true,
+      "netlist_sha256": "e07e2ce09a974c4ba3bce2e6689bf83570b915572c2cda3e983e04184d16d942",
+      "route_valid": true,
+      "source_path": "review/chia_R_xor3_critical/20260924/r02-receipt.json",
+      "source_pointer": "",
+      "source_revision": "dae45a4cc0da4e924992eca1f9b3462160f33f03",
+      "source_sha256": "42997b9a015ea4162e3ad1b75a7241863979fc7f113a63d7da6d4b9d3d0e1b64",
+      "spef_sha256": "73ee80f7880c79bc86977cc76778a5c0f6238f462855c4696f17de62f72bff91",
+      "width": 64
+    },
+    {
+      "area_um2": 2424.0,
+      "delay_ns": 2.370334,
+      "energy_pj": {
+        "stress_encoded": 2.470196341,
+        "valid_low_toggle": 0.3519423262,
+        "valid_uniform": 1.862394856
+      },
+      "execution_source_commit": "cf8c954626f06c117aa771563c0fba106962d335",
+      "feasible": true,
+      "functional_valid": true,
+      "id": "T1",
+      "j": 0.8966336020139302,
+      "measurement_valid": true,
+      "netlist_sha256": "2525e5606fd06eecf7f0383bc7b0b55db2bba5b30c94ea0b2ddbfc0ea33c4280",
+      "route_valid": true,
+      "source_path": "review/chia_T_arity_repair/20260924/t01-receipt.json",
+      "source_pointer": "",
+      "source_revision": "7f72fd9dfa770b3eecbd70aabcc0208b247123e3",
+      "source_sha256": "e4e9ea2662ce04bfbefe4c85c16a90b30607e7dc19e3b9ebd5ab18cf9cd3fa2f",
+      "spef_sha256": "134129eada33da55eddc8704f41681223c57e026fc2fb393b3c83e1af1206c52",
+      "width": 64
+    },
+    {
+      "area_um2": 1299.0,
+      "delay_ns": 2.110139,
+      "energy_pj": {
+        "stress_encoded": 1.3316170950000001,
+        "valid_low_toggle": 0.2848759686,
+        "valid_uniform": 0.9302863327
+      },
+      "execution_source_commit": "191c7c15f4a5b97b0c7523636ecc930610909b63",
+      "feasible": true,
+      "functional_valid": true,
+      "id": "ff6",
+      "j": 0.8396371501336096,
+      "measurement_valid": true,
+      "netlist_sha256": "ff6f3194c3e527005aba7bb2b4153e4a2f47454bf627739f0348cae6d120bf59",
+      "route_valid": true,
+      "source_path": "review/chia_G32_phase_transfer/20260924/run-02-result.json",
+      "source_pointer": "",
+      "source_revision": "10eb0697a609af0cd76ff2fe2e19171d794f02ae",
+      "source_sha256": "b7b0234120b06e0bd6d2e1edf42a8abc64bf3f73d59130ac0b12fc01bad7603a",
+      "spef_sha256": "92d03c0c930464071fe0f22d3d22efafbe8192e5f1022237500ef628e3ea178f",
+      "width": 32
+    },
+    {
+      "area_um2": 1299.0,
+      "delay_ns": 2.069854,
+      "energy_pj": {
+        "stress_encoded": 1.280009747,
+        "valid_low_toggle": 0.2677222983,
+        "valid_uniform": 0.8892433107000001
+      },
+      "execution_source_commit": "5da3ccc20bd18cbae9ac8b64b2b451fc547c9984",
+      "feasible": true,
+      "functional_valid": true,
+      "id": "O1",
+      "j": 0.799552863297334,
+      "measurement_valid": true,
+      "netlist_sha256": "f8a77599cc55287da6f4423c9de3abf1dfdced129616b5c9c3b9aa642f0a3372",
+      "route_valid": true,
+      "source_path": "review/chia_O32_global_phase/20260924/o01-receipt.json",
+      "source_pointer": "",
+      "source_revision": "919c87a54cae67ff66683231d27d55b2e9bb3389",
+      "source_sha256": "53af6d9ea28b6ff8e7127ab7bc62ea9d7bfa492216490aa61009a60a0416d31f",
+      "spef_sha256": "1267423b0e16748fe8fa5ff1c2cb133c8155ec48c9ed33826c3483c09c849e64",
+      "width": 32
+    },
+    {
+      "area_um2": 1299.0,
+      "delay_ns": 2.098243,
+      "energy_pj": {
+        "stress_encoded": 1.2790707110000001,
+        "valid_low_toggle": 0.2669597961,
+        "valid_uniform": 0.8860687375999999
+      },
+      "execution_source_commit": "9fc6f870cd741a8550c9d182571ae579186c0fe1",
+      "feasible": true,
+      "functional_valid": true,
+      "id": "O2",
+      "j": 0.79764622997943,
+      "measurement_valid": true,
+      "netlist_sha256": "c6c10558e367fd345b17c3b1a70898ddb8bcca9414833f0fcb34e7fd83478d95",
+      "route_valid": true,
+      "source_path": "review/chia_O32_global_phase/20260924/o02-receipt.json",
+      "source_pointer": "",
+      "source_revision": "919c87a54cae67ff66683231d27d55b2e9bb3389",
+      "source_sha256": "d84042680c747e7b77076fa77d8b737d0ff1de247022d72414df435802a938d4",
+      "spef_sha256": "00792e4e47293771141c88849f9f7c25d167e37f5274e69bf63886faea9108bb",
+      "width": 32
+    },
+    {
+      "area_um2": 1297.0,
+      "delay_ns": 2.080952,
+      "energy_pj": {
+        "stress_encoded": 1.2772632179999999,
+        "valid_low_toggle": 0.26733046979999997,
+        "valid_uniform": 0.8862236427
+      },
+      "execution_source_commit": "aa31341222e7573376154eba0ba323028e0945a4",
+      "feasible": true,
+      "functional_valid": true,
+      "id": "V1",
+      "j": 0.7976856387624334,
+      "measurement_valid": true,
+      "netlist_sha256": "8e5b08be4e99d6f34e2fc0afea284f7d99ec7d6fdca5104907300c40a8dcbdd3",
+      "route_valid": true,
+      "source_path": "review/chia_V_w32_mixed/20260924/v01-receipt.json",
+      "source_pointer": "",
+      "source_revision": "7799886574c96219b7f2b50a5ec616fa6bd296d7",
+      "source_sha256": "30d9fc9e0b6f0dd01a13f583d69842c238169b50d300400c4abe9c58e7d696cc",
+      "spef_sha256": "08a724c643df23433725e5e7b55d1c350ff99123490e57bebd7e26b07761e219",
+      "width": 32
+    },
+    {
+      "area_um2": 1296.0,
+      "delay_ns": 2.081588,
+      "energy_pj": {
+        "stress_encoded": 1.275677205,
+        "valid_low_toggle": 0.26626383259999997,
+        "valid_uniform": 0.8836139022999999
+      },
+      "execution_source_commit": "9696c194aa7afa41fda66afe5afdcb7820eec767",
+      "feasible": true,
+      "functional_valid": true,
+      "id": "V2",
+      "j": 0.7955110408817432,
+      "measurement_valid": true,
+      "netlist_sha256": "2a2873494f4d097e9e33786de3db0681e22e62a5e480f7407b1a5e59870acb28",
+      "route_valid": true,
+      "source_path": "review/chia_V_w32_mixed/20260924/v02-receipt.json",
+      "source_pointer": "",
+      "source_revision": "7799886574c96219b7f2b50a5ec616fa6bd296d7",
+      "source_sha256": "9239d13500f59daac905c51a259f4f860db5dca6b0f0cf1ab74846dc8247238e",
+      "spef_sha256": "99e1f71dd690f1c744ece2b0b65d5ff720ee21de7b2d87d2a589f0e9819c6ec4",
+      "width": 32
+    },
+    {
+      "area_um2": 1299.0,
+      "delay_ns": 2.061026,
+      "energy_pj": {
+        "stress_encoded": 1.363066986,
+        "valid_low_toggle": 0.2974786548,
+        "valid_uniform": 0.9591930575
+      },
+      "execution_source_commit": "f1e145b0c76c84d4b7d528ae4b519133d58382c9",
+      "feasible": true,
+      "functional_valid": null,
+      "id": "G0",
+      "j": 0.8672960832000194,
+      "measurement_valid": null,
+      "netlist_sha256": "18644d78fe11fa5859ca7f882313e18969dec467d433f1e7b85adab7a8f66aec",
+      "route_valid": null,
+      "source_path": "review/chia_w32_phase_transfer/20260923/receipt.json",
+      "source_pointer": "/result",
+      "source_revision": "8dc94b6caf5fdab66ddcc6a4384c00f964a7d014",
+      "source_sha256": "d25fa13c4e3e9195446ec72b8493124839f79c680f005b90c1fd6e6898c43eef",
+      "spef_sha256": "5e05897ee9d58a2d88de16cb1a9b60b2d178d7fcdc889f59f2f8de28b2730115",
+      "width": 32
+    },
+    {
+      "area_um2": 1299.0,
+      "delay_ns": 2.060426,
+      "energy_pj": {
+        "stress_encoded": 1.339273003,
+        "valid_low_toggle": 0.2863927511,
+        "valid_uniform": 0.9376481466
+      },
+      "execution_source_commit": "191c7c15f4a5b97b0c7523636ecc930610909b63",
+      "feasible": true,
+      "functional_valid": true,
+      "id": "G1",
+      "j": 0.844950729460286,
+      "measurement_valid": true,
+      "netlist_sha256": "00188fb557db0d496d02717a72d4aa4aa5e3a022887f013b374250aa0def746a",
+      "route_valid": true,
+      "source_path": "review/chia_G32_phase_transfer/20260924/run-01-result.json",
+      "source_pointer": "",
+      "source_revision": "10eb0697a609af0cd76ff2fe2e19171d794f02ae",
+      "source_sha256": "90c506420d6726e2418e138a0c605d59c59ab5d0d7c0ca0ad952d8f9a63b6351",
+      "spef_sha256": "571f440bdaf06eac80002f67357ec816f4335ec41dfda12379a97ae83d1622f0",
+      "width": 32
+    }
+  ],
+  "scope": "selected_implementations_not_attempt_census"
+}

@@ -1,0 +1,60 @@
+{
+  "action": {
+    "kind": "pair_batch",
+    "pairs": [
+      {
+        "lower": "_309_",
+        "upper": "_310_"
+      }
+    ]
+  },
+  "case": "U1",
+  "feasible": false,
+  "functional_valid": true,
+  "goal_id": "routed3_w64_d240_b271F0_v1",
+  "hashes": {
+    "eco_pre_route": "cd523afe460cbeae464e2b32d494696813bcbbfa6045f53c843126974f39f2cc",
+    "eco_routed_netlist": "cd523afe460cbeae464e2b32d494696813bcbbfa6045f53c843126974f39f2cc",
+    "eco_routed_odb": "ecb2dcee071792a381103da79e987e55c4dd611733c5868c234c1602a94cd0a0",
+    "eco_routed_spef": "fac0edba5bf20a1c439acf4fa99e18ff9b655dc2c3d4512d36a1ea40c6f98671",
+    "final_proof_log": "beda13da6eb0bedf6f25a6ad68e896883643640fa0734e11ded9fec5390768ac"
+  },
+  "j_score": 0.8925153721687227,
+  "kind": "polarity_action",
+  "measurement_valid": true,
+  "original_sha256": "b2358b76cf45e815bc9021c541283475388db2f2f6aa9b7c35e1101e4cec7984",
+  "parent_graph_sha256": "eefeb2af735a2169fda65d2d8f5ced7507070ade895cfc9f5a261fd8e4c16cf3",
+  "parent_id": "S02-eefeb2af",
+  "parent_measurement_meta_sha256": "e6ce61fa1121ea2649b8dadc1898979ca5dba08b87e278e042c1e5242953c799",
+  "parent_odb_sha256": "efcf7d6be56be055eb86053be820753aa3b7f3d8be24ac3496cbec7d2239f6db",
+  "parent_proof_log_sha256": "8015a4ff400520d7276b2cd8ed14d33d43f5d61848a58d5c1a6cbdc8bf503b02",
+  "parent_receipt_sha256": "632f5e0b5a65aaa1836985025b33d9ada0d21c34318ca7da841e1f6632c7eaf1",
+  "parent_spef_sha256": "ec1f6b9a8f72121df23929a78bd4aefacb9c8461da91de2cc773d37da9b083a7",
+  "raw_energies_pj": {
+    "stress_encoded": 2.4614430730000003,
+    "valid_low_toggle": 0.35134537029999996,
+    "valid_uniform": 1.8465147880000001
+  },
+  "route_valid": true,
+  "routed_area_um2": 2425.0,
+  "routed_delay_ns": 2.430113,
+  "selected_metric_row": {
+    "area_um2": 2425.0,
+    "delay_ns": 2.430113,
+    "energy_pj": {
+      "stress_encoded": 2.4614430730000003,
+      "valid_low_toggle": 0.35134537029999996,
+      "valid_uniform": 1.8465147880000001
+    },
+    "feasible": false,
+    "id": "U1",
+    "j": 0.8925153721687227,
+    "width": 64
+  },
+  "source_commit": "813fed79f6361e537db3da44da3d04a667d94ab0",
+  "source_pointer": "",
+  "source_revision": "7f72fd9dfa770b3eecbd70aabcc0208b247123e3",
+  "stage": "complete",
+  "status": "OK",
+  "upstream_path": "review/chia_U_incumbent_feedback/20260924/u01-receipt.json"
+}

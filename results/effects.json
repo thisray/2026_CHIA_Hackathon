@@ -1,0 +1,208 @@
+{
+  "I1_vs_I2": {
+    "J_reduction_percent": 3.0687781106431444,
+    "area_change_um2": 20.0,
+    "child": "I1",
+    "comparison": "I2",
+    "delay_change_ps": 32.61000000000003,
+    "per_profile_reduction_percent": [
+      2.375277823047639,
+      3.3107469271388856,
+      3.5165007859176867
+    ],
+    "scope": "same repair recipe; different physical parents"
+  },
+  "N1_vs_J1": {
+    "J_reduction_percent": 0.2430683592621219,
+    "area_change_um2": 0.0,
+    "child": "N1",
+    "comparison": "J1",
+    "delay_change_ps": -7.0790000000000575,
+    "per_profile_reduction_percent": [
+      0.11372572513143053,
+      0.11355261832693975,
+      0.501423822376168
+    ],
+    "scope": "sibling proposals from bbf"
+  },
+  "O2_vs_ff6": {
+    "J_reduction_percent": 5.001079352848747,
+    "area_change_um2": 0.0,
+    "child": "O2",
+    "comparison": "ff6",
+    "delay_change_ps": -11.896000000000129,
+    "per_profile_reduction_percent": [
+      3.9460580821095603,
+      4.7531167067311415,
+      6.2891133246681274
+    ],
+    "scope": "direct parent"
+  },
+  "S2_vs_N2": {
+    "J_reduction_percent": 0.1770280625868481,
+    "area_change_um2": -2.0,
+    "child": "S2",
+    "comparison": "N2",
+    "delay_change_ps": -1.8289999999998585,
+    "per_profile_reduction_percent": [
+      0.07768889040287164,
+      0.03541536059855632,
+      0.4175399778820865
+    ],
+    "scope": "direct parent"
+  },
+  "S2_vs_bbf": {
+    "J_reduction_percent": 3.958930233820357,
+    "area_change_um2": -2.0,
+    "child": "S2",
+    "comparison": "bbf",
+    "delay_change_ps": 11.553000000000146,
+    "per_profile_reduction_percent": [
+      2.542652288218006,
+      2.9902021772133636,
+      6.299743628069033
+    ],
+    "scope": "cumulative after an earlier CHIA result"
+  },
+  "S2_vs_reference": {
+    "J_reduction_percent": 10.482003798826323,
+    "child": "S2",
+    "per_profile_reduction_percent": [
+      2.7866518391476913,
+      8.571097848121545,
+      19.291058656905204
+    ],
+    "scope": "fixed width-specific energy denominator, not a matched method control"
+  },
+  "T1_vs_R2": {
+    "J_reduction_percent": -0.2089145247440083,
+    "area_change_um2": 8.0,
+    "child": "T1",
+    "comparison": "R2",
+    "delay_change_ps": -54.702999999999946,
+    "per_profile_reduction_percent": [
+      -0.16131960942649126,
+      -0.31579422759597797,
+      -0.14971549332525314
+    ],
+    "scope": "direct parent; repair restores feasibility"
+  },
+  "U2_vs_S2": {
+    "J_reduction_percent": 0.03584083326440002,
+    "area_change_um2": 0.0,
+    "child": "U2",
+    "comparison": "S2",
+    "delay_change_ps": 1.8000000000002458,
+    "per_profile_reduction_percent": [
+      0.0571779111423254,
+      0.034156517062300384,
+      0.016183847479500635
+    ],
+    "scope": "same logical graph; new physical state"
+  },
+  "U2_vs_bbf": {
+    "J_reduction_percent": 3.9933521535005956,
+    "area_change_um2": -2.0,
+    "child": "U2",
+    "comparison": "bbf",
+    "delay_change_ps": 13.353000000000392,
+    "per_profile_reduction_percent": [
+      2.598376363894317,
+      3.023337345358812,
+      6.314907934648161
+    ],
+    "scope": "cumulative physical realization"
+  },
+  "U2_vs_reference": {
+    "J_reduction_percent": 10.514087794586413,
+    "child": "U2",
+    "per_profile_reduction_percent": [
+      2.8422364009775825,
+      8.60232677668492,
+      19.304120468874487
+    ],
+    "scope": "fixed width-specific energy denominator, not a matched method control"
+  },
+  "V2_vs_G0": {
+    "J_reduction_percent": 8.276878416585776,
+    "area_change_um2": -3.0,
+    "child": "V2",
+    "comparison": "G0",
+    "delay_change_ps": 20.56199999999997,
+    "per_profile_reduction_percent": [
+      6.4112609209654785,
+      7.879451858939257,
+      10.493130077176904
+    ],
+    "scope": "cumulative from local-transfer output"
+  },
+  "V2_vs_O2": {
+    "J_reduction_percent": 0.26768622698083444,
+    "area_change_um2": -3.0,
+    "child": "V2",
+    "comparison": "O2",
+    "delay_change_ps": -16.655000000000086,
+    "per_profile_reduction_percent": [
+      0.2653102733739421,
+      0.2770479530345704,
+      0.2606997421212065
+    ],
+    "scope": "direct parent"
+  },
+  "V2_vs_ff6": {
+    "J_reduction_percent": 5.255378379201625,
+    "area_change_um2": -3.0,
+    "child": "V2",
+    "comparison": "ff6",
+    "delay_change_ps": -28.551000000000215,
+    "per_profile_reduction_percent": [
+      4.2008990579983525,
+      5.016996247224359,
+      6.533417364570216
+    ],
+    "scope": "cumulative after an earlier CHIA result"
+  },
+  "V2_vs_reference": {
+    "J_reduction_percent": 20.44889591182568,
+    "child": "V2",
+    "per_profile_reduction_percent": [
+      20.029492699742956,
+      22.49661872478773,
+      18.77529668969453
+    ],
+    "scope": "fixed width-specific energy denominator, not a matched method control"
+  },
+  "bbf_vs_reference": {
+    "J_reduction_percent": 6.791962626912584,
+    "child": "bbf",
+    "per_profile_reduction_percent": [
+      0.25036547439325485,
+      5.752919597980322,
+      13.864759320688346
+    ],
+    "scope": "fixed width-specific energy denominator, not a matched method control"
+  },
+  "ff6_vs_G0": {
+    "J_reduction_percent": 3.1890992709615373,
+    "area_change_um2": 0.0,
+    "child": "ff6",
+    "comparison": "G0",
+    "delay_change_ps": 49.113000000000184,
+    "per_profile_reduction_percent": [
+      2.307288733644075,
+      3.0136503359752376,
+      4.236501004911775
+    ],
+    "scope": "direct parent; G1 only supplied feedback"
+  },
+  "ff6_vs_reference": {
+    "J_reduction_percent": 16.03628498663904,
+    "child": "ff6",
+    "per_profile_reduction_percent": [
+      16.52269539703456,
+      18.402895030630752,
+      13.097600211697335
+    ],
+    "scope": "fixed width-specific energy denominator, not a matched method control"
+  }
+}

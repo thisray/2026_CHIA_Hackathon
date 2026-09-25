@@ -1,0 +1,408 @@
+{
+  "action": {
+    "kind": "xor3_phase_replay",
+    "plan": "n02_068"
+  },
+  "actual_chia_identity": {
+    "chia_job_id": "01000000",
+    "chia_node_id": "80ab8b8ba28d7a633a036c87d322a012b0895f897e251cd7388710aa",
+    "chia_node_ip": "10.148.0.27",
+    "chia_task_id": "c8ef45ccd0112571ffffffffffffffffffffffff01000000",
+    "chia_worker_id": "fad9c90c7bdd27a63732b2544bbc71db950229706931da599e13e89b",
+    "executable": "/home/vegapunk/miniforge3/envs/chia_familyrtl_260919/bin/python",
+    "hostname": "chia-arm64-eda-03",
+    "in_ray_worker": true,
+    "pid": 196523
+  },
+  "dpl_moved_instance_count": 0,
+  "dpl_moved_instances": [],
+  "dpl_moved_instances_sha256": "07423828286f731ff3d90269f7a54a2cf0d7f99d68c2e5f7a0f4598761447107",
+  "dpl_policy": "detailed_placement max_displacement 25um x 10um",
+  "eco": {
+    "new_run": false,
+    "origin_command": [
+      "docker",
+      "run",
+      "--rm",
+      "--cpus",
+      "2",
+      "--memory",
+      "12g",
+      "--network",
+      "none",
+      "--entrypoint",
+      "/bin/bash",
+      "-v",
+      "/home/vegapunk/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/S-folded-xor3-phase-20260924/run-01/case:/artifacts",
+      "docker.io/hpretl/iic-osic-tools@sha256:65852976cad4af640c9d848762215137e87ec125111a6d06c850c3ab4e9695fb",
+      "-lc",
+      "openroad -no_init -exit /artifacts/eco.tcl"
+    ],
+    "origin_log_sha256": "956805490bf9132ba62a9abdcda2dddd12ef5213d683162bfe051fca84889279",
+    "origin_source_commit": "68fafe35c3c553c9d1adadaad29f3b3551b5cfb4",
+    "original_wall_s": 0.945,
+    "returncode": 0,
+    "status": "REUSED_VERIFIED",
+    "wall_s": 0.0
+  },
+  "eco_reuse_moved_instances": [],
+  "eco_reuse_origin_chia_identity": {
+    "chia_job_id": "01000000",
+    "chia_node_id": "1e55fefea46a5cf8a5832107631b2b9df68c935a67862b074f509be4",
+    "chia_node_ip": "10.148.0.27",
+    "chia_task_id": "c8ef45ccd0112571ffffffffffffffffffffffff01000000",
+    "chia_worker_id": "6dbd3de3e9d5e62492b477e502e9ab0c381eb766b8dae16a9dca54d0",
+    "executable": "/home/vegapunk/miniforge3/envs/chia_familyrtl_260919/bin/python",
+    "hostname": "chia-arm64-eda-03",
+    "in_ray_worker": true,
+    "pid": 195041
+  },
+  "eco_reuse_origin_dir": "/home/vegapunk/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/S-folded-xor3-phase-20260924/run-01/case",
+  "eco_reuse_origin_eco": {
+    "command": [
+      "docker",
+      "run",
+      "--rm",
+      "--cpus",
+      "2",
+      "--memory",
+      "12g",
+      "--network",
+      "none",
+      "--entrypoint",
+      "/bin/bash",
+      "-v",
+      "/home/vegapunk/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/S-folded-xor3-phase-20260924/run-01/case:/artifacts",
+      "docker.io/hpretl/iic-osic-tools@sha256:65852976cad4af640c9d848762215137e87ec125111a6d06c850c3ab4e9695fb",
+      "-lc",
+      "openroad -no_init -exit /artifacts/eco.tcl"
+    ],
+    "log_path": "/home/vegapunk/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/S-folded-xor3-phase-20260924/run-01/case/eco.log",
+    "log_sha256": "956805490bf9132ba62a9abdcda2dddd12ef5213d683162bfe051fca84889279",
+    "returncode": 0,
+    "timed_out": false,
+    "wall_s": 0.945
+  },
+  "eco_reuse_origin_manifest_sha256": "8cec1d04c06b9f0a4c2e5b71904dc15475366ba037a6720873c18993d52beede",
+  "eco_reuse_origin_receipt_sha256": "8ef05da527de9e70ab2e48874c3f980eee1ec7a65820dd32f13f6459f480d5a4",
+  "eco_reuse_origin_source_commit": "68fafe35c3c553c9d1adadaad29f3b3551b5cfb4",
+  "eco_reuse_status": "VERIFIED_COMPLETED_ECO_ONLY",
+  "expected_cell_map_sha256": "b364a3eb724826d5cd7ed60a7e22050cf71593e3e80fbfad53351c3f38d550bc",
+  "feasible": true,
+  "final_proof": {
+    "artifact_dir": "/home/vegapunk/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/S-folded-xor3-phase-20260924/run-02/case/final_proof",
+    "complete_marker": true,
+    "error": null,
+    "exit_code": "0",
+    "log_sha256": "8015a4ff400520d7276b2cd8ed14d33d43f5d61848a58d5c1a6cbdc8bf503b02",
+    "new_run": false,
+    "original_wall_s": 1.147,
+    "reused_from": {
+      "artifact_dir": "/home/vegapunk/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/S-folded-xor3-phase-20260924/run-02/case/pre_route_proof",
+      "child_sha256": "eefeb2af735a2169fda65d2d8f5ced7507070ade895cfc9f5a261fd8e4c16cf3",
+      "image": "docker.io/hpretl/iic-osic-tools@sha256:65852976cad4af640c9d848762215137e87ec125111a6d06c850c3ab4e9695fb",
+      "log_sha256": "8015a4ff400520d7276b2cd8ed14d33d43f5d61848a58d5c1a6cbdc8bf503b02",
+      "parent_sha256": "320970ab4870a46b7603f457414d938c47b7971d760c2b07c5fae1983e0ca44f",
+      "proof_recipe_sha256": "d3036fb932303b6e65f59cba7196559b29d2856884096b9f70f98eaab34ff9a0"
+    },
+    "status": "PASS",
+    "wall_s": 0.0
+  },
+  "functional_valid": true,
+  "goal_id": "routed3_w64_d240_b271F0_v1",
+  "hashes": {
+    "eco_pre_route": "eefeb2af735a2169fda65d2d8f5ced7507070ade895cfc9f5a261fd8e4c16cf3",
+    "eco_routed_netlist": "eefeb2af735a2169fda65d2d8f5ced7507070ade895cfc9f5a261fd8e4c16cf3",
+    "eco_routed_odb": "efcf7d6be56be055eb86053be820753aa3b7f3d8be24ac3496cbec7d2239f6db",
+    "eco_routed_spef": "ec1f6b9a8f72121df23929a78bd4aefacb9c8461da91de2cc773d37da9b083a7",
+    "final_proof_log": "8015a4ff400520d7276b2cd8ed14d33d43f5d61848a58d5c1a6cbdc8bf503b02"
+  },
+  "j_score": 0.8951799620117368,
+  "kind": "xor3_phase_replay",
+  "liberty_sha256": "8e78e14442062dba34d414fca6490b2f6b96038d4510d1438ca44fee31487135",
+  "mapped_submission_counted": 0,
+  "measurement": {
+    "claim_scope": "routed three-profile measurement context (stress_encoded, valid_uniform, valid_low_toggle; 1024 vectors, 10000 ps interval, 0.05 ns slew, 0.005 pF load, fixed corner, matched SPEF, feasibility ceiling D <= 2.40 ns)",
+    "critical_path": {
+      "arrival_ns": 2.374088,
+      "endpoint": "data_o[60]",
+      "path_depth_cells": 10,
+      "slack_ns": 7.625913,
+      "startpoint": "data_i[53]"
+    },
+    "delay_ceiling_ns": 2.4,
+    "denominator_energies": {
+      "stress_encoded": 2.541007707,
+      "valid_low_toggle": 0.4358843944,
+      "valid_uniform": 2.027927403
+    },
+    "drc": {
+      "available": false,
+      "violations": null
+    },
+    "energy_ratios": {
+      "stress_encoded": 0.9721334816085231,
+      "valid_low_toggle": 0.807089413430948,
+      "valid_uniform": 0.9142890215187846
+    },
+    "feasible": true,
+    "hashes": {
+      "routed_netlist": "eefeb2af735a2169fda65d2d8f5ced7507070ade895cfc9f5a261fd8e4c16cf3",
+      "spef": "ec1f6b9a8f72121df23929a78bd4aefacb9c8461da91de2cc773d37da9b083a7",
+      "vcd": {
+        "stress_encoded": "5dcfb969ab0d6b157465b55f69aac1ec0db3c553f2dada67bbe1d5022f571e3b",
+        "valid_low_toggle": "fd9b04a0266103d9c135528759c113f3c4d94f12949600b9b8199f5db9a9223d",
+        "valid_uniform": "c32e594787ef8847e432205c0854c3c5dc5e1bdc836de059aeea289b63b97e43"
+      }
+    },
+    "j_score": 0.8951799620117368,
+    "measurement_valid": true,
+    "optional_power_diagnostic": {
+      "enabled": true,
+      "measurement_runner_sha256": "31cbdcf7362f90cea56027d2137e97511ff83059c2afcaf2f057a14208f04d0a",
+      "power_tcl_sha256": "375a0bfd3214c8b4656a83cfa4d0d2851b751b7899ef140d12f98c1fc001a715",
+      "profiles": {
+        "stress_encoded": {
+          "error_sha256": null,
+          "instance_power_sha256": "cc093a1e356ac1be271e9b7472045c8eeec97fb7ba6ea3e52adf568658b56f1d",
+          "pin_net_mapping_sha256": "52aa6b728efe223aca345230caffcbf08bfb38a386ad4666d6fde8fc7862b5e5"
+        },
+        "valid_low_toggle": {
+          "error_sha256": null,
+          "instance_power_sha256": "7274361f0b49a25c418527bfcb9336f8b31e8773e6a1ec851cf27f1b18e539cd",
+          "pin_net_mapping_sha256": "52aa6b728efe223aca345230caffcbf08bfb38a386ad4666d6fde8fc7862b5e5"
+        },
+        "valid_uniform": {
+          "error_sha256": null,
+          "instance_power_sha256": "a9f0f61dd161483a62a3b59abe791a39c88515f371ee534bd8452336bc994022",
+          "pin_net_mapping_sha256": "52aa6b728efe223aca345230caffcbf08bfb38a386ad4666d6fde8fc7862b5e5"
+        }
+      },
+      "run_script_sha256": "d27e5730ec48ab44b477d4db56f0d24f34d8e216dec6255e08f961baa6bf5d26",
+      "scope": "supplemental instance power only; no scoring or glitch attribution",
+      "sidecar_sha256": "5012192461a4317b651fe454e4ec04a8cb422b2c997a7a969c117fb27f2f9dbe",
+      "version": "ecc_instance_power_v1"
+    },
+    "per_profile": {
+      "stress_encoded": {
+        "actual_window_ps": 10240000,
+        "annotated_pins": 1042,
+        "completed": 1024,
+        "end_ps": 10250000,
+        "energy_j": 2.5294834370559995e-09,
+        "energy_pj_per_vector": 2.4701986689999997,
+        "internal_w": 0.0001014735535,
+        "leakage_w": 1.2680621e-09,
+        "oracle_mismatches": 0,
+        "start_ps": 10000,
+        "switching_w": 0.0001455450401,
+        "total_w": 0.0002470198669,
+        "unannotated_pins": 0,
+        "valid": true,
+        "vcd_sha256": "5dcfb969ab0d6b157465b55f69aac1ec0db3c553f2dada67bbe1d5022f571e3b"
+      },
+      "valid_low_toggle": {
+        "actual_window_ps": 10240000,
+        "annotated_pins": 1042,
+        "completed": 1024,
+        "end_ps": 10250000,
+        "energy_j": 3.6024082452479993e-10,
+        "energy_pj_per_vector": 0.35179768019999996,
+        "internal_w": 1.59700412e-05,
+        "leakage_w": 1.289105045e-09,
+        "oracle_mismatches": 0,
+        "start_ps": 10000,
+        "switching_w": 1.920843897e-05,
+        "total_w": 3.517976802e-05,
+        "unannotated_pins": 0,
+        "valid": true,
+        "vcd_sha256": "fd9b04a0266103d9c135528759c113f3c4d94f12949600b9b8199f5db9a9223d"
+      },
+      "valid_uniform": {
+        "actual_window_ps": 10240000,
+        "annotated_pins": 1042,
+        "completed": 1024,
+        "end_ps": 10250000,
+        "energy_j": 1.898610443264e-09,
+        "energy_pj_per_vector": 1.854111761,
+        "internal_w": 8.385084948e-05,
+        "leakage_w": 1.289594431e-09,
+        "oracle_mismatches": 0,
+        "start_ps": 10000,
+        "switching_w": 0.0001015590242,
+        "total_w": 0.0001854111761,
+        "unannotated_pins": 0,
+        "valid": true,
+        "vcd_sha256": "c32e594787ef8847e432205c0854c3c5dc5e1bdc836de059aeea289b63b97e43"
+      }
+    },
+    "raw_energies_pj": {
+      "stress_encoded": 2.4701986689999997,
+      "valid_low_toggle": 0.35179768019999996,
+      "valid_uniform": 1.854111761
+    },
+    "routed_area_um2": 2425.0,
+    "routed_delay_ns": 2.374088,
+    "stage_status": {
+      "iverilog_compile": 0,
+      "postroute_sta": 0,
+      "power": 0,
+      "simulation": 0
+    },
+    "wall_s": 5.12
+  },
+  "measurement_command": [
+    "/home/vegapunk/miniforge3/envs/chia_familyrtl_260919/bin/python",
+    "/home/vegapunk/projects/260908_CHIA_Hackathon_workers/s-n02-xor3-resume-9f01c4f/research/ecc_perf_bench/bench_ecc_routed_three_profile.py",
+    "--repo-root",
+    "/home/vegapunk/projects/260908_CHIA_Hackathon_workers/s-n02-xor3-resume-9f01c4f",
+    "--routed-netlist",
+    "/home/vegapunk/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/S-folded-xor3-phase-20260924/run-02/case/routed.v",
+    "--spef",
+    "/home/vegapunk/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/S-folded-xor3-phase-20260924/run-02/case/routed.spef",
+    "--artifact-dir",
+    "/home/vegapunk/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/S-folded-xor3-phase-20260924/run-02/case/three_profile",
+    "--width",
+    "64",
+    "--python",
+    "/home/vegapunk/miniforge3/envs/chia_familyrtl_260919/bin/python",
+    "--cpus",
+    "2",
+    "--denominator-json",
+    "/home/vegapunk/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/S-folded-xor3-phase-20260924/run-02/case/denominator.json",
+    "--delay-ceiling",
+    "2.40",
+    "--routed-area-um2",
+    "2425.0",
+    "--power-diagnostic",
+    "--keep-vcd"
+  ],
+  "measurement_exit_code": 0,
+  "measurement_runner_sha256": "31cbdcf7362f90cea56027d2137e97511ff83059c2afcaf2f057a14208f04d0a",
+  "measurement_valid": true,
+  "measurement_wall_s": 5.967,
+  "model_decision_sha256": "04a50f45494ad6920a265766db805c5da94a01aef1aa3ada4c84849b1dd90054",
+  "n02_area_check": {
+    "design_after_dbu2": 2747635200,
+    "design_before_dbu2": 2750137600,
+    "design_delta_dbu2": -2502400,
+    "pair_after_dbu2": 46294400,
+    "pair_before_dbu2": 48796800,
+    "pair_delta_dbu2": -2502400
+  },
+  "n02_target_placements": {
+    "_326_": {
+      "after_dpl": [
+        "sky130_fd_sc_hd__xnor3_1",
+        "19320",
+        "35360",
+        "FS"
+      ],
+      "parent": [
+        "sky130_fd_sc_hd__xor3_1",
+        "19320",
+        "35360",
+        "FS"
+      ]
+    },
+    "_328_": {
+      "after_dpl": [
+        "sky130_fd_sc_hd__xnor3_2",
+        "50600",
+        "46240",
+        "FS"
+      ],
+      "parent": [
+        "sky130_fd_sc_hd__xor3_2",
+        "50600",
+        "46240",
+        "FS"
+      ]
+    }
+  },
+  "n02_xor3_kernel_sha256": "e6fbcb4b2244eae26cd133056fb9aff30b9b61d8b45d65db63ed5d93a774c549",
+  "parent_binding_sha256": null,
+  "parent_graph_sha256": "320970ab4870a46b7603f457414d938c47b7971d760c2b07c5fae1983e0ca44f",
+  "parent_id": "N02-320970ab",
+  "parent_measurement_meta_sha256": "5c2afa90b32dca89de7489ff4f75c39abe05ffd6153175a5983f55289dc1b51b",
+  "parent_odb_sha256": "31ac626cd5e0ec76ae39b69ae9b49eb0e4293bda419429a9ca9a07c920452bff",
+  "parent_proof_log_sha256": "082cf24fabf12d13f5b5f10a127547ced552d1f854129af2d3cca1b9842372b3",
+  "parent_receipt_sha256": "2bb4f045ab14fc882c8347fd70aa7a7abeb5a2ee7c049535cf66e75457fae64c",
+  "parent_root": "/home/vegapunk/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/N-weighted-phase-assignment/feedback-02/d48cc962484f4e77832c5f2107e3c7db/step-01/artifacts",
+  "parent_spef_sha256": "d62064f949382aa95a4fcd149f24806f6aed3922bd754b025b36c066b8505e0b",
+  "placement_claim": "Both targets shrink; all DPL movement recorded, not fixed placement",
+  "placement_guard": "DPL_LEGALIZED_MOVEMENTS_RECORDED",
+  "plan": "n02_068",
+  "pre_route_proof": {
+    "artifact_dir": "/home/vegapunk/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/S-folded-xor3-phase-20260924/run-02/case/pre_route_proof",
+    "complete_marker": true,
+    "error": null,
+    "exit_code": "0",
+    "log_sha256": "8015a4ff400520d7276b2cd8ed14d33d43f5d61848a58d5c1a6cbdc8bf503b02",
+    "new_run": true,
+    "status": "PASS",
+    "wall_s": 1.147
+  },
+  "proof_image": "docker.io/hpretl/iic-osic-tools@sha256:65852976cad4af640c9d848762215137e87ec125111a6d06c850c3ab4e9695fb",
+  "proof_recipe_sha256": "d3036fb932303b6e65f59cba7196559b29d2856884096b9f70f98eaab34ff9a0",
+  "pure_proposal_text_sha256": "eefeb2af735a2169fda65d2d8f5ced7507070ade895cfc9f5a261fd8e4c16cf3",
+  "pure_source_hashes": {
+    "artifact_manifest": "ad8bd591a1f7772cd00a8800c8706570879a65a8246bb03b423fc05eff90e262",
+    "checker": "362fe54880c2292c9233f5d74451711b974a4b66d4749ecda46f64986e332852",
+    "library": "20e3f42ec0dc3864e374204f86d64ad45ee1d9a5c327d52cf9512596826e2d8d",
+    "proposal": "bd7571a5ac6a350dca7ce4e10952c2111986366039c2529468e963ffa779ff2f"
+  },
+  "raw_energies_pj": {
+    "stress_encoded": 2.4701986689999997,
+    "valid_low_toggle": 0.35179768019999996,
+    "valid_uniform": 1.854111761
+  },
+  "recipe_hashes": {
+    "eco.tcl": "641a66415433cd317ce8fbb1eb6033f4aca1301aa59b6b8d15d6ff9850ff4b4c",
+    "reroute.tcl": "4ad2b341c1cf3596c7d50961d95c39c43aa436eaccf76cbe39c51f89e609babd"
+  },
+  "reroute": {
+    "command": [
+      "docker",
+      "run",
+      "--rm",
+      "--cpus",
+      "2",
+      "--memory",
+      "12g",
+      "--network",
+      "none",
+      "--entrypoint",
+      "/bin/bash",
+      "-v",
+      "/home/vegapunk/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/S-folded-xor3-phase-20260924/run-02/case:/artifacts",
+      "docker.io/hpretl/iic-osic-tools@sha256:65852976cad4af640c9d848762215137e87ec125111a6d06c850c3ab4e9695fb",
+      "-lc",
+      "openroad -no_init -exit /artifacts/reroute.tcl"
+    ],
+    "log_path": "/home/vegapunk/projects/260908_CHIA_Hackathon_artifacts/chia-top1-20260923/S-folded-xor3-phase-20260924/run-02/case/reroute.log",
+    "log_sha256": "46318b7e9a854a3645e7bef27e78f8e30c2992812412f55fe9b99f4c3a4d013a",
+    "returncode": 0,
+    "timed_out": false,
+    "wall_s": 19.305
+  },
+  "route_submission_counted": 1,
+  "route_valid": true,
+  "routed_area_um2": 2425.0,
+  "routed_delay_ns": 2.374088,
+  "source_commit": "9f01c4f67ea95ebd91257307455397514524ac18",
+  "stage": "complete",
+  "status": "OK",
+  "target_count": 2,
+  "target_pair_db_area_delta_dbu2": -2502400,
+  "target_pair_liberty_area_delta_um2": -2.5024,
+  "target_pair_width_deltas_um": {
+    "_326_": -0.46,
+    "_328_": -0.46
+  },
+  "targets_tsv_sha256": "e928450e7acf38d2fafa6016f244b0fc26e3b1b82e2c15227b0b26121fd013c5",
+  "vcd_retention": {
+    "delete_vcd": false,
+    "keep_vcd": true
+  }
+}

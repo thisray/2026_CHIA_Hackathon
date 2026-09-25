@@ -1,0 +1,34 @@
+{
+  "source_snapshot": "f5d938b24403f97bc199592f86fb0d7a88541a92",
+  "denominators_pj_per_vector": {
+    "64": [
+      2.541007707,
+      2.027927403,
+      0.4358843944
+    ],
+    "32": [
+      1.595184585,
+      1.140097229,
+      0.32781139449999996
+    ]
+  },
+  "profile_order": [
+    "E_stress_pj",
+    "E_uniform_pj",
+    "E_low_pj"
+  ],
+  "vectors_per_profile": 1024,
+  "interval_ps": 10000,
+  "actual_window_ps": 10240000,
+  "workload_seed": 2026092101,
+  "input_slew_ns": 0.05,
+  "output_load_pf": 0.005,
+  "corner": "SKY130A HD TT 1.8V 25C",
+  "acceptance_delay_ns": 2.4,
+  "routing_target_ns": 2.575,
+  "setup_repair_target_ns": 2.35,
+  "analysis_virtual_clock_ns": 10,
+  "route_seed": 20260921,
+  "energy_method": "functional gate activity without SDF delay back-annotation + matching routed SPEF + Liberty/OpenSTA",
+  "provenance": "Source-transcribed settings; no new EDA run in this review."
+}

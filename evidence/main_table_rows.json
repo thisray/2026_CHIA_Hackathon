@@ -1,0 +1,82 @@
+[
+  {
+    "id": "ref64",
+    "label": "Searched RTL reference"
+  },
+  {
+    "id": "tuned64",
+    "label": "RTL + physical tuning (start)"
+  },
+  {
+    "id": "composed64",
+    "label": "Pin swaps, downsizing, and tree rotation"
+  },
+  {
+    "id": "batch8",
+    "label": "Batched local phase refinements"
+  },
+  {
+    "id": "star64",
+    "label": "Shared-consumer phase refinement"
+  },
+  {
+    "id": "fold64",
+    "label": "Fold for additional timing headroom"
+  },
+  {
+    "id": "bbf",
+    "label": "Feedback-recovered local design"
+  },
+  {
+    "id": "J1",
+    "label": "Multi-path-protected global assignment"
+  },
+  {
+    "id": "N1",
+    "label": "Power-weighted global assignment"
+  },
+  {
+    "id": "N2",
+    "label": "Feedback-selected local pair"
+  },
+  {
+    "id": "S2",
+    "label": "Final three-input refinement"
+  },
+  {
+    "id": "ref32",
+    "label": "Masked-RTL reference"
+  },
+  {
+    "id": "projected32",
+    "label": "Projected searched RTL (start)"
+  },
+  {
+    "id": "G0",
+    "label": "Transferred local phase pairs"
+  },
+  {
+    "id": "G1",
+    "label": "Three-star local trial"
+  },
+  {
+    "id": "ff6",
+    "label": "Feedback-selected four-star trial"
+  },
+  {
+    "id": "O1",
+    "label": "Minimum-count binary assignment"
+  },
+  {
+    "id": "O2",
+    "label": "Power-weighted binary assignment"
+  },
+  {
+    "id": "V1",
+    "label": "Mixed-arity single-group trial"
+  },
+  {
+    "id": "V2",
+    "label": "Final mixed-arity assignment"
+  }
+]

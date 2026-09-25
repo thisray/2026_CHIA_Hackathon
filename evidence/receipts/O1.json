@@ -1,0 +1,57 @@
+{
+  "action": {
+    "kind": "phase_assignment",
+    "proposal": "w32_unprotected_xnor_count_min_seed20260924_v1"
+  },
+  "case": "O1",
+  "feasible": true,
+  "functional_valid": true,
+  "goal_id": "routed3_w32_d240_maskedF0_v1",
+  "hashes": {
+    "eco_pre_route": "f8a77599cc55287da6f4423c9de3abf1dfdced129616b5c9c3b9aa642f0a3372",
+    "eco_routed_netlist": "f8a77599cc55287da6f4423c9de3abf1dfdced129616b5c9c3b9aa642f0a3372",
+    "eco_routed_odb": "d764cc4ef74fd56e2b3bbdf077dc429388319308eca1bd9c2aa6839ad9b9b0ce",
+    "eco_routed_spef": "1267423b0e16748fe8fa5ff1c2cb133c8155ec48c9ed33826c3483c09c849e64",
+    "final_proof_log": "ee4cfb47a3ace054b03757242ccc7ab90896a57addccef8bc66c4c8f310c7b5e"
+  },
+  "j_score": 0.799552863297334,
+  "kind": "bounded_w32_phase_assignment",
+  "measurement_valid": true,
+  "original_sha256": "53af6d9ea28b6ff8e7127ab7bc62ea9d7bfa492216490aa61009a60a0416d31f",
+  "parent_binding_sha256": "c42ab645d66dc106ef75cbdc379c55f3b3987796b480c5d8c7887a8dd40c63df",
+  "parent_graph_sha256": "ff6f3194c3e527005aba7bb2b4153e4a2f47454bf627739f0348cae6d120bf59",
+  "parent_id": "ff6f3194",
+  "parent_measurement_meta_sha256": "e9a7f8d658f0cfae5957152a20ff5594aa201a7ae10cccf9cb84507973032a2d",
+  "parent_odb_sha256": "cad8ffacb97be6dc17481caa44e9d1c0c8dc3354cf9ed33f07d77ddec031117d",
+  "parent_proof_log_sha256": "ee151de6b02149fa6c1b2a525a98ed605472f74de458c308aa0ef73803bdf241",
+  "parent_receipt_sha256": "6db2afa3ee54d92b93f122bc5826e82962d15a59c0d3affb9205ba0d67ea325d",
+  "parent_spef_sha256": "92d03c0c930464071fe0f22d3d22efafbe8192e5f1022237500ef628e3ea178f",
+  "raw_energies_pj": {
+    "stress_encoded": 1.280009747,
+    "valid_low_toggle": 0.2677222983,
+    "valid_uniform": 0.8892433107000001
+  },
+  "reference_measurement_id": "ecc_masked_reduction::F0::routed3_w32_v1",
+  "route_valid": true,
+  "routed_area_um2": 1299.0,
+  "routed_delay_ns": 2.069854,
+  "selected_metric_row": {
+    "area_um2": 1299.0,
+    "delay_ns": 2.069854,
+    "energy_pj": {
+      "stress_encoded": 1.280009747,
+      "valid_low_toggle": 0.2677222983,
+      "valid_uniform": 0.8892433107000001
+    },
+    "feasible": true,
+    "id": "O1",
+    "j": 0.799552863297334,
+    "width": 32
+  },
+  "source_commit": "5da3ccc20bd18cbae9ac8b64b2b451fc547c9984",
+  "source_pointer": "",
+  "source_revision": "919c87a54cae67ff66683231d27d55b2e9bb3389",
+  "stage": "complete",
+  "status": "OK",
+  "upstream_path": "review/chia_O32_global_phase/20260924/o01-receipt.json"
+}

@@ -1,0 +1,89 @@
+{
+  "PPA": "NOT_RUN",
+  "action": {
+    "consumer": "_328_",
+    "phase_net": "_068_",
+    "root": "_326_"
+  },
+  "area_limit": "Cell-only Liberty/LEF area estimate; physical legalisation/routing may change final area. Targets shrink in width; fixed placement is not claimed.",
+  "candidate_graph_sha256": "eefeb2af735a2169fda65d2d8f5ced7507070ade895cfc9f5a261fd8e4c16cf3",
+  "cell_only_area_delta_um2": -2.5024000000000015,
+  "complete_phase_fanout": {
+    "consumers": [
+      [
+        "_328_",
+        "C"
+      ]
+    ],
+    "drivers": [
+      [
+        "_326_",
+        "X"
+      ]
+    ]
+  },
+  "estimated_area_if_only_these_masters_change_um2": 2424.4976,
+  "five_input_truth_rows_checked": 32,
+  "functional_proof": "NOT_RUN",
+  "gf2_phase_law": "XOR3->XNOR3 at producer z(_068_)=1; XOR3->XNOR3 at sole C consumer cancels z at syndrome_o[2].",
+  "kind": "exact_N02_two_cell_xor3_xnor3_phase_probe",
+  "parent_graph_sha256": "320970ab4870a46b7603f457414d938c47b7971d760c2b07c5fae1983e0ca44f",
+  "parent_measured_area_um2": 2427.0,
+  "placement_geometry": {
+    "_326_": {
+      "new_height_um": 2.72,
+      "new_width_um": 8.28,
+      "old_height_um": 2.72,
+      "old_width_um": 8.74
+    },
+    "_328_": {
+      "new_height_um": 2.72,
+      "new_width_um": 8.74,
+      "old_height_um": 2.72,
+      "old_width_um": 9.2
+    }
+  },
+  "route": "NOT_RUN",
+  "source_hashes": {
+    "LEF": "3a3ea4e9d0973402702764d897659e52fe3d413eb48c306cd811de40a75264fa",
+    "Liberty": "8e78e14442062dba34d414fca6490b2f6b96038d4510d1438ca44fee31487135",
+    "Liberty_parser": "9654c59c877b2dc9f4e1ad8ae8b7b1333339483472a7c37e2402cffcda1a0143",
+    "N02_receipt": "2bb4f045ab14fc882c8347fd70aa7a7abeb5a2ee7c049535cf66e75457fae64c",
+    "parent_routed_v": "320970ab4870a46b7603f457414d938c47b7971d760c2b07c5fae1983e0ca44f"
+  },
+  "status": "PURE_PROPOSAL_NOT_PROVED_NOT_ROUTED_NOT_MEASURED",
+  "targets": {
+    "_326_": {
+      "new_master": "sky130_fd_sc_hd__xnor3_1",
+      "new_output_pin": "X",
+      "old_master": "sky130_fd_sc_hd__xor3_1",
+      "old_output_pin": "X",
+      "pins": {
+        "A": "_047_",
+        "B": "_053_",
+        "C": "_067_",
+        "X": "_068_"
+      }
+    },
+    "_328_": {
+      "new_master": "sky130_fd_sc_hd__xnor3_2",
+      "new_output_pin": "X",
+      "old_master": "sky130_fd_sc_hd__xor3_2",
+      "old_output_pin": "X",
+      "pins": {
+        "A": "_006_",
+        "B": "_069_",
+        "C": "_068_",
+        "X": "syndrome_o[2]"
+      }
+    }
+  },
+  "xnor2_count_before_after": [
+    35,
+    35
+  ],
+  "xor2_count_before_after": [
+    152,
+    152
+  ]
+}

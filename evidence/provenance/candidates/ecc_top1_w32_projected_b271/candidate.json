@@ -1,0 +1,145 @@
+{
+  "a": 1,
+  "action": {
+    "a": 1,
+    "b": 2,
+    "basis_source": 1,
+    "basis_target": 0,
+    "bit_order": "1,4,2,3,0,5",
+    "cross": "AB",
+    "decoder": "tree",
+    "decoder_perm": "0,1,2,3,4,5",
+    "linear_style": "radix2",
+    "operator": "basis"
+  },
+  "b": 2,
+  "basis_certificate": {
+    "correction_mismatches": 0,
+    "coverage": "elementary-shear inverse; transformed tree decoder and correction over all syndrome values x both D values x all data positions; original status flags over all syndrome values x both total-parity values",
+    "data_positions": 32,
+    "decoder_mismatches": 0,
+    "flag_mismatches": 0,
+    "inverse_mismatches": 0,
+    "mismatches": 0,
+    "scope": "exact truth-table checks; not whole-RTL or mapped formal",
+    "status": "PASS",
+    "syndrome_values": 64
+  },
+  "basis_source": 1,
+  "basis_target": 0,
+  "basis_transform": {
+    "constant_equation": "c_prime[0] = c[0] XOR c[1]",
+    "equation": "t[0] = s[0] XOR s[1]",
+    "kind": "elementary_row_shear",
+    "self_inverse": true,
+    "source": 1,
+    "target": 0
+  },
+  "bit_order": [
+    1,
+    4,
+    2,
+    3,
+    0,
+    5
+  ],
+  "candidate_id": "ecc-d41d82f720a2785f",
+  "cross": "AB",
+  "data_width": 32,
+  "decoder": "tree",
+  "decoder_check": {
+    "correction_mismatches": 0,
+    "coverage": "elementary-shear inverse; transformed tree decoder and correction over all syndrome values x both D values x all data positions; original status flags over all syndrome values x both total-parity values",
+    "data_positions": 32,
+    "decoder_mismatches": 0,
+    "flag_mismatches": 0,
+    "inverse_mismatches": 0,
+    "mismatches": 0,
+    "scope": "exact truth-table checks; not whole-RTL or mapped formal",
+    "status": "PASS",
+    "syndrome_values": 64
+  },
+  "decoder_perm": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "decoder_stats": {
+    "a": 1,
+    "algorithm": "tree",
+    "b": 2,
+    "cross": "AB",
+    "extra_ideal_xors": 1,
+    "perm": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "terms": 13,
+    "transformed_position_count": 32
+  },
+  "external_contract": {
+    "data_o": "original all-binary correction semantics",
+    "flags": "original all-binary SECDED status semantics",
+    "syndrome_o": "original syndrome basis"
+  },
+  "ideal_xor_count": 70,
+  "linear_certificate": {
+    "coverage": "all binary codewords, linear stage only",
+    "depth_bounds_met": true,
+    "max_linear_node_fanout": 2,
+    "output_depths": [
+      5,
+      5,
+      5,
+      4,
+      4,
+      3,
+      6
+    ],
+    "physical_effect": "UNKNOWN: synthesis may restructure and share these nodes",
+    "status": "PASS",
+    "xor2_nodes": 69
+  },
+  "linear_style": "radix2",
+  "module_name": "familyrtl_ecc_pilot_00_w32_b271_projected_parent",
+  "operator": "basis",
+  "operator_sources": [
+    {
+      "path": "/home/vegapunk/projects/chia-top1-20260923/w32-transfer-repo/research/ecc_perf_bench/operator_candidate.py",
+      "sha256": "54202fe0aaca17df47e8617f9e73c88cd966f7cc67bc25c4b1ffc3b666034d30"
+    },
+    {
+      "path": "/home/vegapunk/projects/chia-top1-20260923/w32-transfer-repo/research/ecc_perf_bench/syndrome_basis.py",
+      "sha256": "dcb8a949492e5f77b4c1190fa71f4c3c95ae486d289e2ca39f5d7b697d7d5b71"
+    },
+    {
+      "path": "/home/vegapunk/projects/chia-top1-20260923/w32-transfer-repo/research/ecc_perf_bench/gen_linear_slp.py",
+      "sha256": "8319a338c43b4b7df63199454d61fe166ca15b9beeb2b95710e5856bdf25c143"
+    },
+    {
+      "path": "/home/vegapunk/projects/chia-top1-20260923/w32-transfer-repo/tools/linear_ecc_candidates.py",
+      "sha256": "d6f602faac85815fe0f962ad8de59e854d47d860d1842838763f95a07881eea4"
+    },
+    {
+      "path": "/home/vegapunk/projects/chia-top1-20260923/w32-transfer-repo/research/ecc_perf_bench/arrival_decoder.py",
+      "sha256": "a578e23fe57002daf8523b0773b2ccf307c3283913f281efcbffdb58d2c288b2"
+    }
+  ],
+  "perm": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "realization": "append",
+  "rtl_sha256": "3a4f95a3751d487b8010676a74f2929c7fe28995146dd8f163c5c72220dcb295"
+}
