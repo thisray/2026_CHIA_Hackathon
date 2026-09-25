@@ -390,12 +390,12 @@
       "bytes": 162
     },
     "paper/CHIA_ECC_Feedback.pdf": {
-      "sha256": "a6b33f80ad00a2b5feba9764b870e77fa6fe82afae9b3cff5d939e8119968b4f",
-      "bytes": 75628
+      "sha256": "1e890074ad879477a995f43a538e9ee268070c516c5e1951c06c8ea2c13a00f9",
+      "bytes": 75798
     },
     "paper/CHIA_ECC_Feedback.tex": {
-      "sha256": "35ba45909a3f595c1de72f8b3259ddc151978758e5ef291cd96de0de1d24a903",
-      "bytes": 15037
+      "sha256": "b7f95506e89328d4fc10ccd342a78c97ef3256a0aeaf0f26e21a0d04eb30c146",
+      "bytes": 15171
     },
     "paper/figures/loop.tex": {
       "sha256": "01528df401fd1494f784be96a285507959c5a96132bbc27c5c3256ff82a01d78",
