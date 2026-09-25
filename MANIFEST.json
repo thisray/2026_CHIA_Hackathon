@@ -390,8 +390,8 @@
       "bytes": 162
     },
     "paper/CHIA_ECC_Feedback.pdf": {
-      "sha256": "abbdeff3f68f238716213a85d0977bbb20fcfaded37458f6806c875f4990b56d",
-      "bytes": 75626
+      "sha256": "a6b33f80ad00a2b5feba9764b870e77fa6fe82afae9b3cff5d939e8119968b4f",
+      "bytes": 75628
     },
     "paper/CHIA_ECC_Feedback.tex": {
       "sha256": "35ba45909a3f595c1de72f8b3259ddc151978758e5ef291cd96de0de1d24a903",
@@ -410,8 +410,8 @@
       "bytes": 2290
     },
     "paper/tables/milestones.tex": {
-      "sha256": "8b46c4458c47a8be22e1dd94afdbc08e96992ea48e1ffaad6d882366ab2ee591",
-      "bytes": 3528
+      "sha256": "316c80870e6e3abe985810675c1453dcf6b800ef7c7dea3570c21677ee5f558e",
+      "bytes": 3532
     },
     "platform/iic-osic-arm64.lock.json": {
       "sha256": "d56168e7b6741c4501cc8f5c07ea2ece6bbe1c39fa2457cc2051227a2f2292cd",
